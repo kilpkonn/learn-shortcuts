@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://github.com/docs/nvim/</loc>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/</loc>
   </url><url>
-    <loc>http://github.com/docs/nvim/week-00/</loc>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-00/</loc>
   </url><url>
-    <loc>http://github.com/posts/</loc>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/posts/</loc>
   </url><url>
-    <loc>http://github.com/categories/</loc>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/categories/</loc>
   </url><url>
-    <loc>http://github.com/docs/</loc>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/docs/</loc>
   </url><url>
-    <loc>http://github.com/</loc>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/</loc>
   </url><url>
-    <loc>http://github.com/tags/</loc>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/tags/</loc>
   </url>
 </urlset>

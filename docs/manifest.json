@@ -1,14 +1,14 @@
 {
   "name": "Learn Shortcuts",
   "short_name": "Learn Shortcuts",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/learn-shortcuts/",
+  "scope": "/learn-shortcuts/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/learn-shortcuts/favicon.svg",
       "sizes": "512x512"
     }
   ]
