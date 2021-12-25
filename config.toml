@@ -1,0 +1,12 @@
+baseURL = 'http://github.com/'
+languageCode = 'en-us'
+title = 'Learn Shortcuts'
+theme = 'hugo-book'
+publishdir = "docs"
+
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+ BookMenuBundle = '/menu'
