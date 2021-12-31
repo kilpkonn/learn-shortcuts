@@ -32,3 +32,5 @@ Edit terminal command in vim with `C-e` (`zsh` specific)
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 ```
+  
+My nvim config can be found [here](https://github.com/kilpkonn/nvim-config)

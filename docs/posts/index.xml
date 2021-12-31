@@ -5,6 +5,16 @@
     <link>https://kilpkonn.github.io/learn-shortcuts/posts/</link>
     <description>Recent content in Blog on Learn Shortcuts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kilpkonn.github.io/learn-shortcuts/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kilpkonn.github.io/learn-shortcuts/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Preparation</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/posts/week-00/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/posts/week-00/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

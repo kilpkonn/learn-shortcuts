@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Replace in range #  Sometimes we wish to replace strings only in some range, not at file at a time. Here are some tims to accomplish that.
+Replace in visually seleceted range #   Select range in visual mode Press &lt;:&gt; to start range action, you should see something like this:  :&#39;&lt;,&#39;&gt;Type in replace command as usual eg. for foo -&gt; bar  :&#39;&lt;,&#39;&gt;s/foo/bar/gReplace last visually selected range in normal mode #   Select range in visual mode Exit to normal mode Start command with &lt;:&gt; as usual Use \%V to restrict selection to previously selected visual range.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 1" />
+<meta property="og:description" content="Replace in range #  Sometimes we wish to replace strings only in some range, not at file at a time. Here are some tims to accomplish that.
+Replace in visually seleceted range #   Select range in visual mode Press &lt;:&gt; to start range action, you should see something like this:  :&#39;&lt;,&#39;&gt;Type in replace command as usual eg. for foo -&gt; bar  :&#39;&lt;,&#39;&gt;s/foo/bar/gReplace last visually selected range in normal mode #   Select range in visual mode Exit to normal mode Start command with &lt;:&gt; as usual Use \%V to restrict selection to previously selected visual range." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-01/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 1 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.c32b05f60c7bf81e6b7a0b0708ac44747f4a4dbfc5aa69baaee7fdcb6791b714.js" integrity="sha256-wysF9gx7&#43;B5regsHCKxEdH9KTb/Fqmm6ruf9y2eRtxQ=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/learn-shortcuts/posts/" >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 1</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#replace-in-visually-seleceted-range">Replace in visually seleceted range</a></li>
+    <li><a href="#replace-last-visually-selected-range-in-normal-mode">Replace last visually selected range in normal mode</a></li>
+    <li><a href="#replace-multiple-ranges">Replace multiple ranges</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="replace-in-range">
+  Replace in range
+  <a class="anchor" href="#replace-in-range">#</a>
+</h1>
+<p>Sometimes we wish to replace strings only in some range, not at file at a time.
+Here are some tims to accomplish that.</p>
+<h2 id="replace-in-visually-seleceted-range">
+  Replace in visually seleceted range
+  <a class="anchor" href="#replace-in-visually-seleceted-range">#</a>
+</h2>
+<ol>
+<li>Select range in visual mode</li>
+<li>Press <code>&lt;:&gt;</code> to start range action, you should see something like this:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><ol start="3">
+<li>Type in replace command as usual eg. for foo -&gt; bar</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;<span style="color:#a6e22e">s</span><span style="color:#e6db74">/foo/</span><span style="color:#a6e22e">bar</span>/<span style="color:#a6e22e">g</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="replace-last-visually-selected-range-in-normal-mode">
+  Replace last visually selected range in normal mode
+  <a class="anchor" href="#replace-last-visually-selected-range-in-normal-mode">#</a>
+</h2>
+<ol>
+<li>Select range in visual mode</li>
+<li>Exit to normal mode</li>
+<li>Start command with <code>&lt;:&gt;</code> as usual</li>
+<li>Use <code>\%V</code> to restrict selection to previously selected visual range.</li>
+<li>Replace usual eg. for foo -&gt; bar</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:%<span style="color:#a6e22e">s</span><span style="color:#e6db74">/\%Vfoo/</span><span style="color:#a6e22e">bar</span>/<span style="color:#a6e22e">g</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="replace-multiple-ranges">
+  Replace multiple ranges
+  <a class="anchor" href="#replace-multiple-ranges">#</a>
+</h2>
+<p>You can also select range in command mode with <code>:start,end</code> and run command on it.
+You can then also chain renaming in multiple ranges like so</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#ae81ff">18</span>,<span style="color:#ae81ff">20</span>s<span style="color:#e6db74">/foo/</span><span style="color:#a6e22e">bar</span>/<span style="color:#a6e22e">g</span> | <span style="color:#ae81ff">28</span>,<span style="color:#ae81ff">30</span>&amp;&amp;<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#replace-in-visually-seleceted-range">Replace in visually seleceted range</a></li>
+    <li><a href="#replace-last-visually-selected-range-in-normal-mode">Replace last visually selected range in normal mode</a></li>
+    <li><a href="#replace-multiple-ranges">Replace multiple ranges</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

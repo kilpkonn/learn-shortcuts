@@ -5,7 +5,8 @@
     <link>https://kilpkonn.github.io/learn-shortcuts/</link>
     <description>Recent content on Learn Shortcuts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://kilpkonn.github.io/learn-shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kilpkonn.github.io/learn-shortcuts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week 0</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-00/</link>
@@ -16,6 +17,25 @@
 Before starting you should have:
  basic experience with neovim (I had ~5 months as neovim as my main editor but also less is sufficient for sure) know basic movement, editing and similar in vim. know very basics of lua (for config)  Some random tips #  Make neovim your default editor
 # .zshenv export EDITOR=&amp;#34;nvim&amp;#34; Add alias to launch neovim faster</description>
+    </item>
+    
+    <item>
+      <title>Week 1</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-01/</guid>
+      <description>Replace in range #  Sometimes we wish to replace strings only in some range, not at file at a time. Here are some tims to accomplish that.
+Replace in visually seleceted range #   Select range in visual mode Press &amp;lt;:&amp;gt; to start range action, you should see something like this:  :&amp;#39;&amp;lt;,&amp;#39;&amp;gt;Type in replace command as usual eg. for foo -&amp;gt; bar  :&amp;#39;&amp;lt;,&amp;#39;&amp;gt;s/foo/bar/gReplace last visually selected range in normal mode #   Select range in visual mode Exit to normal mode Start command with &amp;lt;:&amp;gt; as usual Use \%V to restrict selection to previously selected visual range.</description>
+    </item>
+    
+    <item>
+      <title>Preparation</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/posts/week-00/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/posts/week-00/</guid>
+      <description></description>
     </item>
     
   </channel>
