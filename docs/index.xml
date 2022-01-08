@@ -5,8 +5,7 @@
     <link>https://kilpkonn.github.io/learn-shortcuts/</link>
     <description>Recent content on Learn Shortcuts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kilpkonn.github.io/learn-shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://kilpkonn.github.io/learn-shortcuts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week 0</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-00/</link>
@@ -30,12 +29,16 @@ Replace in visually seleceted range #   Select range in visual mode Press &amp;l
     </item>
     
     <item>
-      <title>Preparation</title>
-      <link>https://kilpkonn.github.io/learn-shortcuts/posts/week-00/</link>
-      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      <title>Week 2</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kilpkonn.github.io/learn-shortcuts/posts/week-00/</guid>
-      <description></description>
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</guid>
+      <description>The &amp;lsquo;g&amp;rsquo; command #  It is quite common to wish to run some specific command on every line containing a pattern. This is exactly what the &amp;lsquo;g&amp;rsquo; command is for.
+Syntax #  The &amp;lsquo;g&amp;rsquo; command is executed in command mode and the syntax is following:
+:g/pattern/commandAlso the inverse is possible (run command on lines that do not match)
+:g!/pattern/commandor
+:v/pattern/commandExamples #  Delete all lines containing pattern #  :g/foo/dDelete all empty lines #  :g/^\s*$/dMove imports to start of file #  :g/import/m0Capitalize all lines not containig bar #  :v/bar/normal gUU</description>
     </item>
     
   </channel>
