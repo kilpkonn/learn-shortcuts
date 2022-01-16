@@ -41,5 +41,16 @@ Syntax #  The &amp;lsquo;g&amp;rsquo; command is executed in command mode and th
 :v/pattern/commandExamples #  Delete all lines containing pattern #  :g/foo/dDelete all empty lines #  :g/^\s*$/dMove imports to start of file #  :g/import/m0Capitalize all lines not containig bar #  :v/bar/normal gUU</description>
     </item>
     
+    <item>
+      <title>Week 2</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</guid>
+      <description>Working on long lines #  Sometimes lines are so long that they do not fit onto screen. It is inportant to know how to split line to multiple or sometimes merge into single in these cases.
+Movement #  This is how to move on wrapped lines as if they were multiple lines
+gj - downgk - upg$ - end of a visual lineg0 - beginning of a visual lineSplit to multiple lines #  To split single line (or any other text object) to multiple lines gq followed by a motion can be used.</description>
+    </item>
+    
   </channel>
 </rss>
