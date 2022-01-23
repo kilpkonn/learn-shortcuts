@@ -42,7 +42,7 @@ Syntax #  The &amp;lsquo;g&amp;rsquo; command is executed in command mode and th
     </item>
     
     <item>
-      <title>Week 2</title>
+      <title>Week 3</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -50,6 +50,19 @@ Syntax #  The &amp;lsquo;g&amp;rsquo; command is executed in command mode and th
       <description>Working on long lines #  Sometimes lines are so long that they do not fit onto screen. It is inportant to know how to split line to multiple or sometimes merge into single in these cases.
 Movement #  This is how to move on wrapped lines as if they were multiple lines
 gj - downgk - upg$ - end of a visual lineg0 - beginning of a visual lineSplit to multiple lines #  To split single line (or any other text object) to multiple lines gq followed by a motion can be used.</description>
+    </item>
+    
+    <item>
+      <title>Week 4</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</guid>
+      <description>Opening files #  Here are some tips for opening files with vim.
+Open file with nvim #  The most basic way is to open files when opening vim.
+nvim [-o] /path/to/file.txt -o Can be used to open each file in sepparate window or you can specify amount of windows with it as -o 4
+Open width :edit / :view command #  To edit
+:e /path/to/file.txtView only mode</description>
     </item>
     
   </channel>

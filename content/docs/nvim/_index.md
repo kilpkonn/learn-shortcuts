@@ -10,3 +10,4 @@ title: "Neovim tips"
  - [week-01](./week-01) Rename in range
  - [week-02](./week-02) Run command on lines that match
  - [week-03](./week-03) Working on long lines
+ - [week-04](./week-04) Opening files

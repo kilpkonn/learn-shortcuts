@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Opening files #  Here are some tips for opening files with vim.
+Open file with nvim #  The most basic way is to open files when opening vim.
+nvim [-o] /path/to/file.txt -o Can be used to open each file in sepparate window or you can specify amount of windows with it as -o 4
+Open width :edit / :view command #  To edit
+:e /path/to/file.txtView only mode">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 4" />
+<meta property="og:description" content="Opening files #  Here are some tips for opening files with vim.
+Open file with nvim #  The most basic way is to open files when opening vim.
+nvim [-o] /path/to/file.txt -o Can be used to open each file in sepparate window or you can specify amount of windows with it as -o 4
+Open width :edit / :view command #  To edit
+:e /path/to/file.txtView only mode" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 4 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.9ef2026ef5b000cb5ddad3c80968d6c57a3f67150141357234e9c1250f7c6b8c.js" integrity="sha256-nvICbvWwAMtd2tPICWjWxXo/ZxUBQTVyNOnBJQ98a4w=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 4</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#open-file-with-nvim">Open file with nvim</a></li>
+    <li><a href="#open-width-edit--view-command">Open width :edit / :view command</a></li>
+    <li><a href="#open-path-in-buffer">Open path in buffer</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="opening-files">
+  Opening files
+  <a class="anchor" href="#opening-files">#</a>
+</h1>
+<p>Here are some tips for opening files with vim.</p>
+<h2 id="open-file-with-nvim">
+  Open file with nvim
+  <a class="anchor" href="#open-file-with-nvim">#</a>
+</h2>
+<p>The most basic way is to open files when opening vim.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nvim <span style="color:#f92672">[</span>-o<span style="color:#f92672">]</span> /path/to/file.txt
+</code></pre></div><p><code>-o</code> Can be used to open each file in sepparate window or you can specify amount of windows with it as <code>-o 4</code></p>
+<h2 id="open-width-edit--view-command">
+  Open width :edit / :view command
+  <a class="anchor" href="#open-width-edit--view-command">#</a>
+</h2>
+<p>To edit</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">e</span> <span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">txt</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>View only mode</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">v</span> <span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">txt</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="open-path-in-buffer">
+  Open path in buffer
+  <a class="anchor" href="#open-path-in-buffer">#</a>
+</h2>
+<p>Sometimes you have some paths in you text document and you want to open them.
+For that you can simply do <code>gf</code> on the path to open it.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#open-file-with-nvim">Open file with nvim</a></li>
+    <li><a href="#open-width-edit--view-command">Open width :edit / :view command</a></li>
+    <li><a href="#open-path-in-buffer">Open path in buffer</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
