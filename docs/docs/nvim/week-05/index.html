@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Opening files #  More tips for opening files incoming.
+Open multiple files from inside vim #  Similarly to passing wildcards to arguments when opening vim with files you can open multiple files from inside vim. This can be acieved with :ar[gs] &lt;pattern&gt; command.
+For example all .cpp files is src can be opened with
+:args src/**/*.cppNvim Tree #  Another very useful option is to use kyazdani42/nvim-tree (or something similar).">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 5" />
+<meta property="og:description" content="Opening files #  More tips for opening files incoming.
+Open multiple files from inside vim #  Similarly to passing wildcards to arguments when opening vim with files you can open multiple files from inside vim. This can be acieved with :ar[gs] &lt;pattern&gt; command.
+For example all .cpp files is src can be opened with
+:args src/**/*.cppNvim Tree #  Another very useful option is to use kyazdani42/nvim-tree (or something similar)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 5 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.94e4d76e33ff2a19bbbb8d7d49c8c314628db461f13dfcbfe1b1a599ec41a47a.js" integrity="sha256-lOTXbjP/Khm7u419ScjDFGKNtGHxPfy/4bGlmexBpHo=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 5</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#open-multiple-files-from-inside-vim">Open multiple files from inside vim</a></li>
+    <li><a href="#nvim-tree">Nvim Tree</a></li>
+    <li><a href="#telescope">Telescope</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="opening-files">
+  Opening files
+  <a class="anchor" href="#opening-files">#</a>
+</h1>
+<p>More tips for opening files incoming.</p>
+<h2 id="open-multiple-files-from-inside-vim">
+  Open multiple files from inside vim
+  <a class="anchor" href="#open-multiple-files-from-inside-vim">#</a>
+</h2>
+<p>Similarly to passing wildcards to arguments when opening vim with files you can open multiple files from inside vim.
+This can be acieved with <code>:ar[gs] &lt;pattern&gt;</code> command.</p>
+<p>For example all <code>.cpp</code> files is src can be opened with</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">args</span> <span style="color:#a6e22e">src</span><span style="color:#e6db74">/**/</span>*.<span style="color:#a6e22e">cpp</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="nvim-tree">
+  Nvim Tree
+  <a class="anchor" href="#nvim-tree">#</a>
+</h2>
+<p>Another very useful option is to use <a href="https://github.com/kyazdani42/nvim-tree.lua">kyazdani42/nvim-tree</a> <em>(or something similar)</em>.
+Some keymappings inside <code>nvim-tree</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">x</span> - <span style="color:#a6e22e">cut</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">c</span> - <span style="color:#a6e22e">copy</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">p</span> - <span style="color:#a6e22e">paste</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">y</span> - <span style="color:#a6e22e">copy</span> <span style="color:#a6e22e">name</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>&lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">V</span>&gt; - <span style="color:#a6e22e">open</span> <span style="color:#a6e22e">file</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">vertical</span> <span style="color:#a6e22e">split</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">H</span> - <span style="color:#a6e22e">toggle</span> <span style="color:#a6e22e">visibility</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">dotfiles</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>..<span style="color:#a6e22e">and</span> <span style="color:#a6e22e">more</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="telescope">
+  Telescope
+  <a class="anchor" href="#telescope">#</a>
+</h2>
+<p>Telescope is also very useful when opening files with either <code>find_files</code> or <code>live_grep</code>.
+Find files is fuzzy finder for files whilst live grep is for searching file by it&rsquo;s context <em>(fuzzy finder for text)</em>.
+My mappings for them</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">&lt;<span style="color:#a6e22e">Leader</span>&gt;<span style="color:#a6e22e">ff</span> - <span style="color:#a6e22e">find_files</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>&lt;<span style="color:#a6e22e">Leader</span>&gt;<span style="color:#a6e22e">fw</span> - <span style="color:#a6e22e">live_grep</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#open-multiple-files-from-inside-vim">Open multiple files from inside vim</a></li>
+    <li><a href="#nvim-tree">Nvim Tree</a></li>
+    <li><a href="#telescope">Telescope</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

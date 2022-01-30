@@ -65,5 +65,17 @@ Open width :edit / :view command #  To edit
 :e /path/to/file.txtView only mode</description>
     </item>
     
+    <item>
+      <title>Week 5</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</guid>
+      <description>Opening files #  More tips for opening files incoming.
+Open multiple files from inside vim #  Similarly to passing wildcards to arguments when opening vim with files you can open multiple files from inside vim. This can be acieved with :ar[gs] &amp;lt;pattern&amp;gt; command.
+For example all .cpp files is src can be opened with
+:args src/**/*.cppNvim Tree #  Another very useful option is to use kyazdani42/nvim-tree (or something similar).</description>
+    </item>
+    
   </channel>
 </rss>
