@@ -77,5 +77,16 @@ For example all .cpp files is src can be opened with
 :args src/**/*.cppNvim Tree #  Another very useful option is to use kyazdani42/nvim-tree (or something similar).</description>
     </item>
     
+    <item>
+      <title>Week 6</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</guid>
+      <description>Macros #  It is quite often that we want to repeat some combination of actions multiple times&amp;hellip; And thats exactly what macros are for :D.
+Recording a macro #  Recording macro is started with pressing q in normal mode followed by macro name (any lowercase letter). Recording macro can be stopped with pressing q again.
+qa # Record macro named &amp;#34;a&amp;#34;# perform actionsqPlaying macros #  Macro can me played with @{macro-name}.</description>
+    </item>
+    
   </channel>
 </rss>

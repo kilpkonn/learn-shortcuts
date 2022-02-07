@@ -12,3 +12,4 @@ title: "Neovim tips"
  - [week-03](./week-03) Working on long lines
  - [week-04](./week-04) Opening files
  - [week-05](./week-05) Opening more files
+ - [week-06](./week-06) Macros basics
