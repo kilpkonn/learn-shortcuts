@@ -13,3 +13,4 @@ title: "Neovim tips"
  - [week-04](./week-04) Opening files
  - [week-05](./week-05) Opening more files
  - [week-06](./week-06) Macros basics
+ - [week-07](./week-07) Registers intro

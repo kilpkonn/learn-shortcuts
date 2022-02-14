@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Registers #  Sometomes you copy a thing.. and then you copy another thing.. but now you want to paste the first one. This is what vim registers are for :D
+Different types of registers #   Unnamed register &quot;&quot; 10 numbered registers &quot;0..9 The small delete register &quot;- 26 named registers &quot;a..z Three read-only registers &quot;., &quot;%, : Alternate buffer register &quot;# The expression register &quot;= The black hole register &quot;_ The last selection registers &quot;* and &quot;&#43; Last search pattern register &quot;/  Viewing registers #  Show all registers">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 7" />
+<meta property="og:description" content="Registers #  Sometomes you copy a thing.. and then you copy another thing.. but now you want to paste the first one. This is what vim registers are for :D
+Different types of registers #   Unnamed register &quot;&quot; 10 numbered registers &quot;0..9 The small delete register &quot;- 26 named registers &quot;a..z Three read-only registers &quot;., &quot;%, : Alternate buffer register &quot;# The expression register &quot;= The black hole register &quot;_ The last selection registers &quot;* and &quot;&#43; Last search pattern register &quot;/  Viewing registers #  Show all registers" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-07/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 7 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.54424e4d878cf200ec06abe161487d83760d39b4f435300eee6b8c1a0a25b462.js" integrity="sha256-VEJOTYeM8gDsBqvhYUh9g3YNObT0NTAO7muMGgoltGI=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 7</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#different-types-of-registers">Different types of registers</a></li>
+    <li><a href="#viewing-registers">Viewing registers</a></li>
+    <li><a href="#accessing-registers">Accessing registers</a></li>
+    <li><a href="#unnamed-register">Unnamed register</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="registers">
+  Registers
+  <a class="anchor" href="#registers">#</a>
+</h1>
+<p>Sometomes you copy a thing.. and then you copy another thing.. but now you want to paste the first one.
+This is what vim registers are for :D</p>
+<h2 id="different-types-of-registers">
+  Different types of registers
+  <a class="anchor" href="#different-types-of-registers">#</a>
+</h2>
+<ol>
+<li>Unnamed register <code>&quot;&quot;</code></li>
+<li>10 numbered registers <code>&quot;0..9</code></li>
+<li>The small delete register <code>&quot;-</code></li>
+<li>26 named registers <code>&quot;a..z</code></li>
+<li>Three read-only registers <code>&quot;.</code>, <code>&quot;%</code>, <code>:</code></li>
+<li>Alternate buffer register <code>&quot;#</code></li>
+<li>The expression register <code>&quot;=</code></li>
+<li>The black hole register <code>&quot;_</code></li>
+<li>The last selection registers <code>&quot;*</code> and <code>&quot;+</code></li>
+<li>Last search pattern register <code>&quot;/</code></li>
+</ol>
+<h2 id="viewing-registers">
+  Viewing registers
+  <a class="anchor" href="#viewing-registers">#</a>
+</h2>
+<p>Show all registers</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">registers</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">Or</span> <span style="color:#a6e22e">simply</span>..<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">reg</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Show specific register</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">reg</span> &lt;<span style="color:#a6e22e">register</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="accessing-registers">
+  Accessing registers
+  <a class="anchor" href="#accessing-registers">#</a>
+</h2>
+<p><strong>Normal mode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-v" data-lang="v"><span style="color:#e6db74">&#34;&lt;reg&gt; &lt;action&gt;</span>
+
+<span style="color:#e6db74">&#34;0p  # Paste from register &#34;</span><span style="color:#ae81ff">0</span>
+</code></pre></div><p><strong>Insert mode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">&lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">r</span>&gt; &lt;<span style="color:#a6e22e">reg</span>&gt; &lt;<span style="color:#a6e22e">action</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="unnamed-register">
+  Unnamed register
+  <a class="anchor" href="#unnamed-register">#</a>
+</h2>
+<p>Yank, delete, substitute and similar commands already use the unnamed register.
+The unnamed register acts as a default so there is no need to specify it via <code>&quot;&quot;</code>.
+In other words <code>&quot;&quot;yy</code> and <code>yy</code> both yank line to unnamed register.</p>
+<br>
+<blockquote class="book-hint info">
+  <strong>Side note</strong><br>
+Make sure to check out <a href="https://www.youtube.com/watch?v=I5QGlfbuCfs">https://www.youtube.com/watch?v=I5QGlfbuCfs</a> for more detailed description!
+</blockquote>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#different-types-of-registers">Different types of registers</a></li>
+    <li><a href="#viewing-registers">Viewing registers</a></li>
+    <li><a href="#accessing-registers">Accessing registers</a></li>
+    <li><a href="#unnamed-register">Unnamed register</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
