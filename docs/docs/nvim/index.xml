@@ -98,5 +98,16 @@ qa # Record macro named &amp;#34;a&amp;#34;# perform actionsqPlaying macros #  M
 Different types of registers #   Unnamed register &amp;quot;&amp;quot; 10 numbered registers &amp;quot;0..9 The small delete register &amp;quot;- 26 named registers &amp;quot;a..z Three read-only registers &amp;quot;., &amp;quot;%, : Alternate buffer register &amp;quot;# The expression register &amp;quot;= The black hole register &amp;quot;_ The last selection registers &amp;quot;* and &amp;quot;+ Last search pattern register &amp;quot;/  Viewing registers #  Show all registers</description>
     </item>
     
+    <item>
+      <title>Week 8</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-08/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-08/</guid>
+      <description>Registers 1 #  We continue with registers by looking atÖ
+ 10 numbered registers &amp;quot;0..9 The small delete register &amp;quot;- 26 named registers &amp;quot;a..z  Numbered registers #   &amp;quot;0 has the last yank &amp;quot;1 has the last delete (d, c, s, x) &amp;quot;2..9 have previous deletes  Side note
+Note that %, (), /, n and N (and maybe some more) dont got to delete registers.  Small delete register #  This register contains the deletes that delete less than one line.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Registers 1 #  We continue with registers by looking atÖ
+ 10 numbered registers &quot;0..9 The small delete register &quot;- 26 named registers &quot;a..z  Numbered registers #   &quot;0 has the last yank &quot;1 has the last delete (d, c, s, x) &quot;2..9 have previous deletes  Side note
+Note that %, (), /, n and N (and maybe some more) dont got to delete registers.  Small delete register #  This register contains the deletes that delete less than one line.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 8" />
+<meta property="og:description" content="Registers 1 #  We continue with registers by looking atÖ
+ 10 numbered registers &quot;0..9 The small delete register &quot;- 26 named registers &quot;a..z  Numbered registers #   &quot;0 has the last yank &quot;1 has the last delete (d, c, s, x) &quot;2..9 have previous deletes  Side note
+Note that %, (), /, n and N (and maybe some more) dont got to delete registers.  Small delete register #  This register contains the deletes that delete less than one line." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-08/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 8 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.a70602da34328abd3bab31548c529c823785b9d82fb8e062aa17f1ac512b325a.js" integrity="sha256-pwYC2jQyir07qzFUjFKcgjeFudgvuOBiqhfxrFErMlo=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 8</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#numbered-registers">Numbered registers</a></li>
+    <li><a href="#small-delete-register">Small delete register</a></li>
+    <li><a href="#named-registers">Named registers</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="registers-1">
+  Registers 1
+  <a class="anchor" href="#registers-1">#</a>
+</h1>
+<p>We continue with registers by looking atÖ</p>
+<ol>
+<li>10 numbered registers <code>&quot;0..9</code></li>
+<li>The small delete register <code>&quot;-</code></li>
+<li>26 named registers <code>&quot;a..z</code></li>
+</ol>
+<h2 id="numbered-registers">
+  Numbered registers
+  <a class="anchor" href="#numbered-registers">#</a>
+</h2>
+<ul>
+<li><code>&quot;0</code> has the last yank</li>
+<li><code>&quot;1</code> has the last delete (<code>d</code>, <code>c</code>, <code>s</code>, <code>x</code>)</li>
+<li><code>&quot;2..9</code> have previous deletes</li>
+</ul>
+<blockquote class="book-hint danger">
+  <strong>Side note</strong><br>
+Note that <code>%</code>, <code>()</code>, <code>/</code>, <code>n</code> and <code>N</code> (and maybe some more) dont got to delete registers.
+</blockquote>
+
+<h2 id="small-delete-register">
+  Small delete register
+  <a class="anchor" href="#small-delete-register">#</a>
+</h2>
+<p>This register contains the deletes that delete less than one line.
+This is also somewhat confusing register as some commands don&rsquo;t put stuff there while others do.
+<em>Don&rsquo;t have any good usecase, but never know :D</em></p>
+<h2 id="named-registers">
+  Named registers
+  <a class="anchor" href="#named-registers">#</a>
+</h2>
+<ul>
+<li>Store whatever you want</li>
+<li>Macros are stored here automatically</li>
+<li>You can edit macros by editing contents of these registers</li>
+<li></li>
+</ul>
+<p>Edit macro a with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">let</span> @<span style="color:#a6e22e">a</span>=<span style="color:#e6db74">&#39;&lt;macro&gt;&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p><em>Use <code>&lt;C-r&gt;a</code> to access previous macro from <code>&quot;a</code> register in insert mode.</em></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#numbered-registers">Numbered registers</a></li>
+    <li><a href="#small-delete-register">Small delete register</a></li>
+    <li><a href="#named-registers">Named registers</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
