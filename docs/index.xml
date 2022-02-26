@@ -104,9 +104,20 @@ Different types of registers #   Unnamed register &amp;quot;&amp;quot; 10 number
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-08/</guid>
-      <description>Registers 1 #  We continue with registers by looking atÖ
+      <description>Registers 1 #  We continue with registers by looking at:
  10 numbered registers &amp;quot;0..9 The small delete register &amp;quot;- 26 named registers &amp;quot;a..z  Numbered registers #   &amp;quot;0 has the last yank &amp;quot;1 has the last delete (d, c, s, x) &amp;quot;2..9 have previous deletes  Side note
 Note that %, (), /, n and N (and maybe some more) dont got to delete registers.  Small delete register #  This register contains the deletes that delete less than one line.</description>
+    </item>
+    
+    <item>
+      <title>Week 9</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-09/</guid>
+      <description>Registers 2 #  We continue with registers by looking at:
+ Three read-only registers &amp;quot;., &amp;quot;%, : Alternate file register &amp;quot;# The expression register &amp;quot;=  Readonly registers #   &amp;quot;. Last insert mode &amp;quot;% Current file name &amp;quot;: Last Command  Some tips to go with current filename:
+%:p -&amp;gt; Make filename full path%:h -&amp;gt; Head of the filename%:t -&amp;gt; Tail of the filename%:r -&amp;gt; Root%:e -&amp;gt; ExtensionAlternate file register #  Register can be accessed via &amp;quot;#.</description>
     </item>
     
   </channel>

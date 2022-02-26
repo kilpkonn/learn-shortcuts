@@ -5,7 +5,7 @@ title: "Week 8"
 ---
 
 # Registers 1
-We continue with registers by looking atÖ
+We continue with registers by looking at:
 1. 10 numbered registers `"0..9`
 2. The small delete register `"-`
 3. 26 named registers `"a..z`
@@ -31,7 +31,6 @@ _Don't have any good usecase, but never know :D_
 - Store whatever you want
 - Macros are stored here automatically
 - You can edit macros by editing contents of these registers
-- 
 
 Edit macro a with:
 ```vim

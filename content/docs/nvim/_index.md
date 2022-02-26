@@ -15,3 +15,4 @@ title: "Neovim tips"
  - [week-06](./week-06) Macros basics
  - [week-07](./week-07) Registers intro
  - [week-08](./week-08) Registers 1
+ - [week-09](./week-09) Registers 2

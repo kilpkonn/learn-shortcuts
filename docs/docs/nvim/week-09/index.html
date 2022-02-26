@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Registers 2 #  We continue with registers by looking at:
+ Three read-only registers &quot;., &quot;%, : Alternate file register &quot;# The expression register &quot;=  Readonly registers #   &quot;. Last insert mode &quot;% Current file name &quot;: Last Command  Some tips to go with current filename:
+%:p -&gt; Make filename full path%:h -&gt; Head of the filename%:t -&gt; Tail of the filename%:r -&gt; Root%:e -&gt; ExtensionAlternate file register #  Register can be accessed via &quot;#.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 9" />
+<meta property="og:description" content="Registers 2 #  We continue with registers by looking at:
+ Three read-only registers &quot;., &quot;%, : Alternate file register &quot;# The expression register &quot;=  Readonly registers #   &quot;. Last insert mode &quot;% Current file name &quot;: Last Command  Some tips to go with current filename:
+%:p -&gt; Make filename full path%:h -&gt; Head of the filename%:t -&gt; Tail of the filename%:r -&gt; Root%:e -&gt; ExtensionAlternate file register #  Register can be accessed via &quot;#." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-09/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 9 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.995a28cdf646e700eaaeba105bd282ae91f478bf66fc0638df843b78639d40ba.js" integrity="sha256-mVoozfZG5wDqrroQW9KCrpH0eL9m/AY434Q7eGOdQLo=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 9</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#readonly-registers">Readonly registers</a></li>
+    <li><a href="#alternate-file-register">Alternate file register</a></li>
+    <li><a href="#the-expression-register">The expression register</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="registers-2">
+  Registers 2
+  <a class="anchor" href="#registers-2">#</a>
+</h1>
+<p>We continue with registers by looking at:</p>
+<ol>
+<li>Three read-only registers <code>&quot;.</code>, <code>&quot;%</code>, <code>:</code></li>
+<li>Alternate file register <code>&quot;#</code></li>
+<li>The expression register <code>&quot;=</code></li>
+</ol>
+<h2 id="readonly-registers">
+  Readonly registers
+  <a class="anchor" href="#readonly-registers">#</a>
+</h2>
+<ul>
+<li><code>&quot;.</code> Last insert mode</li>
+<li><code>&quot;%</code> Current file name</li>
+<li><code>&quot;:</code> Last Command</li>
+</ul>
+<p><strong>Some tips to go with current filename:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">%:<span style="color:#a6e22e">p</span> -&gt; <span style="color:#a6e22e">Make</span> <span style="color:#a6e22e">filename</span> <span style="color:#a6e22e">full</span> <span style="color:#a6e22e">path</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>%:<span style="color:#a6e22e">h</span> -&gt; <span style="color:#a6e22e">Head</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">filename</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>%:<span style="color:#a6e22e">t</span> -&gt; <span style="color:#a6e22e">Tail</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">filename</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>%:<span style="color:#a6e22e">r</span> -&gt; <span style="color:#a6e22e">Root</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>%:<span style="color:#a6e22e">e</span> -&gt; <span style="color:#a6e22e">Extension</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="alternate-file-register">
+  Alternate file register
+  <a class="anchor" href="#alternate-file-register">#</a>
+</h2>
+<p>Register can be accessed via <code>&quot;#</code>.
+Always contains the filename of the last file you were at.
+You can quicly switch to last file with <code>&lt;C-^&gt;</code>
+Otherwise works similraly to current file reg.</p>
+<h2 id="the-expression-register">
+  The expression register
+  <a class="anchor" href="#the-expression-register">#</a>
+</h2>
+<p>Can be accessed via <code>&quot;=</code>.
+You can do math and system calls and then paste.</p>
+<p>Examples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">=<span style="color:#ae81ff">123</span> * <span style="color:#ae81ff">456</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>=<span style="color:#a6e22e">system</span>(<span style="color:#e6db74">&#39;ls &#39;</span>)<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#readonly-registers">Readonly registers</a></li>
+    <li><a href="#alternate-file-register">Alternate file register</a></li>
+    <li><a href="#the-expression-register">The expression register</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
