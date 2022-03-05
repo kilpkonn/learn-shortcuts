@@ -25,7 +25,7 @@ Open width :edit / :view command #  To edit
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
-  <script defer src="/learn-shortcuts/en.search.min.995a28cdf646e700eaaeba105bd282ae91f478bf66fc0638df843b78639d40ba.js" integrity="sha256-mVoozfZG5wDqrroQW9KCrpH0eL9m/AY434Q7eGOdQLo=" crossorigin="anonymous"></script>
+  <script defer src="/learn-shortcuts/en.search.min.26acc0563aa737be4ea9ebe069482f6681153b8800be570a7f90e1f7c040d7ef.js" integrity="sha256-JqzAVjqnN75OqevgaUgvZoEVO4gAvlcKf5Dh98BA1&#43;8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -81,7 +81,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -137,17 +137,17 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#open-file-with-nvim">#</a>
 </h2>
 <p>The most basic way is to open files when opening vim.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nvim <span style="color:#f92672">[</span>-o<span style="color:#f92672">]</span> /path/to/file.txt
-</code></pre></div><p><code>-o</code> Can be used to open each file in sepparate window or you can specify amount of windows with it as <code>-o 4</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nvim <span style="color:#f92672">[</span>-o<span style="color:#f92672">]</span> /path/to/file.txt
+</span></span></code></pre></div><p><code>-o</code> Can be used to open each file in sepparate window or you can specify amount of windows with it as <code>-o 4</code></p>
 <h2 id="open-width-edit--view-command">
   Open width :edit / :view command
   <a class="anchor" href="#open-width-edit--view-command">#</a>
 </h2>
 <p>To edit</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">e</span> <span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">txt</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>View only mode</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">v</span> <span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">txt</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="open-path-in-buffer">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">e</span> <span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">txt</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>View only mode</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">v</span> <span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">txt</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="open-path-in-buffer">
   Open path in buffer
   <a class="anchor" href="#open-path-in-buffer">#</a>
 </h2>
@@ -169,7 +169,7 @@ For that you can simply do <code>gf</code> on the path to open it.</p>
 
 
 
-  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  

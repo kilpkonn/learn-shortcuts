@@ -19,7 +19,7 @@ Replace in visually seleceted range #   Select range in visual mode Press &lt;:&
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
-  <script defer src="/learn-shortcuts/en.search.min.995a28cdf646e700eaaeba105bd282ae91f478bf66fc0638df843b78639d40ba.js" integrity="sha256-mVoozfZG5wDqrroQW9KCrpH0eL9m/AY434Q7eGOdQLo=" crossorigin="anonymous"></script>
+  <script defer src="/learn-shortcuts/en.search.min.26acc0563aa737be4ea9ebe069482f6681153b8800be570a7f90e1f7c040d7ef.js" integrity="sha256-JqzAVjqnN75OqevgaUgvZoEVO4gAvlcKf5Dh98BA1&#43;8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -75,7 +75,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -135,12 +135,12 @@ Here are some tims to accomplish that.</p>
 <li>Select range in visual mode</li>
 <li>Press <code>&lt;:&gt;</code> to start range action, you should see something like this:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><ol start="3">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><ol start="3">
 <li>Type in replace command as usual eg. for foo -&gt; bar</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;<span style="color:#a6e22e">s</span><span style="color:#e6db74">/foo/</span><span style="color:#a6e22e">bar</span>/<span style="color:#a6e22e">g</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="replace-last-visually-selected-range-in-normal-mode">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;<span style="color:#a6e22e">s</span><span style="color:#e6db74">/foo/</span><span style="color:#a6e22e">bar</span>/<span style="color:#a6e22e">g</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="replace-last-visually-selected-range-in-normal-mode">
   Replace last visually selected range in normal mode
   <a class="anchor" href="#replace-last-visually-selected-range-in-normal-mode">#</a>
 </h2>
@@ -151,15 +151,15 @@ Here are some tims to accomplish that.</p>
 <li>Use <code>\%V</code> to restrict selection to previously selected visual range.</li>
 <li>Replace usual eg. for foo -&gt; bar</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:%<span style="color:#a6e22e">s</span><span style="color:#e6db74">/\%Vfoo/</span><span style="color:#a6e22e">bar</span>/<span style="color:#a6e22e">g</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="replace-multiple-ranges">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:%<span style="color:#a6e22e">s</span><span style="color:#e6db74">/\%Vfoo/</span><span style="color:#a6e22e">bar</span>/<span style="color:#a6e22e">g</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="replace-multiple-ranges">
   Replace multiple ranges
   <a class="anchor" href="#replace-multiple-ranges">#</a>
 </h2>
 <p>You can also select range in command mode with <code>:start,end</code> and run command on it.
 You can then also chain renaming in multiple ranges like so</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#ae81ff">18</span>,<span style="color:#ae81ff">20</span>s<span style="color:#e6db74">/foo/</span><span style="color:#a6e22e">bar</span>/<span style="color:#a6e22e">g</span> | <span style="color:#ae81ff">28</span>,<span style="color:#ae81ff">30</span>&amp;&amp;<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div></article>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#ae81ff">18</span>,<span style="color:#ae81ff">20</span>s<span style="color:#e6db74">/foo/</span><span style="color:#a6e22e">bar</span>/<span style="color:#a6e22e">g</span> | <span style="color:#ae81ff">28</span>,<span style="color:#ae81ff">30</span>&amp;&amp;<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div></article>
  
       
 
@@ -175,7 +175,7 @@ You can then also chain renaming in multiple ranges like so</p>
 
 
 
-  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  

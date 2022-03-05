@@ -25,7 +25,7 @@ Syntax #  The &lsquo;g&rsquo; command is executed in command mode and the syntax
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
-  <script defer src="/learn-shortcuts/en.search.min.995a28cdf646e700eaaeba105bd282ae91f478bf66fc0638df843b78639d40ba.js" integrity="sha256-mVoozfZG5wDqrroQW9KCrpH0eL9m/AY434Q7eGOdQLo=" crossorigin="anonymous"></script>
+  <script defer src="/learn-shortcuts/en.search.min.26acc0563aa737be4ea9ebe069482f6681153b8800be570a7f90e1f7c040d7ef.js" integrity="sha256-JqzAVjqnN75OqevgaUgvZoEVO4gAvlcKf5Dh98BA1&#43;8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -81,7 +81,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -144,12 +144,12 @@ This is exactly what the &lsquo;g&rsquo; command is for.</p>
   <a class="anchor" href="#syntax">#</a>
 </h2>
 <p>The &lsquo;g&rsquo; command is executed in command mode and the syntax is following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">g</span><span style="color:#e6db74">/pattern/</span><span style="color:#a6e22e">command</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>Also the inverse is possible (run command on lines that do not match)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">g</span>!<span style="color:#e6db74">/pattern/</span><span style="color:#a6e22e">command</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>or</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">v</span><span style="color:#e6db74">/pattern/</span><span style="color:#a6e22e">command</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="examples">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">g</span><span style="color:#e6db74">/pattern/</span><span style="color:#a6e22e">command</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Also the inverse is possible (run command on lines that do not match)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">g</span>!<span style="color:#e6db74">/pattern/</span><span style="color:#a6e22e">command</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">v</span><span style="color:#e6db74">/pattern/</span><span style="color:#a6e22e">command</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="examples">
   Examples
   <a class="anchor" href="#examples">#</a>
 </h2>
@@ -157,23 +157,23 @@ This is exactly what the &lsquo;g&rsquo; command is for.</p>
   Delete all lines containing pattern
   <a class="anchor" href="#delete-all-lines-containing-pattern">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">g</span><span style="color:#e6db74">/foo/</span><span style="color:#a6e22e">d</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h3 id="delete-all-empty-lines">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">g</span><span style="color:#e6db74">/foo/</span><span style="color:#a6e22e">d</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="delete-all-empty-lines">
   Delete all empty lines
   <a class="anchor" href="#delete-all-empty-lines">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">g</span><span style="color:#e6db74">/^\s*$/</span><span style="color:#a6e22e">d</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h3 id="move-imports-to-start-of-file">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">g</span><span style="color:#e6db74">/^\s*$/</span><span style="color:#a6e22e">d</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="move-imports-to-start-of-file">
   Move imports to start of file
   <a class="anchor" href="#move-imports-to-start-of-file">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">g</span><span style="color:#e6db74">/import/</span><span style="color:#a6e22e">m0</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h3 id="capitalize-all-lines-not-containig-bar">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">g</span><span style="color:#e6db74">/import/</span><span style="color:#a6e22e">m0</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h3 id="capitalize-all-lines-not-containig-bar">
   Capitalize all lines not containig bar
   <a class="anchor" href="#capitalize-all-lines-not-containig-bar">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">v</span><span style="color:#e6db74">/bar/</span><span style="color:#a6e22e">normal</span> <span style="color:#a6e22e">gUU</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div></article>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">v</span><span style="color:#e6db74">/bar/</span><span style="color:#a6e22e">normal</span> <span style="color:#a6e22e">gUU</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div></article>
  
       
 
@@ -189,7 +189,7 @@ This is exactly what the &lsquo;g&rsquo; command is for.</p>
 
 
 
-  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
 
 
  
