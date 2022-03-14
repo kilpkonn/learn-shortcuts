@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vim Marks #  Marks allow storying corrent location and returning to it later. There are generally 3 types of marks lowercase marks, uppercase marks and special marks. Marks can be added with m&lt;letter&gt; in normal mode for example ma. The mark stores both the line and column information.
+Lowercase marks #  These are marks for a-z. Lowercase marks are local to a file meaning multiple files can have say mark &#39;a.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 11" />
+<meta property="og:description" content="Vim Marks #  Marks allow storying corrent location and returning to it later. There are generally 3 types of marks lowercase marks, uppercase marks and special marks. Marks can be added with m&lt;letter&gt; in normal mode for example ma. The mark stores both the line and column information.
+Lowercase marks #  These are marks for a-z. Lowercase marks are local to a file meaning multiple files can have say mark &#39;a." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-11/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 11 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.ea6f093344846b429ac805b62d1d5d4403c3f0ca252f57bd40f2a3746e261b84.js" integrity="sha256-6m8JM0SEa0KayAW2LR1dRAPD8MolL1e9QPKjdG4mG4Q=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 11</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lowercase-marks">Lowercase marks</a></li>
+    <li><a href="#uppercase-marks">Uppercase marks</a></li>
+    <li><a href="#using-marks">Using marks</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="vim-marks">
+  Vim Marks
+  <a class="anchor" href="#vim-marks">#</a>
+</h1>
+<p>Marks allow storying corrent location and returning to it later.
+There are generally 3 types of marks lowercase marks, uppercase marks and special marks.
+Marks can be added with <code>m&lt;letter&gt;</code> in normal mode for example <code>ma</code>.
+The mark stores both the line and column information.</p>
+<h2 id="lowercase-marks">
+  Lowercase marks
+  <a class="anchor" href="#lowercase-marks">#</a>
+</h2>
+<p>These are marks for <code>a-z</code>.
+Lowercase marks are local to a file meaning multiple files can have say mark <code>'a</code>.</p>
+<blockquote class="book-hint warning">
+  <strong>Note:</strong> You can only jump to lowercase marks whilst in the same file.
+</blockquote>
+
+<h2 id="uppercase-marks">
+  Uppercase marks
+  <a class="anchor" href="#uppercase-marks">#</a>
+</h2>
+<p>These are marks from <code>A-Z</code>.
+Uppercase marks are global meaning there can be only one mark <code>'A</code>.
+These can be really useful for returning to some place after moving around in multiple files.</p>
+<h2 id="using-marks">
+  Using marks
+  <a class="anchor" href="#using-marks">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#a6e22e">ma</span> - <span style="color:#a6e22e">Add</span> <span style="color:#a6e22e">mark</span> `<span style="color:#a6e22e">a</span>`<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&#39;<span style="color:#a6e22e">a</span> - <span style="color:#a6e22e">Jump</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">line</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">mark</span> (<span style="color:#a6e22e">first</span> <span style="color:#a6e22e">nonblank</span> <span style="color:#a6e22e">character</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>`<span style="color:#a6e22e">a</span> - <span style="color:#a6e22e">Jump</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">position</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">mark</span> (<span style="color:#a6e22e">line</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">column</span>)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">d</span>&#39;<span style="color:#a6e22e">a</span> - <span style="color:#a6e22e">Delete</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">current</span> <span style="color:#a6e22e">line</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">line</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">mark</span> `<span style="color:#a6e22e">a</span>`<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">d</span>`<span style="color:#a6e22e">a</span> - <span style="color:#a6e22e">Delete</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">current</span> <span style="color:#a6e22e">position</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">position</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">mark</span> `<span style="color:#a6e22e">a</span>`<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">c</span>&#39;<span style="color:#a6e22e">a</span> - <span style="color:#a6e22e">Change</span> <span style="color:#a6e22e">text</span> <span style="color:#a6e22e">from</span> <span style="color:#a6e22e">current</span> <span style="color:#a6e22e">line</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">line</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">mark</span> `<span style="color:#a6e22e">a</span>`<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">marks</span> - <span style="color:#a6e22e">List</span> <span style="color:#a6e22e">all</span> <span style="color:#a6e22e">marks</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">marks</span> <span style="color:#a6e22e">aB</span> - <span style="color:#a6e22e">List</span> <span style="color:#a6e22e">marks</span> `<span style="color:#a6e22e">a</span>` <span style="color:#a6e22e">and</span> `<span style="color:#a6e22e">B</span>` <span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><blockquote class="book-hint info">
+  Commands like <code>d'a</code> operate linewise and include start and end lines but commands like
+<code>d`a</code> operate characterwise and include start but not the end character.
+</blockquote>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lowercase-marks">Lowercase marks</a></li>
+    <li><a href="#uppercase-marks">Uppercase marks</a></li>
+    <li><a href="#using-marks">Using marks</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

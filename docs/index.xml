@@ -39,6 +39,16 @@ Replace in visually seleceted range #   Select range in visual mode Press &amp;l
     </item>
     
     <item>
+      <title>Week 11</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-11/</guid>
+      <description>Vim Marks #  Marks allow storying corrent location and returning to it later. There are generally 3 types of marks lowercase marks, uppercase marks and special marks. Marks can be added with m&amp;lt;letter&amp;gt; in normal mode for example ma. The mark stores both the line and column information.
+Lowercase marks #  These are marks for a-z. Lowercase marks are local to a file meaning multiple files can have say mark &#39;a.</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
