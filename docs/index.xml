@@ -49,6 +49,17 @@ Lowercase marks #  These are marks for a-z. Lowercase marks are local to a file 
     </item>
     
     <item>
+      <title>Week 12</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-12/</guid>
+      <description>More on Marks #  We learned some basics of vim marks last week. Now we can take a look at some more advanced commands.
+Movement #  Here are some more options to move around marks.
+]&amp;#39; - jump to next line with a lowercase mark[&amp;#39; - jump to previous line with a lowercase mark]` - jump to next lowercase mark[` - jump to previous lowercase markNote: You can use count with all the commands above, for example 5[&#39; works.</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

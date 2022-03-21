@@ -18,3 +18,4 @@ title: "Neovim tips"
  - [week-09](./week-09) Registers 2
  - [week-10](./week-10) Registers 3
  - [week-11](./week-11) Marks
+ - [week-12](./week-12) More on Marks
