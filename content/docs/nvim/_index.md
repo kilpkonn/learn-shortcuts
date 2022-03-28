@@ -19,3 +19,4 @@ title: "Neovim tips"
  - [week-10](./week-10) Registers 3
  - [week-11](./week-11) Marks
  - [week-12](./week-12) More on Marks
+ - [week-13](./week-13) Buffers

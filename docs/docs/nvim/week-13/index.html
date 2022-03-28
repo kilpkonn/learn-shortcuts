@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Buffers #  Vim buffers are something you can think of as opened files. Some of them are readonly and do not correspond to actual files (eg. Nvimtree), but it still is something that makes thinking of them easier.
+A buffer can be opened in multiple windows in which case if you edit it in one window, the changes also appear in the other.
+Basic commands #  You can view the contents of buffers with :buffers or :ls.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 13" />
+<meta property="og:description" content="Buffers #  Vim buffers are something you can think of as opened files. Some of them are readonly and do not correspond to actual files (eg. Nvimtree), but it still is something that makes thinking of them easier.
+A buffer can be opened in multiple windows in which case if you edit it in one window, the changes also appear in the other.
+Basic commands #  You can view the contents of buffers with :buffers or :ls." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-13/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 13 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.aa3808827d04c8992ccd2f1cc17431ae564235a1b91d33eb2cd4c3091cb579f9.js" integrity="sha256-qjgIgn0EyJkszS8cwXQxrlZCNaG5HTPrLNTDCRy1efk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 13</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-commands">Basic commands</a></li>
+    <li><a href="#switching-buffers">Switching buffers</a></li>
+    <li><a href="#closing-buffers">Closing buffers</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="buffers">
+  Buffers
+  <a class="anchor" href="#buffers">#</a>
+</h1>
+<p>Vim buffers are something you can think of as opened files.
+Some of them are readonly and do not correspond to actual files (eg. Nvimtree),
+but it still is something that makes thinking of them easier.</p>
+<p>A buffer can be opened in multiple windows in which case if you edit it in one window, the changes also appear in the other.</p>
+<h2 id="basic-commands">
+  Basic commands
+  <a class="anchor" href="#basic-commands">#</a>
+</h2>
+<p>You can view the contents of buffers with <code>:buffers</code> or <code>:ls</code>.
+The ouput of the command is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">ls</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;<span style="color:#a6e22e">nr</span>&gt; &lt;<span style="color:#a6e22e">mark</span>&gt;&lt;<span style="color:#a6e22e">info</span>&gt; &lt;<span style="color:#a6e22e">unsaved</span>&gt; &lt;<span style="color:#a6e22e">name</span>&gt; <span style="color:#a6e22e">line</span> &lt;<span style="color:#a6e22e">line</span> <span style="color:#a6e22e">nr</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="switching-buffers">
+  Switching buffers
+  <a class="anchor" href="#switching-buffers">#</a>
+</h2>
+<p>Here are some commands to move between buffers</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">bp</span> - <span style="color:#a6e22e">go</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">previous</span> <span style="color:#a6e22e">buffer</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">bn</span> - <span style="color:#a6e22e">go</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">next</span> <span style="color:#a6e22e">buffer</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">b</span>&lt;<span style="color:#a6e22e">nr</span>&gt; - <span style="color:#a6e22e">jump</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">buffer</span> <span style="color:#a6e22e">by</span> <span style="color:#a6e22e">number</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;<span style="color:#a6e22e">C</span><span style="color:#ae81ff">-6</span>&gt; - <span style="color:#a6e22e">jump</span> <span style="color:#a6e22e">between</span> <span style="color:#a6e22e">current</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">alternate</span> <span style="color:#a6e22e">buffer</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="closing-buffers">
+  Closing buffers
+  <a class="anchor" href="#closing-buffers">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">bd</span> - <span style="color:#a6e22e">Delete</span> <span style="color:#a6e22e">buffer</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">bw</span> - <span style="color:#a6e22e">Wipe</span> <span style="color:#a6e22e">buffer</span>, <span style="color:#a6e22e">deletes</span> <span style="color:#a6e22e">everything</span> <span style="color:#a6e22e">related</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">it</span> <span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-commands">Basic commands</a></li>
+    <li><a href="#switching-buffers">Switching buffers</a></li>
+    <li><a href="#closing-buffers">Closing buffers</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

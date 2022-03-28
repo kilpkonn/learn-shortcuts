@@ -60,6 +60,17 @@ Movement #  Here are some more options to move around marks.
     </item>
     
     <item>
+      <title>Week 13</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-13/</guid>
+      <description>Buffers #  Vim buffers are something you can think of as opened files. Some of them are readonly and do not correspond to actual files (eg. Nvimtree), but it still is something that makes thinking of them easier.
+A buffer can be opened in multiple windows in which case if you edit it in one window, the changes also appear in the other.
+Basic commands #  You can view the contents of buffers with :buffers or :ls.</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
