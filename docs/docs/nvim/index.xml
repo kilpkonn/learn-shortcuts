@@ -71,6 +71,16 @@ Basic commands #  You can view the contents of buffers with :buffers or :ls.</de
     </item>
     
     <item>
+      <title>Week 14</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-14/</guid>
+      <description>QuickFix lists #  Whilst the name seems new, some of QuickFix lists usecases are quite common. r example it is used when vimgrepping a pattern and then jumping between entries found. Local QuickFix lists can be used for code errors and warnings.
+Viewving and navigating QuickFix list #  QuickFix list can be viewed with :copen or :lopen command depending on if you want global or local list. Navigation can be done with :cnext and :cprev or :lnext and :lprev respectively.</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
