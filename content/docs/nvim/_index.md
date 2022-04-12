@@ -21,3 +21,4 @@ title: "Neovim tips"
  - [week-12](./week-12) More on Marks
  - [week-13](./week-13) Buffers
  - [week-14](./week-14) QuickFix lists
+ - [week-15](./week-15) Makeprg and building files

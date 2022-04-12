@@ -81,6 +81,16 @@ Viewving and navigating QuickFix list #  QuickFix list can be viewed with :copen
     </item>
     
     <item>
+      <title>Week 15</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-15/</guid>
+      <description>Makeprg #  A big part of programming is compiling files and running them. Whilst editing parts of code usually it is a good idea to sometimes build the project to see if everything works fine. This can be done also in vim without exiting it.
+Make and makeprg #  To build a program you can run :make. As You might have guessed the default build system is GNU Make.</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

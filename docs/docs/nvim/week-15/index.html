@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Makeprg #  A big part of programming is compiling files and running them. Whilst editing parts of code usually it is a good idea to sometimes build the project to see if everything works fine. This can be done also in vim without exiting it.
+Make and makeprg #  To build a program you can run :make. As You might have guessed the default build system is GNU Make.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 15" />
+<meta property="og:description" content="Makeprg #  A big part of programming is compiling files and running them. Whilst editing parts of code usually it is a good idea to sometimes build the project to see if everything works fine. This can be done also in vim without exiting it.
+Make and makeprg #  To build a program you can run :make. As You might have guessed the default build system is GNU Make." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-15/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 15 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.60f2385897b6b3ff5bb1c92944cd750295ea39435fc0b807c88fa8371ff1aa4d.js" integrity="sha256-YPI4WJe2s/9bsckpRM11ApXqOUNfwLgHyI&#43;oNx/xqk0=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 15</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#make-and-makeprg">Make and makeprg</a></li>
+    <li><a href="#local-make">Local make</a></li>
+    <li><a href="#error-format">Error format</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="makeprg">
+  Makeprg
+  <a class="anchor" href="#makeprg">#</a>
+</h1>
+<p>A big part of programming is compiling files and running them.
+Whilst editing parts of code usually it is a good idea to sometimes build the project to see if everything works fine.
+This can be done also in vim without exiting it.</p>
+<h2 id="make-and-makeprg">
+  Make and makeprg
+  <a class="anchor" href="#make-and-makeprg">#</a>
+</h2>
+<p>To build a program you can run <code>:make</code>.
+As You might have guessed the default build system is GNU Make.
+However you can use different build systems via <code>:set makeprg</code>.
+Example to build current file with gcc <em>(<code>\</code> is to escape space)</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">makeprg</span>=<span style="color:#a6e22e">gcc</span>\ %<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><blockquote class="book-hint info">
+  <strong>Note:</strong> You can also run it instantly by chaining run command
+</blockquote>
+
+<h2 id="local-make">
+  Local make
+  <a class="anchor" href="#local-make">#</a>
+</h2>
+<p>Running <code>:make</code> polulates QuickFix list with errors.
+To use local list instead <code>:lmake</code> command can be used instead.
+Otherwise it acts as <code>:make</code>.</p>
+<h2 id="error-format">
+  Error format
+  <a class="anchor" href="#error-format">#</a>
+</h2>
+<p>One benefit of using <code>:make</code> rather than shelling out is that you can automatically jump between build errors.
+For that you need to <code>:set errorformat</code>
+An example for rust would be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> &amp;<span style="color:#a6e22e">efm</span>=<span style="color:#e6db74">&#39;&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">let</span> &amp;<span style="color:#a6e22e">efm</span> .= <span style="color:#e6db74">&#39;%Eerror%m,&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">let</span> &amp;<span style="color:#a6e22e">efm</span> .= <span style="color:#e6db74">&#39;%Wwarning: %m,&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">let</span> &amp;<span style="color:#a6e22e">efm</span> .= <span style="color:#e6db74">&#39;%-Z%*\s--&gt; %f:%l:%c,&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Note that this can become quite complex for some compilers so it might be a good idea to set it in <code>ftplugin</code> automatically
+rather than typing it in every time.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#make-and-makeprg">Make and makeprg</a></li>
+    <li><a href="#local-make">Local make</a></li>
+    <li><a href="#error-format">Error format</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
