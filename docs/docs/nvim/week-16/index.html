@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Compiler plugins #  Compiler plugins are something that allow automating steps described in previous week. You can pretty much set the :makeprg and :efm based on filetype.
+Writing plugin #  Compiler plugins are stored in compiler/ subdirecotory so ~/.config/nvim/compiler/ for nvim. You can write them both in vim and lua.
+Example plugin written in vim:
+if exists(&#34;current_compiler&#34;) | finish | endif &#34; Needed to avoid running multiple timeslet current_compiler = &#34;zsh&#34;if exists(&#34;:CompilerSet&#34;) !">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 16" />
+<meta property="og:description" content="Compiler plugins #  Compiler plugins are something that allow automating steps described in previous week. You can pretty much set the :makeprg and :efm based on filetype.
+Writing plugin #  Compiler plugins are stored in compiler/ subdirecotory so ~/.config/nvim/compiler/ for nvim. You can write them both in vim and lua.
+Example plugin written in vim:
+if exists(&#34;current_compiler&#34;) | finish | endif &#34; Needed to avoid running multiple timeslet current_compiler = &#34;zsh&#34;if exists(&#34;:CompilerSet&#34;) !" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-16/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 16 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.9cb1f9ce567cc6800a3ea269ded62f1076b8ead755e8be1facf5fe353fd5a059.js" integrity="sha256-nLH5zlZ8xoAKPqJp3tYvEHa46tdV6L4frPX&#43;NT/VoFk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 16</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#writing-plugin">Writing plugin</a></li>
+    <li><a href="#setting-compiler">Setting compiler</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="compiler-plugins">
+  Compiler plugins
+  <a class="anchor" href="#compiler-plugins">#</a>
+</h1>
+<p>Compiler plugins are something that allow automating steps described in previous week.
+You can pretty much set the <code>:makeprg</code> and <code>:efm</code> based on filetype.</p>
+<h2 id="writing-plugin">
+  Writing plugin
+  <a class="anchor" href="#writing-plugin">#</a>
+</h2>
+<p>Compiler plugins are stored in <code>compiler/</code> subdirecotory so <code>~/.config/nvim/compiler/</code> for nvim.
+You can write them both in vim and lua.</p>
+<p>Example plugin written in vim:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">exists</span>(<span style="color:#e6db74">&#34;current_compiler&#34;</span>) | <span style="color:#a6e22e">finish</span> | <span style="color:#66d9ef">endif</span> <span style="color:#75715e">&#34; Needed to avoid running multiple times</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">current_compiler</span> = <span style="color:#e6db74">&#34;zsh&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">exists</span>(<span style="color:#e6db74">&#34;:CompilerSet&#34;</span>) != <span style="color:#ae81ff">2</span>		<span style="color:#75715e">&#34; older Vim always used :setlocal</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#a6e22e">command</span> -<span style="color:#a6e22e">nargs</span>=* <span style="color:#a6e22e">CompilerSet</span> <span style="color:#a6e22e">setlocal</span> &lt;<span style="color:#a6e22e">args</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CompilerSet</span> <span style="color:#a6e22e">makeprg</span>=<span style="color:#a6e22e">zsh</span>\ -<span style="color:#a6e22e">n</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CompilerSet</span> <span style="color:#a6e22e">errorformat</span>=%<span style="color:#a6e22e">f</span>:\ <span style="color:#a6e22e">line</span>\ %<span style="color:#a6e22e">l</span>:\ %<span style="color:#a6e22e">m</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><blockquote class="book-hint info">
+  <strong>Note:</strong> You can also write compiler plugins in lua, however I didn&rsquo;t manage to find any good examples.
+</blockquote>
+
+<h2 id="setting-compiler">
+  Setting compiler
+  <a class="anchor" href="#setting-compiler">#</a>
+</h2>
+<p>You can set compiler with <code>:compiler &lt;name&gt;</code>.
+To automate it you can easily move setting it automatically to <code>ftplugin</code>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#writing-plugin">Writing plugin</a></li>
+    <li><a href="#setting-compiler">Setting compiler</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -91,6 +91,18 @@ Make and makeprg #  To build a program you can run :make. As You might have gues
     </item>
     
     <item>
+      <title>Week 16</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-16/</guid>
+      <description>Compiler plugins #  Compiler plugins are something that allow automating steps described in previous week. You can pretty much set the :makeprg and :efm based on filetype.
+Writing plugin #  Compiler plugins are stored in compiler/ subdirecotory so ~/.config/nvim/compiler/ for nvim. You can write them both in vim and lua.
+Example plugin written in vim:
+if exists(&amp;#34;current_compiler&amp;#34;) | finish | endif &amp;#34; Needed to avoid running multiple timeslet current_compiler = &amp;#34;zsh&amp;#34;if exists(&amp;#34;:CompilerSet&amp;#34;) !</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

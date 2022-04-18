@@ -22,3 +22,4 @@ title: "Neovim tips"
  - [week-13](./week-13) Buffers
  - [week-14](./week-14) QuickFix lists
  - [week-15](./week-15) Makeprg and building files
+ - [week-16](./week-16) Vim compiler plugins
