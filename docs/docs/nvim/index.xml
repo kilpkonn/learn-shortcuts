@@ -103,6 +103,17 @@ if exists(&amp;#34;current_compiler&amp;#34;) | finish | endif &amp;#34; Needed 
     </item>
     
     <item>
+      <title>Week 17</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-17/</guid>
+      <description>Set and let #  Since day one, everybody know vim has :set command to set options. There also seems to be a :let command which in a way is similar, but it&amp;rsquo;s also quite different.
+Set command #  Set is command for setting vim options. Here are some things you can do with it.
+:verbose set &amp;#34;show all options:set tw=40 &amp;#34;set option (text width to 40):set wrap&amp;amp; &amp;#34;set default option (to wrap):set nowrap &amp;#34;unset option:set wrap!</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
