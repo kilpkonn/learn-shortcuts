@@ -24,3 +24,4 @@ title: "Neovim tips"
  - [week-15](./week-15) Makeprg and building files
  - [week-16](./week-16) Vim compiler plugins
  - [week-17](./week-17) Set and let commands
+ - [week-18](./week-18) More on navigation
