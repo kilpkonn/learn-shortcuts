@@ -124,6 +124,16 @@ Move to next occurance #  One way to skip couple of keystrokes is to jump around
     </item>
     
     <item>
+      <title>Week 19</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-19/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-19/</guid>
+      <description>More on inserting and deleting #  How to insert and delete text are some of the first things you have to learn in vim, but there are also more &amp;ldquo;advanced&amp;rdquo; ways to do it or just cool shortcuts for it.
+Start inserting on new line #  The o key can be used to start inserting text to newline just below the cursor. The capital O does the same, but start inserting to a line above.</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

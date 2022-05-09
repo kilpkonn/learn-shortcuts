@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="More on navigation #  hjkl is nice and some stuff such as 0 and $ give extra touch, but there is much more available in vim. In this week we&rsquo;ll come some of the options I&rsquo;ve personally rarely used, but which can be very useful.
-Move to next occurance #  One way to skip couple of keystrokes is to jump around with f followed by a letter you want to jump to.">
+<meta name="description" content="More on inserting and deleting #  How to insert and delete text are some of the first things you have to learn in vim, but there are also more &ldquo;advanced&rdquo; ways to do it or just cool shortcuts for it.
+Start inserting on new line #  The o key can be used to start inserting text to newline just below the cursor. The capital O does the same, but start inserting to a line above.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 18" />
-<meta property="og:description" content="More on navigation #  hjkl is nice and some stuff such as 0 and $ give extra touch, but there is much more available in vim. In this week we&rsquo;ll come some of the options I&rsquo;ve personally rarely used, but which can be very useful.
-Move to next occurance #  One way to skip couple of keystrokes is to jump around with f followed by a letter you want to jump to." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 19" />
+<meta property="og:description" content="More on inserting and deleting #  How to insert and delete text are some of the first things you have to learn in vim, but there are also more &ldquo;advanced&rdquo; ways to do it or just cool shortcuts for it.
+Start inserting on new line #  The o key can be used to start inserting text to newline just below the cursor. The capital O does the same, but start inserting to a line above." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-18/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-19/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Week 18 | Learn Shortcuts</title>
+<title>Week 19 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 18</strong>
+  <strong>Week 19</strong>
 
   <label for="toc-control">
     
@@ -106,9 +106,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#move-to-next-occurance">Move to next occurance</a></li>
-    <li><a href="#jump-between-brakets">Jump between brakets</a></li>
-    <li><a href="#move-around-text">Move around text</a></li>
+    <li><a href="#start-inserting-on-new-line">Start inserting on new line</a></li>
+    <li><a href="#special-inserts">Special inserts</a></li>
+    <li><a href="#deleting-by-sentence">Deleting by sentence</a></li>
+    <li><a href="#replacing-text">Replacing text</a></li>
   </ul>
 </nav>
 
@@ -121,31 +122,37 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="more-on-navigation">
-  More on navigation
-  <a class="anchor" href="#more-on-navigation">#</a>
+  <article class="markdown"><h1 id="more-on-inserting-and-deleting">
+  More on inserting and deleting
+  <a class="anchor" href="#more-on-inserting-and-deleting">#</a>
 </h1>
-<p><code>hjkl</code> is nice and some stuff such as <code>0</code> and <code>$</code> give extra touch, but there is much more available in vim.
-In this week we&rsquo;ll come some of the options I&rsquo;ve personally rarely used, but which can be very useful.</p>
-<h2 id="move-to-next-occurance">
-  Move to next occurance
-  <a class="anchor" href="#move-to-next-occurance">#</a>
+<p>How to insert and delete text are some of the first things you have to learn in vim, but there
+are also more &ldquo;advanced&rdquo; ways to do it or just cool shortcuts for it.</p>
+<h2 id="start-inserting-on-new-line">
+  Start inserting on new line
+  <a class="anchor" href="#start-inserting-on-new-line">#</a>
 </h2>
-<p>One way to skip couple of keystrokes is to jump around with <code>f</code> followed by a letter you want to jump to.
-You can do the same going backwards direction with <code>F</code>.
-<code>t</code> and <code>T</code> operate in a similar manner, but places cursor just before the char.</p>
-<h2 id="jump-between-brakets">
-  Jump between brakets
-  <a class="anchor" href="#jump-between-brakets">#</a>
+<p>The <code>o</code> key can be used to start inserting text to newline just below the cursor.
+The capital <code>O</code> does the same, but start inserting to a line above.</p>
+<h2 id="special-inserts">
+  Special inserts
+  <a class="anchor" href="#special-inserts">#</a>
 </h2>
-<p>The <code>%</code> shortcut can be used to jump between matching brakets, even if there are other levels of braket inside it.</p>
-<h2 id="move-around-text">
-  Move around text
-  <a class="anchor" href="#move-around-text">#</a>
+<p>There are also some more special ways to insert text.
+<code>:r [filename]</code> can be used to insert the contents of some file to current location.
+<code>:r ![command]</code> runs shell command and pastes the output to current location.</p>
+<h2 id="deleting-by-sentence">
+  Deleting by sentence
+  <a class="anchor" href="#deleting-by-sentence">#</a>
 </h2>
-<p><code>{</code> and <code>}</code> Can be useful when moving around paragraphs.
-They actually jump to clear lines before or after the paragraph.
-<code>(</code> and <code>)</code> Move around by sentence at a time.</p>
+<p>To delete from current location to the end of sentence <code>d)</code> can be used.
+Similarly <code>d}</code> etc. can be used to delete to end of paragraph etc.</p>
+<h2 id="replacing-text">
+  Replacing text
+  <a class="anchor" href="#replacing-text">#</a>
+</h2>
+<p>To replace single character use <code>r</code>.
+To go to replace mode (instead of inserting new characters overwrite existing ones) use <code>R</code>.</p>
 </article>
  
       
@@ -187,9 +194,10 @@ They actually jump to clear lines before or after the paragraph.
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#move-to-next-occurance">Move to next occurance</a></li>
-    <li><a href="#jump-between-brakets">Jump between brakets</a></li>
-    <li><a href="#move-around-text">Move around text</a></li>
+    <li><a href="#start-inserting-on-new-line">Start inserting on new line</a></li>
+    <li><a href="#special-inserts">Special inserts</a></li>
+    <li><a href="#deleting-by-sentence">Deleting by sentence</a></li>
+    <li><a href="#replacing-text">Replacing text</a></li>
   </ul>
 </nav>
 
