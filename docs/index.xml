@@ -147,6 +147,16 @@ Syntax #  The &amp;lsquo;g&amp;rsquo; command is executed in command mode and th
     </item>
     
     <item>
+      <title>Week 20</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-20/</guid>
+      <description>Folds #  In all kinds of IDEs folds are quite common. You can fold all kinds of long functions or even bunch of vars to make your spagetti code easier to read. Folds also do exist in vim, and here are some examples for it.
+Folding lines #  To fold lines zF command can be used followed by a motion. Folds can also be created in command mode with</description>
+    </item>
+    
+    <item>
       <title>Week 3</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

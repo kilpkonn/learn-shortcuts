@@ -25,4 +25,5 @@ title: "Neovim tips"
  - [week-16](./week-16) Vim compiler plugins
  - [week-17](./week-17) Set and let commands
  - [week-18](./week-18) More on navigation
- - [week-19](./week-19) Mor on inserting and deleting
+ - [week-19](./week-19) More on inserting and deleting
+ - [week-20](./week-20) Folds
