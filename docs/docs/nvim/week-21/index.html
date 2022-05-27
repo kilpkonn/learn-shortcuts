@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Incremental selection #  Most ides support incremental selection of some sort. You can start from single function argument, then select all arguments, whole line etc. and then up to whole file. Same is possible using treesitter
+Setup #  To enable incremential selection, following snippet can be used:
+require&#39;nvim-treesitter.configs&#39;.setup {  incremental_selection = {  enable = true,  keymaps = {  init_selection = &#34;gnn&#34;,  node_incremental = &#34;grn&#34;,  scope_incremental = &#34;grc&#34;,  node_decremental = &#34;grm&#34;,  },  }, } Usage #  Now you are pretty much good to go :D As you can see above, gnn can be used to init selection.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 21" />
+<meta property="og:description" content="Incremental selection #  Most ides support incremental selection of some sort. You can start from single function argument, then select all arguments, whole line etc. and then up to whole file. Same is possible using treesitter
+Setup #  To enable incremential selection, following snippet can be used:
+require&#39;nvim-treesitter.configs&#39;.setup {  incremental_selection = {  enable = true,  keymaps = {  init_selection = &#34;gnn&#34;,  node_incremental = &#34;grn&#34;,  scope_incremental = &#34;grc&#34;,  node_decremental = &#34;grm&#34;,  },  }, } Usage #  Now you are pretty much good to go :D As you can see above, gnn can be used to init selection." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-21/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 21 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.28921d8c233eb461b2d17f380b4aad1cddc1a3c4e49931560b9da2c04fbf7c70.js" integrity="sha256-KJIdjCM&#43;tGGy0X84C0qtHN3Bo8TkmTFWC52iwE&#43;/fHA=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 21</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#usage">Usage</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="incremental-selection">
+  Incremental selection
+  <a class="anchor" href="#incremental-selection">#</a>
+</h1>
+<p>Most ides support incremental selection of some sort.
+You can start from single function argument, then select all arguments, whole line etc. and then up to whole file.
+Same is possible using treesitter</p>
+<h2 id="setup">
+  Setup
+  <a class="anchor" href="#setup">#</a>
+</h2>
+<p>To enable incremential selection, following snippet can be used:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>require<span style="color:#e6db74">&#39;nvim-treesitter.configs&#39;</span>.setup {
+</span></span><span style="display:flex;"><span>  incremental_selection <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    enable <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    keymaps <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>      init_selection <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gnn&#34;</span>,
+</span></span><span style="display:flex;"><span>      node_incremental <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grn&#34;</span>,
+</span></span><span style="display:flex;"><span>      scope_incremental <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grc&#34;</span>,
+</span></span><span style="display:flex;"><span>      node_decremental <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;grm&#34;</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="usage">
+  Usage
+  <a class="anchor" href="#usage">#</a>
+</h2>
+<p>Now you are pretty much good to go :D
+As you can see above, <code>gnn</code> can be used to init selection.
+<code>grn</code> and <code>grm</code> can be used to increment and decrement the selection so they are likely the most useful commands.
+<code>grc</code> selects whole scope, which I&rsquo;m not quite sure what exactly is, but it seems to be whole file etc.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#usage">Usage</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

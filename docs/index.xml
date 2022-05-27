@@ -157,6 +157,17 @@ Folding lines #  To fold lines zF command can be used followed by a motion. Fold
     </item>
     
     <item>
+      <title>Week 21</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-21/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-21/</guid>
+      <description>Incremental selection #  Most ides support incremental selection of some sort. You can start from single function argument, then select all arguments, whole line etc. and then up to whole file. Same is possible using treesitter
+Setup #  To enable incremential selection, following snippet can be used:
+require&amp;#39;nvim-treesitter.configs&amp;#39;.setup {  incremental_selection = {  enable = true,  keymaps = {  init_selection = &amp;#34;gnn&amp;#34;,  node_incremental = &amp;#34;grn&amp;#34;,  scope_incremental = &amp;#34;grc&amp;#34;,  node_decremental = &amp;#34;grm&amp;#34;,  },  }, } Usage #  Now you are pretty much good to go :D As you can see above, gnn can be used to init selection.</description>
+    </item>
+    
+    <item>
       <title>Week 3</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
