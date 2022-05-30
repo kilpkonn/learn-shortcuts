@@ -28,3 +28,4 @@ title: "Neovim tips"
  - [week-19](./week-19) More on inserting and deleting
  - [week-20](./week-20) Folds
  - [week-21](./week-21) Incremental selection with Treesitter
+ - [week-22](./week-22) Moving lines around

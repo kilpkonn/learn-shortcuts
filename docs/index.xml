@@ -168,6 +168,16 @@ require&amp;#39;nvim-treesitter.configs&amp;#39;.setup {  incremental_selection 
     </item>
     
     <item>
+      <title>Week 22</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-22/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-22/</guid>
+      <description>Moving lines around #  Moving lines can be thought of as deleting and pasting lines. However sometimes it is easier to think of it as pushing selected part up or down. For that vim has :m command.
+The move command #  The move command is quite easy to use. To move a line, first you have to place cursor at it or select it in visual mode. After that you can do :m &amp;lt;nr&amp;gt; to move line to line &amp;lt;nr&amp;gt;.</description>
+    </item>
+    
+    <item>
       <title>Week 3</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

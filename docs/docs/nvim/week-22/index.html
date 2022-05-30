@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.99.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="Moving lines around #  Moving lines can be thought of as deleting and pasting lines. However sometimes it is easier to think of it as pushing selected part up or down. For that vim has :m command.
+The move command #  The move command is quite easy to use. To move a line, first you have to place cursor at it or select it in visual mode. After that you can do :m &lt;nr&gt; to move line to line &lt;nr&gt;.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Learn Shortcuts" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 22" />
+<meta property="og:description" content="Moving lines around #  Moving lines can be thought of as deleting and pasting lines. However sometimes it is easier to think of it as pushing selected part up or down. For that vim has :m command.
+The move command #  The move command is quite easy to use. To move a line, first you have to place cursor at it or select it in visual mode. After that you can do :m &lt;nr&gt; to move line to line &lt;nr&gt;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-22/" /><meta property="article:section" content="docs" />
 
-<title>Learn Shortcuts | Learn Shortcuts</title>
+
+
+<title>Week 22 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
   <script defer src="/learn-shortcuts/en.search.min.97cfd60cc6b3ec45260405ef8ada170313b193b173408bd1e998fb205ae7e9df.js" integrity="sha256-l8/WDMaz7EUmBAXvitoXAxOxk7FzQIvR6Zj7IFrn6d8=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://kilpkonn.github.io/learn-shortcuts/index.xml" title="Learn Shortcuts" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -88,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Learn Shortcuts</strong>
+  <strong>Week 22</strong>
 
   <label for="toc-control">
     
@@ -102,7 +104,12 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-move-command">The move command</a></li>
+    <li><a href="#the-copy-command">The copy command</a></li>
+  </ul>
+</nav>
 
 
 
@@ -113,7 +120,30 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"></article>
+  <article class="markdown"><h1 id="moving-lines-around">
+  Moving lines around
+  <a class="anchor" href="#moving-lines-around">#</a>
+</h1>
+<p>Moving lines can be thought of as deleting and pasting lines.
+However sometimes it is easier to think of it as pushing selected part up or down.
+For that vim has <code>:m</code> command.</p>
+<h2 id="the-move-command">
+  The move command
+  <a class="anchor" href="#the-move-command">#</a>
+</h2>
+<p>The move command is quite easy to use.
+To move a line, first you have to place cursor at it or select it in visual mode.
+After that you can do <code>:m &lt;nr&gt;</code> to move line to line <code>&lt;nr&gt;</code>.
+Also relative numbers can be used to move lines around.
+Simly use <code>:m +1&lt;CR&gt;</code> to move line down or <code>:m -2&lt;CR&gt;</code> to move line up.</p>
+<h2 id="the-copy-command">
+  The copy command
+  <a class="anchor" href="#the-copy-command">#</a>
+</h2>
+<p>Similarly to <code>:m[ove]</code> command vim has <code>:co[py]</code> command that works in a similary manner,
+but instead of moving lines it copies them.
+Copy also doesn&rsquo;t play nice with relative line numbers.</p>
+</article>
  
       
 
@@ -138,6 +168,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -148,7 +182,12 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-move-command">The move command</a></li>
+    <li><a href="#the-copy-command">The copy command</a></li>
+  </ul>
+</nav>
 
 
  
