@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="More on navigation #  hjkl is nice and some stuff such as 0 and $ give extra touch, but there is much more available in vim. In this week we&rsquo;ll come some of the options I&rsquo;ve personally rarely used, but which can be very useful.
-Move to next occurance #  One way to skip couple of keystrokes is to jump around with f followed by a letter you want to jump to.">
+<meta name="description" content="Indenting text #  Indenting text can be quite common in programming. You might want to format comments or text later printed to terminal. Vim can also give you a hand here.
+Indenting #  Indenting can be done with selecting text and then using &lt; and &gt; keys. Whilst this is useful for formatting text after it has been written you can also indent in insert mode. For that we have ^D and ^T for deindent and indent respectively.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 18" />
-<meta property="og:description" content="More on navigation #  hjkl is nice and some stuff such as 0 and $ give extra touch, but there is much more available in vim. In this week we&rsquo;ll come some of the options I&rsquo;ve personally rarely used, but which can be very useful.
-Move to next occurance #  One way to skip couple of keystrokes is to jump around with f followed by a letter you want to jump to." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 23" />
+<meta property="og:description" content="Indenting text #  Indenting text can be quite common in programming. You might want to format comments or text later printed to terminal. Vim can also give you a hand here.
+Indenting #  Indenting can be done with selecting text and then using &lt; and &gt; keys. Whilst this is useful for formatting text after it has been written you can also indent in insert mode. For that we have ^D and ^T for deindent and indent respectively." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-18/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-23/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Week 18 | Learn Shortcuts</title>
+<title>Week 23 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 18</strong>
+  <strong>Week 23</strong>
 
   <label for="toc-control">
     
@@ -106,9 +106,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#move-to-next-occurance">Move to next occurance</a></li>
-    <li><a href="#jump-between-brakets">Jump between brakets</a></li>
-    <li><a href="#move-around-text">Move around text</a></li>
+    <li><a href="#indenting">Indenting</a></li>
+    <li><a href="#shifting-paragraphs-or-other-text-objects">Shifting paragraphs or other text objects</a></li>
   </ul>
 </nav>
 
@@ -121,31 +120,26 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="more-on-navigation">
-  More on navigation
-  <a class="anchor" href="#more-on-navigation">#</a>
+  <article class="markdown"><h1 id="indenting-text">
+  Indenting text
+  <a class="anchor" href="#indenting-text">#</a>
 </h1>
-<p><code>hjkl</code> is nice and some stuff such as <code>0</code> and <code>$</code> give extra touch, but there is much more available in vim.
-In this week we&rsquo;ll come some of the options I&rsquo;ve personally rarely used, but which can be very useful.</p>
-<h2 id="move-to-next-occurance">
-  Move to next occurance
-  <a class="anchor" href="#move-to-next-occurance">#</a>
+<p>Indenting text can be quite common in programming.
+You might want to format comments or text later printed to terminal.
+Vim can also give you a hand here.</p>
+<h2 id="indenting">
+  Indenting
+  <a class="anchor" href="#indenting">#</a>
 </h2>
-<p>One way to skip couple of keystrokes is to jump around with <code>f</code> followed by a letter you want to jump to.
-You can do the same going backwards direction with <code>F</code>.
-<code>t</code> and <code>T</code> operate in a similar manner, but places cursor just before the char.</p>
-<h2 id="jump-between-brakets">
-  Jump between brakets
-  <a class="anchor" href="#jump-between-brakets">#</a>
+<p>Indenting can be done with selecting text and then using <code>&lt;</code> and <code>&gt;</code> keys.
+Whilst this is useful for formatting text after it has been written you can also indent in insert mode.
+For that we have <code>^D</code> and <code>^T</code> for deindent and indent respectively.</p>
+<h2 id="shifting-paragraphs-or-other-text-objects">
+  Shifting paragraphs or other text objects
+  <a class="anchor" href="#shifting-paragraphs-or-other-text-objects">#</a>
 </h2>
-<p>The <code>%</code> shortcut can be used to jump between matching brakets, even if there are other levels of braket inside it.</p>
-<h2 id="move-around-text">
-  Move around text
-  <a class="anchor" href="#move-around-text">#</a>
-</h2>
-<p><code>{</code> and <code>}</code> Can be useful when moving around paragraphs.
-They actually jump to clear lines before or after the paragraph.
-<code>(</code> and <code>)</code> Move around by sentence at a time.</p>
+<p>Indenting can be also done on text objects.
+For that you can do <code>&gt;ap</code> for example to shift current paragraph.</p>
 </article>
  
       
@@ -187,9 +181,8 @@ They actually jump to clear lines before or after the paragraph.
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#move-to-next-occurance">Move to next occurance</a></li>
-    <li><a href="#jump-between-brakets">Jump between brakets</a></li>
-    <li><a href="#move-around-text">Move around text</a></li>
+    <li><a href="#indenting">Indenting</a></li>
+    <li><a href="#shifting-paragraphs-or-other-text-objects">Shifting paragraphs or other text objects</a></li>
   </ul>
 </nav>
 

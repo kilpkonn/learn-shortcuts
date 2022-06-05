@@ -29,3 +29,4 @@ title: "Neovim tips"
  - [week-20](./week-20) Folds
  - [week-21](./week-21) Incremental selection with Treesitter
  - [week-22](./week-22) Moving lines around
+ - [week-23](./week-23) Indenting text
