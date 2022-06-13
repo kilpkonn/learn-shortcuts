@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="More on inserting and deleting #  How to insert and delete text are some of the first things you have to learn in vim, but there are also more &ldquo;advanced&rdquo; ways to do it or just cool shortcuts for it.
-Start inserting on new line #  The o key can be used to start inserting text to newline just below the cursor. The capital O does the same, but start inserting to a line above.">
+<meta name="description" content="Aligning text #  A simple, but sometimes boring and slow task is alagning text. However it is also quite common task in programming, wheather fore readme or for printing to terminal.
+Aligning to columns #  One of the most common tasks is algining text to columns. It can be easily achieved using linux column command.
+:&#39;&lt;,&#39;&gt;! column -tCentering text #  There is also a command in vim for centering text.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 19" />
-<meta property="og:description" content="More on inserting and deleting #  How to insert and delete text are some of the first things you have to learn in vim, but there are also more &ldquo;advanced&rdquo; ways to do it or just cool shortcuts for it.
-Start inserting on new line #  The o key can be used to start inserting text to newline just below the cursor. The capital O does the same, but start inserting to a line above." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 24" />
+<meta property="og:description" content="Aligning text #  A simple, but sometimes boring and slow task is alagning text. However it is also quite common task in programming, wheather fore readme or for printing to terminal.
+Aligning to columns #  One of the most common tasks is algining text to columns. It can be easily achieved using linux column command.
+:&#39;&lt;,&#39;&gt;! column -tCentering text #  There is also a command in vim for centering text." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-19/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-24/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Week 19 | Learn Shortcuts</title>
+<title>Week 24 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +92,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 19</strong>
+  <strong>Week 24</strong>
 
   <label for="toc-control">
     
@@ -106,10 +108,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#start-inserting-on-new-line">Start inserting on new line</a></li>
-    <li><a href="#special-inserts">Special inserts</a></li>
-    <li><a href="#deleting-by-sentence">Deleting by sentence</a></li>
-    <li><a href="#replacing-text">Replacing text</a></li>
+    <li><a href="#aligning-to-columns">Aligning to columns</a></li>
+    <li><a href="#centering-text">Centering text</a></li>
   </ul>
 </nav>
 
@@ -122,38 +122,26 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="more-on-inserting-and-deleting">
-  More on inserting and deleting
-  <a class="anchor" href="#more-on-inserting-and-deleting">#</a>
+  <article class="markdown"><h1 id="aligning-text">
+  Aligning text
+  <a class="anchor" href="#aligning-text">#</a>
 </h1>
-<p>How to insert and delete text are some of the first things you have to learn in vim, but there
-are also more &ldquo;advanced&rdquo; ways to do it or just cool shortcuts for it.</p>
-<h2 id="start-inserting-on-new-line">
-  Start inserting on new line
-  <a class="anchor" href="#start-inserting-on-new-line">#</a>
+<p>A simple, but sometimes boring and slow task is alagning text.
+However it is also quite common task in programming, wheather fore readme or for printing to terminal.</p>
+<h2 id="aligning-to-columns">
+  Aligning to columns
+  <a class="anchor" href="#aligning-to-columns">#</a>
 </h2>
-<p>The <code>o</code> key can be used to start inserting text to newline just below the cursor.
-The capital <code>O</code> does the same, but start inserting to a line above.</p>
-<h2 id="special-inserts">
-  Special inserts
-  <a class="anchor" href="#special-inserts">#</a>
+<p>One of the most common tasks is algining text to columns.
+It can be easily achieved using linux <code>column</code> command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;! <span style="color:#a6e22e">column</span> -<span style="color:#a6e22e">t</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h2 id="centering-text">
+  Centering text
+  <a class="anchor" href="#centering-text">#</a>
 </h2>
-<p>There are also some more special ways to insert text.
-<code>:r [filename]</code> can be used to insert the contents of some file to current location.
-<code>:r ![command]</code> runs shell command and pastes the output to current location.</p>
-<h2 id="deleting-by-sentence">
-  Deleting by sentence
-  <a class="anchor" href="#deleting-by-sentence">#</a>
-</h2>
-<p>To delete from current location to the end of sentence <code>d)</code> can be used.
-Similarly <code>d}</code> etc. can be used to delete to end of paragraph etc.</p>
-<h2 id="replacing-text">
-  Replacing text
-  <a class="anchor" href="#replacing-text">#</a>
-</h2>
-<p>To replace single character use <code>r</code>.
-To go to replace mode (instead of inserting new characters overwrite existing ones) use <code>R</code>.</p>
-</article>
+<p>There is also a command in vim for centering text.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;<span style="color:#a6e22e">center</span> <span style="color:#ae81ff">30</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div></article>
  
       
 
@@ -194,10 +182,8 @@ To go to replace mode (instead of inserting new characters overwrite existing on
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#start-inserting-on-new-line">Start inserting on new line</a></li>
-    <li><a href="#special-inserts">Special inserts</a></li>
-    <li><a href="#deleting-by-sentence">Deleting by sentence</a></li>
-    <li><a href="#replacing-text">Replacing text</a></li>
+    <li><a href="#aligning-to-columns">Aligning to columns</a></li>
+    <li><a href="#centering-text">Centering text</a></li>
   </ul>
 </nav>
 

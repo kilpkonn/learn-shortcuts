@@ -188,6 +188,17 @@ Indenting #  Indenting can be done with selecting text and then using &amp;lt; a
     </item>
     
     <item>
+      <title>Week 24</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-24/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-24/</guid>
+      <description>Aligning text #  A simple, but sometimes boring and slow task is alagning text. However it is also quite common task in programming, wheather fore readme or for printing to terminal.
+Aligning to columns #  One of the most common tasks is algining text to columns. It can be easily achieved using linux column command.
+:&amp;#39;&amp;lt;,&amp;#39;&amp;gt;! column -tCentering text #  There is also a command in vim for centering text.</description>
+    </item>
+    
+    <item>
       <title>Week 3</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
