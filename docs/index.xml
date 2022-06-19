@@ -12,9 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-00/</guid>
-      <description>Starting point #  This is a short chapter to describe starting point.
+      <description>Starting point # This is a short chapter to describe starting point.
 Before starting you should have:
- basic experience with neovim (I had ~5 months as neovim as my main editor but also less is sufficient for sure) know basic movement, editing and similar in vim. know very basics of lua (for config)  Some random tips #  Make neovim your default editor
+basic experience with neovim (I had ~5 months as neovim as my main editor but also less is sufficient for sure) know basic movement, editing and similar in vim. know very basics of lua (for config) Some random tips # Make neovim your default editor
 # .zshenv export EDITOR=&amp;#34;nvim&amp;#34; Add alias to launch neovim faster</description>
     </item>
     
@@ -24,8 +24,8 @@ Before starting you should have:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-01/</guid>
-      <description>Replace in range #  Sometimes we wish to replace strings only in some range, not at file at a time. Here are some tims to accomplish that.
-Replace in visually seleceted range #   Select range in visual mode Press &amp;lt;:&amp;gt; to start range action, you should see something like this:  :&amp;#39;&amp;lt;,&amp;#39;&amp;gt;Type in replace command as usual eg. for foo -&amp;gt; bar  :&amp;#39;&amp;lt;,&amp;#39;&amp;gt;s/foo/bar/gReplace last visually selected range in normal mode #   Select range in visual mode Exit to normal mode Start command with &amp;lt;:&amp;gt; as usual Use \%V to restrict selection to previously selected visual range.</description>
+      <description>Replace in range # Sometimes we wish to replace strings only in some range, not at file at a time. Here are some tims to accomplish that.
+Replace in visually seleceted range # Select range in visual mode Press &amp;lt;:&amp;gt; to start range action, you should see something like this: :&amp;#39;&amp;lt;,&amp;#39;&amp;gt; Type in replace command as usual eg. for foo -&amp;gt; bar :&amp;#39;&amp;lt;,&amp;#39;&amp;gt;s/foo/bar/g Replace last visually selected range in normal mode # Select range in visual mode Exit to normal mode Start command with &amp;lt;:&amp;gt; as usual Use \%V to restrict selection to previously selected visual range.</description>
     </item>
     
     <item>
@@ -34,8 +34,8 @@ Replace in visually seleceted range #   Select range in visual mode Press &amp;l
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-10/</guid>
-      <description>Registers 3 #  We finish with registers by looking at:
- Black hole register Last selection register Last search register  The black hole register #   &amp;quot;_ &amp;lt;- the name When writing to it, nothing happens Can be used to delete text without affecting other registers Reading it returns nothing Can be used for clearing other registers  Last selection registers #  Keys: &amp;quot;+ and &amp;quot;* Useful for operating with system clipboard.</description>
+      <description>Registers 3 # We finish with registers by looking at:
+Black hole register Last selection register Last search register The black hole register # &amp;quot;_ &amp;lt;- the name When writing to it, nothing happens Can be used to delete text without affecting other registers Reading it returns nothing Can be used for clearing other registers Last selection registers # Keys: &amp;quot;+ and &amp;quot;* Useful for operating with system clipboard. In case you do not like it you can use the clipboard for all operations</description>
     </item>
     
     <item>
@@ -44,8 +44,8 @@ Replace in visually seleceted range #   Select range in visual mode Press &amp;l
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-11/</guid>
-      <description>Vim Marks #  Marks allow storying corrent location and returning to it later. There are generally 3 types of marks lowercase marks, uppercase marks and special marks. Marks can be added with m&amp;lt;letter&amp;gt; in normal mode for example ma. The mark stores both the line and column information.
-Lowercase marks #  These are marks for a-z. Lowercase marks are local to a file meaning multiple files can have say mark &#39;a.</description>
+      <description>Vim Marks # Marks allow storying corrent location and returning to it later. There are generally 3 types of marks lowercase marks, uppercase marks and special marks. Marks can be added with m&amp;lt;letter&amp;gt; in normal mode for example ma. The mark stores both the line and column information.
+Lowercase marks # These are marks for a-z. Lowercase marks are local to a file meaning multiple files can have say mark &#39;a.</description>
     </item>
     
     <item>
@@ -54,9 +54,9 @@ Lowercase marks #  These are marks for a-z. Lowercase marks are local to a file 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-12/</guid>
-      <description>More on Marks #  We learned some basics of vim marks last week. Now we can take a look at some more advanced commands.
-Movement #  Here are some more options to move around marks.
-]&amp;#39; - jump to next line with a lowercase mark[&amp;#39; - jump to previous line with a lowercase mark]` - jump to next lowercase mark[` - jump to previous lowercase markNote: You can use count with all the commands above, for example 5[&#39; works.</description>
+      <description>More on Marks # We learned some basics of vim marks last week. Now we can take a look at some more advanced commands.
+Movement # Here are some more options to move around marks.
+]&amp;#39; - jump to next line with a lowercase mark [&amp;#39; - jump to previous line with a lowercase mark ]` - jump to next lowercase mark [` - jump to previous lowercase mark Note: You can use count with all the commands above, for example 5[&#39; works.</description>
     </item>
     
     <item>
@@ -65,9 +65,9 @@ Movement #  Here are some more options to move around marks.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-13/</guid>
-      <description>Buffers #  Vim buffers are something you can think of as opened files. Some of them are readonly and do not correspond to actual files (eg. Nvimtree), but it still is something that makes thinking of them easier.
+      <description>Buffers # Vim buffers are something you can think of as opened files. Some of them are readonly and do not correspond to actual files (eg. Nvimtree), but it still is something that makes thinking of them easier.
 A buffer can be opened in multiple windows in which case if you edit it in one window, the changes also appear in the other.
-Basic commands #  You can view the contents of buffers with :buffers or :ls.</description>
+Basic commands # You can view the contents of buffers with :buffers or :ls.</description>
     </item>
     
     <item>
@@ -76,8 +76,8 @@ Basic commands #  You can view the contents of buffers with :buffers or :ls.</de
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-14/</guid>
-      <description>QuickFix lists #  Whilst the name seems new, some of QuickFix lists usecases are quite common. r example it is used when vimgrepping a pattern and then jumping between entries found. Local QuickFix lists can be used for code errors and warnings.
-Viewving and navigating QuickFix list #  QuickFix list can be viewed with :copen or :lopen command depending on if you want global or local list. Navigation can be done with :cnext and :cprev or :lnext and :lprev respectively.</description>
+      <description>QuickFix lists # Whilst the name seems new, some of QuickFix lists usecases are quite common. r example it is used when vimgrepping a pattern and then jumping between entries found. Local QuickFix lists can be used for code errors and warnings.
+Viewving and navigating QuickFix list # QuickFix list can be viewed with :copen or :lopen command depending on if you want global or local list. Navigation can be done with :cnext and :cprev or :lnext and :lprev respectively.</description>
     </item>
     
     <item>
@@ -86,8 +86,8 @@ Viewving and navigating QuickFix list #  QuickFix list can be viewed with :copen
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-15/</guid>
-      <description>Makeprg #  A big part of programming is compiling files and running them. Whilst editing parts of code usually it is a good idea to sometimes build the project to see if everything works fine. This can be done also in vim without exiting it.
-Make and makeprg #  To build a program you can run :make. As You might have guessed the default build system is GNU Make.</description>
+      <description>Makeprg # A big part of programming is compiling files and running them. Whilst editing parts of code usually it is a good idea to sometimes build the project to see if everything works fine. This can be done also in vim without exiting it.
+Make and makeprg # To build a program you can run :make. As You might have guessed the default build system is GNU Make. However you can use different build systems via :set makeprg.</description>
     </item>
     
     <item>
@@ -96,10 +96,10 @@ Make and makeprg #  To build a program you can run :make. As You might have gues
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-16/</guid>
-      <description>Compiler plugins #  Compiler plugins are something that allow automating steps described in previous week. You can pretty much set the :makeprg and :efm based on filetype.
-Writing plugin #  Compiler plugins are stored in compiler/ subdirecotory so ~/.config/nvim/compiler/ for nvim. You can write them both in vim and lua.
+      <description>Compiler plugins # Compiler plugins are something that allow automating steps described in previous week. You can pretty much set the :makeprg and :efm based on filetype.
+Writing plugin # Compiler plugins are stored in compiler/ subdirecotory so ~/.config/nvim/compiler/ for nvim. You can write them both in vim and lua.
 Example plugin written in vim:
-if exists(&amp;#34;current_compiler&amp;#34;) | finish | endif &amp;#34; Needed to avoid running multiple timeslet current_compiler = &amp;#34;zsh&amp;#34;if exists(&amp;#34;:CompilerSet&amp;#34;) !</description>
+if exists(&amp;#34;current_compiler&amp;#34;) | finish | endif &amp;#34; Needed to avoid running multiple times let current_compiler = &amp;#34;zsh&amp;#34; if exists(&amp;#34;:CompilerSet&amp;#34;) !</description>
     </item>
     
     <item>
@@ -108,9 +108,9 @@ if exists(&amp;#34;current_compiler&amp;#34;) | finish | endif &amp;#34; Needed 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-17/</guid>
-      <description>Set and let #  Since day one, everybody know vim has :set command to set options. There also seems to be a :let command which in a way is similar, but it&amp;rsquo;s also quite different.
-Set command #  Set is command for setting vim options. Here are some things you can do with it.
-:verbose set &amp;#34;show all options:set tw=40 &amp;#34;set option (text width to 40):set wrap&amp;amp; &amp;#34;set default option (to wrap):set nowrap &amp;#34;unset option:set wrap!</description>
+      <description>Set and let # Since day one, everybody know vim has :set command to set options. There also seems to be a :let command which in a way is similar, but it&amp;rsquo;s also quite different.
+Set command # Set is command for setting vim options. Here are some things you can do with it.
+:verbose set &amp;#34;show all options :set tw=40 &amp;#34;set option (text width to 40) :set wrap&amp;amp; &amp;#34;set default option (to wrap) :set nowrap &amp;#34;unset option :set wrap!</description>
     </item>
     
     <item>
@@ -119,8 +119,8 @@ Set command #  Set is command for setting vim options. Here are some things you 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-18/</guid>
-      <description>More on navigation #  hjkl is nice and some stuff such as 0 and $ give extra touch, but there is much more available in vim. In this week we&amp;rsquo;ll come some of the options I&amp;rsquo;ve personally rarely used, but which can be very useful.
-Move to next occurance #  One way to skip couple of keystrokes is to jump around with f followed by a letter you want to jump to.</description>
+      <description>More on navigation # hjkl is nice and some stuff such as 0 and $ give extra touch, but there is much more available in vim. In this week we&amp;rsquo;ll come some of the options I&amp;rsquo;ve personally rarely used, but which can be very useful.
+Move to next occurance # One way to skip couple of keystrokes is to jump around with f followed by a letter you want to jump to.</description>
     </item>
     
     <item>
@@ -129,8 +129,8 @@ Move to next occurance #  One way to skip couple of keystrokes is to jump around
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-19/</guid>
-      <description>More on inserting and deleting #  How to insert and delete text are some of the first things you have to learn in vim, but there are also more &amp;ldquo;advanced&amp;rdquo; ways to do it or just cool shortcuts for it.
-Start inserting on new line #  The o key can be used to start inserting text to newline just below the cursor. The capital O does the same, but start inserting to a line above.</description>
+      <description>More on inserting and deleting # How to insert and delete text are some of the first things you have to learn in vim, but there are also more &amp;ldquo;advanced&amp;rdquo; ways to do it or just cool shortcuts for it.
+Start inserting on new line # The o key can be used to start inserting text to newline just below the cursor. The capital O does the same, but start inserting to a line above.</description>
     </item>
     
     <item>
@@ -139,11 +139,11 @@ Start inserting on new line #  The o key can be used to start inserting text to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-02/</guid>
-      <description>The &amp;lsquo;g&amp;rsquo; command #  It is quite common to wish to run some specific command on every line containing a pattern. This is exactly what the &amp;lsquo;g&amp;rsquo; command is for.
-Syntax #  The &amp;lsquo;g&amp;rsquo; command is executed in command mode and the syntax is following:
-:g/pattern/commandAlso the inverse is possible (run command on lines that do not match)
-:g!/pattern/commandor
-:v/pattern/commandExamples #  Delete all lines containing pattern #  :g/foo/dDelete all empty lines #  :g/^\s*$/dMove imports to start of file #  :g/import/m0Capitalize all lines not containig bar #  :v/bar/normal gUU</description>
+      <description> The &amp;lsquo;g&amp;rsquo; command # It is quite common to wish to run some specific command on every line containing a pattern. This is exactly what the &amp;lsquo;g&amp;rsquo; command is for.
+Syntax # The &amp;lsquo;g&amp;rsquo; command is executed in command mode and the syntax is following:
+:g/pattern/command Also the inverse is possible (run command on lines that do not match)
+:g!/pattern/command or
+:v/pattern/command Examples # Delete all lines containing pattern # :g/foo/d Delete all empty lines # :g/^\s*$/d Move imports to start of file # :g/import/m0 Capitalize all lines not containig bar # :v/bar/normal gUU </description>
     </item>
     
     <item>
@@ -152,8 +152,8 @@ Syntax #  The &amp;lsquo;g&amp;rsquo; command is executed in command mode and th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-20/</guid>
-      <description>Folds #  In all kinds of IDEs folds are quite common. You can fold all kinds of long functions or even bunch of vars to make your spagetti code easier to read. Folds also do exist in vim, and here are some examples for it.
-Folding lines #  To fold lines zF command can be used followed by a motion. Folds can also be created in command mode with</description>
+      <description>Folds # In all kinds of IDEs folds are quite common. You can fold all kinds of long functions or even bunch of vars to make your spagetti code easier to read. Folds also do exist in vim, and here are some examples for it.
+Folding lines # To fold lines zF command can be used followed by a motion. Folds can also be created in command mode with</description>
     </item>
     
     <item>
@@ -162,9 +162,9 @@ Folding lines #  To fold lines zF command can be used followed by a motion. Fold
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-21/</guid>
-      <description>Incremental selection #  Most ides support incremental selection of some sort. You can start from single function argument, then select all arguments, whole line etc. and then up to whole file. Same is possible using treesitter
-Setup #  To enable incremential selection, following snippet can be used:
-require&amp;#39;nvim-treesitter.configs&amp;#39;.setup {  incremental_selection = {  enable = true,  keymaps = {  init_selection = &amp;#34;gnn&amp;#34;,  node_incremental = &amp;#34;grn&amp;#34;,  scope_incremental = &amp;#34;grc&amp;#34;,  node_decremental = &amp;#34;grm&amp;#34;,  },  }, } Usage #  Now you are pretty much good to go :D As you can see above, gnn can be used to init selection.</description>
+      <description>Incremental selection # Most ides support incremental selection of some sort. You can start from single function argument, then select all arguments, whole line etc. and then up to whole file. Same is possible using treesitter
+Setup # To enable incremential selection, following snippet can be used:
+require&amp;#39;nvim-treesitter.configs&amp;#39;.setup { incremental_selection = { enable = true, keymaps = { init_selection = &amp;#34;gnn&amp;#34;, node_incremental = &amp;#34;grn&amp;#34;, scope_incremental = &amp;#34;grc&amp;#34;, node_decremental = &amp;#34;grm&amp;#34;, }, }, } Usage # Now you are pretty much good to go :D As you can see above, gnn can be used to init selection.</description>
     </item>
     
     <item>
@@ -173,8 +173,8 @@ require&amp;#39;nvim-treesitter.configs&amp;#39;.setup {  incremental_selection 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-22/</guid>
-      <description>Moving lines around #  Moving lines can be thought of as deleting and pasting lines. However sometimes it is easier to think of it as pushing selected part up or down. For that vim has :m command.
-The move command #  The move command is quite easy to use. To move a line, first you have to place cursor at it or select it in visual mode. After that you can do :m &amp;lt;nr&amp;gt; to move line to line &amp;lt;nr&amp;gt;.</description>
+      <description>Moving lines around # Moving lines can be thought of as deleting and pasting lines. However sometimes it is easier to think of it as pushing selected part up or down. For that vim has :m command.
+The move command # The move command is quite easy to use. To move a line, first you have to place cursor at it or select it in visual mode. After that you can do :m &amp;lt;nr&amp;gt; to move line to line &amp;lt;nr&amp;gt;.</description>
     </item>
     
     <item>
@@ -183,8 +183,8 @@ The move command #  The move command is quite easy to use. To move a line, first
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-23/</guid>
-      <description>Indenting text #  Indenting text can be quite common in programming. You might want to format comments or text later printed to terminal. Vim can also give you a hand here.
-Indenting #  Indenting can be done with selecting text and then using &amp;lt; and &amp;gt; keys. Whilst this is useful for formatting text after it has been written you can also indent in insert mode. For that we have ^D and ^T for deindent and indent respectively.</description>
+      <description>Indenting text # Indenting text can be quite common in programming. You might want to format comments or text later printed to terminal. Vim can also give you a hand here.
+Indenting # Indenting can be done with selecting text and then using &amp;lt; and &amp;gt; keys. Whilst this is useful for formatting text after it has been written you can also indent in insert mode. For that we have ^D and ^T for deindent and indent respectively.</description>
     </item>
     
     <item>
@@ -193,9 +193,21 @@ Indenting #  Indenting can be done with selecting text and then using &amp;lt; a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-24/</guid>
-      <description>Aligning text #  A simple, but sometimes boring and slow task is alagning text. However it is also quite common task in programming, wheather fore readme or for printing to terminal.
-Aligning to columns #  One of the most common tasks is algining text to columns. It can be easily achieved using linux column command.
-:&amp;#39;&amp;lt;,&amp;#39;&amp;gt;! column -tCentering text #  There is also a command in vim for centering text.</description>
+      <description>Aligning text # A simple, but sometimes boring and slow task is alagning text. However it is also quite common task in programming, wheather fore readme or for printing to terminal.
+Aligning to columns # One of the most common tasks is algining text to columns. It can be easily achieved using linux column command.
+:&amp;#39;&amp;lt;,&amp;#39;&amp;gt;! column -t Centering text # There is also a command in vim for centering text.</description>
+    </item>
+    
+    <item>
+      <title>Week 25</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-25/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-25/</guid>
+      <description>Aligning text # This week we&amp;rsquo;re simply continuing with aligning text.
+Aligning left or right # Aigning text to left or right can be achieved with :left and :right. Make sure to also set correct textwidth so that aligning right would make sense.
+Aligning by character # As a followup to last week I also decided to add option to align by char. For that you can use
+:% !</description>
     </item>
     
     <item>
@@ -204,9 +216,9 @@ Aligning to columns #  One of the most common tasks is algining text to columns.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</guid>
-      <description>Working on long lines #  Sometimes lines are so long that they do not fit onto screen. It is inportant to know how to split line to multiple or sometimes merge into single in these cases.
-Movement #  This is how to move on wrapped lines as if they were multiple lines
-gj - downgk - upg$ - end of a visual lineg0 - beginning of a visual lineSplit to multiple lines #  To split single line (or any other text object) to multiple lines gq followed by a motion can be used.</description>
+      <description>Working on long lines # Sometimes lines are so long that they do not fit onto screen. It is inportant to know how to split line to multiple or sometimes merge into single in these cases.
+Movement # This is how to move on wrapped lines as if they were multiple lines
+gj - down gk - up g$ - end of a visual line g0 - beginning of a visual line Split to multiple lines # To split single line (or any other text object) to multiple lines gq followed by a motion can be used.</description>
     </item>
     
     <item>
@@ -215,11 +227,12 @@ gj - downgk - upg$ - end of a visual lineg0 - beginning of a visual lineSplit to
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</guid>
-      <description>Opening files #  Here are some tips for opening files with vim.
-Open file with nvim #  The most basic way is to open files when opening vim.
+      <description>Opening files # Here are some tips for opening files with vim.
+Open file with nvim # The most basic way is to open files when opening vim.
 nvim [-o] /path/to/file.txt -o Can be used to open each file in sepparate window or you can specify amount of windows with it as -o 4
-Open width :edit / :view command #  To edit
-:e /path/to/file.txtView only mode</description>
+Open width :edit / :view command # To edit
+:e /path/to/file.txt View only mode
+:v /path/to/file.</description>
     </item>
     
     <item>
@@ -228,10 +241,10 @@ Open width :edit / :view command #  To edit
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</guid>
-      <description>Opening files #  More tips for opening files incoming.
-Open multiple files from inside vim #  Similarly to passing wildcards to arguments when opening vim with files you can open multiple files from inside vim. This can be acieved with :ar[gs] &amp;lt;pattern&amp;gt; command.
+      <description>Opening files # More tips for opening files incoming.
+Open multiple files from inside vim # Similarly to passing wildcards to arguments when opening vim with files you can open multiple files from inside vim. This can be acieved with :ar[gs] &amp;lt;pattern&amp;gt; command.
 For example all .cpp files is src can be opened with
-:args src/**/*.cppNvim Tree #  Another very useful option is to use kyazdani42/nvim-tree (or something similar).</description>
+:args src/**/*.cpp Nvim Tree # Another very useful option is to use kyazdani42/nvim-tree (or something similar).</description>
     </item>
     
     <item>
@@ -240,9 +253,9 @@ For example all .cpp files is src can be opened with
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</guid>
-      <description>Macros #  It is quite often that we want to repeat some combination of actions multiple times&amp;hellip; And thats exactly what macros are for :D.
-Recording a macro #  Recording macro is started with pressing q in normal mode followed by macro name (any lowercase letter). Recording macro can be stopped with pressing q again.
-qa # Record macro named &amp;#34;a&amp;#34;# perform actionsqPlaying macros #  Macro can me played with @{macro-name}.</description>
+      <description>Macros # It is quite often that we want to repeat some combination of actions multiple times&amp;hellip; And thats exactly what macros are for :D.
+Recording a macro # Recording macro is started with pressing q in normal mode followed by macro name (any lowercase letter). Recording macro can be stopped with pressing q again.
+qa # Record macro named &amp;#34;a&amp;#34; # perform actions q Playing macros # Macro can me played with @{macro-name}.</description>
     </item>
     
     <item>
@@ -251,8 +264,8 @@ qa # Record macro named &amp;#34;a&amp;#34;# perform actionsqPlaying macros #  M
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-07/</guid>
-      <description>Registers #  Sometomes you copy a thing.. and then you copy another thing.. but now you want to paste the first one. This is what vim registers are for :D
-Different types of registers #   Unnamed register &amp;quot;&amp;quot; 10 numbered registers &amp;quot;0..9 The small delete register &amp;quot;- 26 named registers &amp;quot;a..z Three read-only registers &amp;quot;., &amp;quot;%, : Alternate buffer register &amp;quot;# The expression register &amp;quot;= The black hole register &amp;quot;_ The last selection registers &amp;quot;* and &amp;quot;+ Last search pattern register &amp;quot;/  Viewing registers #  Show all registers</description>
+      <description>Registers # Sometomes you copy a thing.. and then you copy another thing.. but now you want to paste the first one. This is what vim registers are for :D
+Different types of registers # Unnamed register &amp;quot;&amp;quot; 10 numbered registers &amp;quot;0..9 The small delete register &amp;quot;- 26 named registers &amp;quot;a..z Three read-only registers &amp;quot;., &amp;quot;%, : Alternate buffer register &amp;quot;# The expression register &amp;quot;= The black hole register &amp;quot;_ The last selection registers &amp;quot;* and &amp;quot;+ Last search pattern register &amp;quot;/ Viewing registers # Show all registers</description>
     </item>
     
     <item>
@@ -261,9 +274,9 @@ Different types of registers #   Unnamed register &amp;quot;&amp;quot; 10 number
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-08/</guid>
-      <description>Registers 1 #  We continue with registers by looking at:
- 10 numbered registers &amp;quot;0..9 The small delete register &amp;quot;- 26 named registers &amp;quot;a..z  Numbered registers #   &amp;quot;0 has the last yank &amp;quot;1 has the last delete (d, c, s, x) &amp;quot;2..9 have previous deletes  Side note
-Note that %, (), /, n and N (and maybe some more) dont got to delete registers.  Small delete register #  This register contains the deletes that delete less than one line.</description>
+      <description>Registers 1 # We continue with registers by looking at:
+10 numbered registers &amp;quot;0..9 The small delete register &amp;quot;- 26 named registers &amp;quot;a..z Numbered registers # &amp;quot;0 has the last yank &amp;quot;1 has the last delete (d, c, s, x) &amp;quot;2..9 have previous deletes Side note
+Note that %, (), /, n and N (and maybe some more) dont got to delete registers. Small delete register # This register contains the deletes that delete less than one line.</description>
     </item>
     
     <item>
@@ -272,9 +285,9 @@ Note that %, (), /, n and N (and maybe some more) dont got to delete registers. 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-09/</guid>
-      <description>Registers 2 #  We continue with registers by looking at:
- Three read-only registers &amp;quot;., &amp;quot;%, : Alternate file register &amp;quot;# The expression register &amp;quot;=  Readonly registers #   &amp;quot;. Last insert mode &amp;quot;% Current file name &amp;quot;: Last Command  Some tips to go with current filename:
-%:p -&amp;gt; Make filename full path%:h -&amp;gt; Head of the filename%:t -&amp;gt; Tail of the filename%:r -&amp;gt; Root%:e -&amp;gt; ExtensionAlternate file register #  Register can be accessed via &amp;quot;#.</description>
+      <description>Registers 2 # We continue with registers by looking at:
+Three read-only registers &amp;quot;., &amp;quot;%, : Alternate file register &amp;quot;# The expression register &amp;quot;= Readonly registers # &amp;quot;. Last insert mode &amp;quot;% Current file name &amp;quot;: Last Command Some tips to go with current filename:
+%:p -&amp;gt; Make filename full path %:h -&amp;gt; Head of the filename %:t -&amp;gt; Tail of the filename %:r -&amp;gt; Root %:e -&amp;gt; Extension Alternate file register # Register can be accessed via &amp;quot;#.</description>
     </item>
     
   </channel>

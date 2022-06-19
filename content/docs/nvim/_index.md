@@ -31,3 +31,4 @@ title: "Neovim tips"
  - [week-22](./week-22) Moving lines around
  - [week-23](./week-23) Indenting text
  - [week-24](./week-24) Aligning text
+ - [week-25](./week-25) Aligning text 2
