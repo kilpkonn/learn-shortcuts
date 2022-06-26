@@ -211,6 +211,16 @@ Aligning by character # As a followup to last week I also decided to add option 
     </item>
     
     <item>
+      <title>Week 26</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-26/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-26/</guid>
+      <description>Manipulating numbers # It is quite often, that we do not treat numbersr just as text, but as actual numbers. We might wish to either increment, decrement or perform any other numerical operations.
+Incrementing and decrementing # Incrementing and decrementing can be done with C-a and C-x. You simply have to have your cursor on the same line and then the command modifies the first number on the given line.</description>
+    </item>
+    
+    <item>
       <title>Week 3</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

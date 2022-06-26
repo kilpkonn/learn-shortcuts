@@ -32,3 +32,4 @@ title: "Neovim tips"
  - [week-23](./week-23) Indenting text
  - [week-24](./week-24) Aligning text
  - [week-25](./week-25) Aligning text 2
+ - [week-26](./week-26) Manipulating numbers
