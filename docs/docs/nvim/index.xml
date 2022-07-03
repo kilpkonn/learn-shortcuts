@@ -221,6 +221,17 @@ Incrementing and decrementing # Incrementing and decrementing can be done with C
     </item>
     
     <item>
+      <title>Week 27</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-27/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-27/</guid>
+      <description>Digraphs # Vim has also a feature tu insert digraphs, hers how.
+Viewing available options # To see available digraphs use :dig command.
+Inserting # Inserting can be done with &amp;lt;C-K&amp;gt; &amp;lt;char1&amp;gt;&amp;lt;char2&amp;gt;. For example &amp;lt;C-K&amp;gt;-&amp;gt; for →.</description>
+    </item>
+    
+    <item>
       <title>Week 3</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
