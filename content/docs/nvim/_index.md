@@ -34,3 +34,4 @@ title: "Neovim tips"
  - [week-25](./week-25) Aligning text 2
  - [week-26](./week-26) Manipulating numbers
  - [week-27](./week-27) Digraphs
+ - [week-28](./week-28) Deleting in insert mode

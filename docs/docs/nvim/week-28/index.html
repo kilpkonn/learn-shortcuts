@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Aligning text # A simple, but sometimes boring and slow task is alagning text. However it is also quite common task in programming, wheather fore readme or for printing to terminal.
-Aligning to columns # One of the most common tasks is algining text to columns. It can be easily achieved using linux column command.
-:&#39;&lt;,&#39;&gt;! column -t Centering text # There is also a command in vim for centering text.">
+<meta name="description" content="Deleting in insert mode # In Vim you normally in sert in insert mode and delete in normal mode. However, there are also shortcuts to delete text more conveniently in insert mode.
+Shotcuts # &lt;C-h&gt; works as backspace.
+&lt;C-w&gt; deletes word under cursor.
+&lt;C-u&gt; delete line until cursor.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 24" />
-<meta property="og:description" content="Aligning text # A simple, but sometimes boring and slow task is alagning text. However it is also quite common task in programming, wheather fore readme or for printing to terminal.
-Aligning to columns # One of the most common tasks is algining text to columns. It can be easily achieved using linux column command.
-:&#39;&lt;,&#39;&gt;! column -t Centering text # There is also a command in vim for centering text." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 28" />
+<meta property="og:description" content="Deleting in insert mode # In Vim you normally in sert in insert mode and delete in normal mode. However, there are also shortcuts to delete text more conveniently in insert mode.
+Shotcuts # &lt;C-h&gt; works as backspace.
+&lt;C-w&gt; deletes word under cursor.
+&lt;C-u&gt; delete line until cursor." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-24/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-28/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Week 24 | Learn Shortcuts</title>
+<title>Week 28 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -92,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 24</strong>
+  <strong>Week 28</strong>
 
   <label for="toc-control">
     
@@ -108,8 +110,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#aligning-to-columns">Aligning to columns</a></li>
-    <li><a href="#centering-text">Centering text</a></li>
+    <li><a href="#shotcuts">Shotcuts</a></li>
   </ul>
 </nav>
 
@@ -122,26 +123,20 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="aligning-text">
-  Aligning text
-  <a class="anchor" href="#aligning-text">#</a>
+  <article class="markdown"><h1 id="deleting-in-insert-mode">
+  Deleting in insert mode
+  <a class="anchor" href="#deleting-in-insert-mode">#</a>
 </h1>
-<p>A simple, but sometimes boring and slow task is alagning text.
-However it is also quite common task in programming, wheather fore readme or for printing to terminal.</p>
-<h2 id="aligning-to-columns">
-  Aligning to columns
-  <a class="anchor" href="#aligning-to-columns">#</a>
+<p>In Vim you normally in sert in insert mode and delete in normal mode.
+However, there are also shortcuts to delete text more conveniently in insert mode.</p>
+<h2 id="shotcuts">
+  Shotcuts
+  <a class="anchor" href="#shotcuts">#</a>
 </h2>
-<p>One of the most common tasks is algining text to columns.
-It can be easily achieved using linux <code>column</code> command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;! <span style="color:#a6e22e">column</span> -<span style="color:#a6e22e">t</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><h2 id="centering-text">
-  Centering text
-  <a class="anchor" href="#centering-text">#</a>
-</h2>
-<p>There is also a command in vim for centering text.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#e6db74">&#39;&lt;,&#39;</span>&gt;<span style="color:#a6e22e">center</span> <span style="color:#ae81ff">30</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div></article>
+<p><code>&lt;C-h&gt;</code> works as backspace.<br>
+<code>&lt;C-w&gt;</code> deletes word under cursor.<br>
+<code>&lt;C-u&gt;</code> delete line until cursor.</p>
+</article>
  
       
 
@@ -182,8 +177,7 @@ It can be easily achieved using linux <code>column</code> command.</p>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#aligning-to-columns">Aligning to columns</a></li>
-    <li><a href="#centering-text">Centering text</a></li>
+    <li><a href="#shotcuts">Shotcuts</a></li>
   </ul>
 </nav>
 

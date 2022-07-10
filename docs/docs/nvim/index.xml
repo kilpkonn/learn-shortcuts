@@ -232,6 +232,18 @@ Inserting # Inserting can be done with &amp;lt;C-K&amp;gt; &amp;lt;char1&amp;gt;
     </item>
     
     <item>
+      <title>Week 28</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-28/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-28/</guid>
+      <description>Deleting in insert mode # In Vim you normally in sert in insert mode and delete in normal mode. However, there are also shortcuts to delete text more conveniently in insert mode.
+Shotcuts # &amp;lt;C-h&amp;gt; works as backspace.
+&amp;lt;C-w&amp;gt; deletes word under cursor.
+&amp;lt;C-u&amp;gt; delete line until cursor.</description>
+    </item>
+    
+    <item>
       <title>Week 3</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
