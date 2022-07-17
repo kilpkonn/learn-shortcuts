@@ -35,3 +35,4 @@ title: "Neovim tips"
  - [week-26](./week-26) Manipulating numbers
  - [week-27](./week-27) Digraphs
  - [week-28](./week-28) Deleting in insert mode
+ - [week-29](./week-29) Commands in insert mode
