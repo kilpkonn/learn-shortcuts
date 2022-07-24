@@ -5,7 +5,7 @@ title: "Week 29"
 ---
 
 # Commands in insert mode
-AS discussed previously, in Vim you normally in sert in insert mode and delete in normal mode.
+As discussed previously, in Vim you normally in sert in insert mode and delete in normal mode.
 However, there is a sleek way to temporarly tap into normal mode, run command and return to insert mode.
 
 ## This is how

@@ -249,7 +249,7 @@ Shotcuts # &amp;lt;C-h&amp;gt; works as backspace.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-29/</guid>
-      <description>Commands in insert mode # AS discussed previously, in Vim you normally in sert in insert mode and delete in normal mode. However, there is a sleek way to temporarly tap into normal mode, run command and return to insert mode.
+      <description>Commands in insert mode # As discussed previously, in Vim you normally in sert in insert mode and delete in normal mode. However, there is a sleek way to temporarly tap into normal mode, run command and return to insert mode.
 This is how # &amp;lt;C-o&amp;gt; is a simple shortcut to tap into normal mode for single command. After running the command you are automatically put back into insert mode.</description>
     </item>
     
@@ -262,6 +262,16 @@ This is how # &amp;lt;C-o&amp;gt; is a simple shortcut to tap into normal mode f
       <description>Working on long lines # Sometimes lines are so long that they do not fit onto screen. It is inportant to know how to split line to multiple or sometimes merge into single in these cases.
 Movement # This is how to move on wrapped lines as if they were multiple lines
 gj - down gk - up g$ - end of a visual line g0 - beginning of a visual line Split to multiple lines # To split single line (or any other text object) to multiple lines gq followed by a motion can be used.</description>
+    </item>
+    
+    <item>
+      <title>Week 30</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-30/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-30/</guid>
+      <description>Moving in visual mode # In visual mode, there are some extra options to normal mode to select text easierly. Namely you can jump around already selected code.
+Jump to the other side of selection # The o key can be used to jump to the other side of selection. Namely it jumps from corner to corner on diagonal. To jump to other end of selection on current line, use O.</description>
     </item>
     
     <item>
