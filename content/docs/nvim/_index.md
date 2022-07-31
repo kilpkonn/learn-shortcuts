@@ -37,3 +37,4 @@ title: "Neovim tips"
  - [week-28](./week-28) Deleting in insert mode
  - [week-29](./week-29) Commands in insert mode
  - [week-30](./week-30) Moving in visual mode
+ - [week-31](./week-31) Undo and insert mode

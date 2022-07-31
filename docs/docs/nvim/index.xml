@@ -275,6 +275,16 @@ Jump to the other side of selection # The o key can be used to jump to the other
     </item>
     
     <item>
+      <title>Week 31</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-31/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-31/</guid>
+      <description>Undo in insert mode # In inser mode we insert text and later we can undo those changes with u key in normal mode. However undo to whole update is not what we always want and vim might not be always clever enough to understand what should be considere atomic edit. To solve that there is an option to tell where an atomic edit should end.
+Splitting insert to multiple atoms # To split a single edit to multiple atoms use &amp;lt;C-G&amp;gt;u shortcut.</description>
+    </item>
+    
+    <item>
       <title>Week 4</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
