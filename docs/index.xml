@@ -285,6 +285,16 @@ Splitting insert to multiple atoms # To split a single edit to multiple atoms us
     </item>
     
     <item>
+      <title>Week 32</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-32/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-32/</guid>
+      <description>Append to registers # Sometimes it is convenient to append some data to registers. The most likely usecase is:
+Record macro with qa Stop recording with q Realize, something needs to be added to macro Append keystrokes you previously left out Apending keystrokes # Appending can be done with qA to continue the example above. For other registers, simply use other capital letters. You can end the recording with q as always.</description>
+    </item>
+    
+    <item>
       <title>Week 4</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
