@@ -305,6 +305,16 @@ The gx command # Vim has a gx command to open links with default app configured 
     </item>
     
     <item>
+      <title>Week 34</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-34/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-34/</guid>
+      <description>Reselectiong last visual selection # You select text, copy it and continue with other stuf.. Now you suddenly want to make the same selection again, but redoing all the motions is slow and cumbersome.
+The gv command # There is a gv command in Vim, that goes to visual selection mode and reselects last selection again. Might be super handy when you have some REPL oen in separate window and copy your code there.</description>
+    </item>
+    
+    <item>
       <title>Week 4</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

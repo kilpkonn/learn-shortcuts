@@ -40,3 +40,4 @@ title: "Neovim tips"
  - [week-31](./week-31) Undo and insert mode
  - [week-32](./week-32) Appending to registers
  - [week-33](./week-33) Opening files and links in other apps
+ - [week-34](./week-34) Reselecting last visual selection
