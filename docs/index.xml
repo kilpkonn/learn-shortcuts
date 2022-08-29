@@ -315,6 +315,16 @@ The gv command # There is a gv command in Vim, that goes to visual selection mod
     </item>
     
     <item>
+      <title>Week 35</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-35/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-35/</guid>
+      <description>Visually selecting search matches # You can search with / and visually select in motions, but theres also a way to select text based on your search.
+The gn command # There is a gn command in Vim, that goes to visual selection mode and select your search match. Running gn again extends the selection to next match and so on&amp;hellip;</description>
+    </item>
+    
+    <item>
       <title>Week 4</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
