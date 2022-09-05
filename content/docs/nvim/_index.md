@@ -42,3 +42,4 @@ title: "Neovim tips"
  - [week-33](./week-33) Opening files and links in other apps
  - [week-34](./week-34) Reselecting last visual selection
  - [week-35](./week-35) Visually selectiong search matches
+ - [week-36](./week-36) Viewing ASCII values
