@@ -43,3 +43,4 @@ title: "Neovim tips"
  - [week-34](./week-34) Reselecting last visual selection
  - [week-35](./week-35) Visually selectiong search matches
  - [week-36](./week-36) Viewing ASCII values
+ - [week-37](./week-37) Ranges
