@@ -345,6 +345,17 @@ Basic syntax # The range in vim consists of starting position and ending positio
     </item>
     
     <item>
+      <title>Week 38</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-38/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-38/</guid>
+      <description> Substitute magic # Vim has a regex engine that has some so-called magic features. Here&amp;rsquo;s how to use or not to use them.
+Enabling different levels of magic # \v - very magic :sm - substitute magic :sno - no magic \V - very no magic These all delete opening brackets:
+:%s/\V(/ :%sm/(/ :%s/\(/ </description>
+    </item>
+    
+    <item>
       <title>Week 4</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

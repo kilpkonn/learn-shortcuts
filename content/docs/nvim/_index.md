@@ -44,3 +44,4 @@ title: "Neovim tips"
  - [week-35](./week-35) Visually selectiong search matches
  - [week-36](./week-36) Viewing ASCII values
  - [week-37](./week-37) Ranges
+ - [week-38](./week-38) Substitute magic
