@@ -356,6 +356,17 @@ Enabling different levels of magic # \v - very magic :sm - substitute magic :sno
     </item>
     
     <item>
+      <title>Week 39</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-39/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-39/</guid>
+      <description>Repeating substitutions # Instead of doing substitution on the whole file and reverting if it goes wrong there is a better way to test out you substitutions.
+Repeat same substitution # To repeat the last substitution with its flags use the :&amp;amp;&amp;amp; command.
+Repeat the substitution with new pattern # To redo the substitution with a new pattern (same replacement) you can use the :- command. Typical solution would be</description>
+    </item>
+    
+    <item>
       <title>Week 4</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

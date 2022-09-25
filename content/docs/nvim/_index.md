@@ -45,3 +45,4 @@ title: "Neovim tips"
  - [week-36](./week-36) Viewing ASCII values
  - [week-37](./week-37) Ranges
  - [week-38](./week-38) Substitute magic
+ - [week-39](./week-39) Repeating substitutions

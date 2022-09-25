@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Repeating substitutions # Instead of doing substitution on the whole file and reverting if it goes wrong there is a better way to test out you substitutions.
+Repeat same substitution # To repeat the last substitution with its flags use the :&amp;&amp; command.
+Repeat the substitution with new pattern # To redo the substitution with a new pattern (same replacement) you can use the :- command. Typical solution would be">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 39" />
+<meta property="og:description" content="Repeating substitutions # Instead of doing substitution on the whole file and reverting if it goes wrong there is a better way to test out you substitutions.
+Repeat same substitution # To repeat the last substitution with its flags use the :&amp;&amp; command.
+Repeat the substitution with new pattern # To redo the substitution with a new pattern (same replacement) you can use the :- command. Typical solution would be" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-39/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Week 39 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.59d82233233c22eb078c084854e5995815b20913156c9da53efa7dbfcdbd840c.js" integrity="sha256-WdgiMyM8IusHjAhIVOWZWBWyCRMVbJ2lPvp9v829hAw=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 39</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#repeat-same-substitution">Repeat same substitution</a></li>
+    <li><a href="#repeat-the-substitution-with-new-pattern">Repeat the substitution with new pattern</a></li>
+    <li><a href="#more-tips">More tips</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="repeating-substitutions">
+  Repeating substitutions
+  <a class="anchor" href="#repeating-substitutions">#</a>
+</h1>
+<p>Instead of doing substitution on the whole file and reverting if it goes wrong there is a better way to
+test out you substitutions.</p>
+<h2 id="repeat-same-substitution">
+  Repeat same substitution
+  <a class="anchor" href="#repeat-same-substitution">#</a>
+</h2>
+<p>To repeat the last substitution with its flags use the <code>:&amp;&amp;</code> command.</p>
+<h2 id="repeat-the-substitution-with-new-pattern">
+  Repeat the substitution with new pattern
+  <a class="anchor" href="#repeat-the-substitution-with-new-pattern">#</a>
+</h2>
+<p>To redo the substitution with a new pattern (same replacement) you can use
+the <code>:-</code> command.
+Typical solution would be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">s</span><span style="color:#e6db74">/pattern/</span><span style="color:#a6e22e">replacement</span>/<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>/<span style="color:#a6e22e">new</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:~<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>In the sequence above the occurances of <code>new</code> get replaced with <code>replacement</code>.</p>
+<h2 id="more-tips">
+  More tips
+  <a class="anchor" href="#more-tips">#</a>
+</h2>
+<ul>
+<li><code>:&amp;</code> Repeats last substitution with its falgs but without its range</li>
+<li><code>:g&amp;</code> Repeats last substitution with its flags and global range. Also replaces search pattern with latest search pattern used.</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#repeat-same-substitution">Repeat same substitution</a></li>
+    <li><a href="#repeat-the-substitution-with-new-pattern">Repeat the substitution with new pattern</a></li>
+    <li><a href="#more-tips">More tips</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
