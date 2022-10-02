@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Undo in insert mode # In inser mode we insert text and later we can undo those changes with u key in normal mode. However undo to whole update is not what we always want and vim might not be always clever enough to understand what should be considere atomic edit. To solve that there is an option to tell where an atomic edit should end.
-Splitting insert to multiple atoms # To split a single edit to multiple atoms use &lt;C-G&gt;u shortcut.">
+<meta name="description" content="Sorting text # Vim has also builtins for operations such as sorting text. Some of it is quite basic but there are also some quite fancy options.
+Basics # Sorting in vim is done with the sort command or sort! for reverse direction.
+Options # Useful options for sorting:
+i - ignore case n - sort by first decimal on line f - sort by first float on line /pattern/ sort by what comes after the match r sort by what is in pattern Note: Some more tips on this week&rsquo;s and previous weeks topics can be found here: https://thevaluable.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 31" />
-<meta property="og:description" content="Undo in insert mode # In inser mode we insert text and later we can undo those changes with u key in normal mode. However undo to whole update is not what we always want and vim might not be always clever enough to understand what should be considere atomic edit. To solve that there is an option to tell where an atomic edit should end.
-Splitting insert to multiple atoms # To split a single edit to multiple atoms use &lt;C-G&gt;u shortcut." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 40" />
+<meta property="og:description" content="Sorting text # Vim has also builtins for operations such as sorting text. Some of it is quite basic but there are also some quite fancy options.
+Basics # Sorting in vim is done with the sort command or sort! for reverse direction.
+Options # Useful options for sorting:
+i - ignore case n - sort by first decimal on line f - sort by first float on line /pattern/ sort by what comes after the match r sort by what is in pattern Note: Some more tips on this week&rsquo;s and previous weeks topics can be found here: https://thevaluable." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-31/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-40/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Week 31 | Learn Shortcuts</title>
+<title>Week 40 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 31</strong>
+  <strong>Week 40</strong>
 
   <label for="toc-control">
     
@@ -104,11 +108,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#splitting-insert-to-multiple-atoms">Splitting insert to multiple atoms</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -119,20 +119,33 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="undo-in-insert-mode">
-  Undo in insert mode
-  <a class="anchor" href="#undo-in-insert-mode">#</a>
+  <article class="markdown"><h1 id="sorting-text">
+  Sorting text
+  <a class="anchor" href="#sorting-text">#</a>
 </h1>
-<p>In inser mode we insert text and later we can undo those changes with <code>u</code> key in normal mode.
-However undo to whole update is not what we always want and vim might not be always clever enough to understand what should be considere
-atomic edit.
-To solve that there is an option to tell where an atomic edit should end.</p>
-<h2 id="splitting-insert-to-multiple-atoms">
-  Splitting insert to multiple atoms
-  <a class="anchor" href="#splitting-insert-to-multiple-atoms">#</a>
-</h2>
-<p>To split a single edit to multiple atoms use <code>&lt;C-G&gt;u</code> shortcut.
-Now you can undo everything you inserted after it without losing what was written before.</p>
+<p>Vim has also builtins for operations such as sorting text.
+Some of it is quite basic but there are also some quite fancy options.</p>
+<h1 id="basics">
+  Basics
+  <a class="anchor" href="#basics">#</a>
+</h1>
+<p>Sorting in vim is done with the <code>sort</code> command or <code>sort!</code> for reverse direction.</p>
+<h1 id="options">
+  Options
+  <a class="anchor" href="#options">#</a>
+</h1>
+<p>Useful options for sorting:</p>
+<ul>
+<li><code>i</code> - ignore case</li>
+<li><code>n</code> - sort by first decimal on line</li>
+<li><code>f</code> - sort by first float on line</li>
+<li><code>/pattern/</code> sort by what comes <strong>after</strong> the match</li>
+<li><code>r</code> sort by what is in pattern</li>
+</ul>
+<blockquote class="book-hint info">
+  <strong>Note:</strong> Some more tips on this week&rsquo;s and previous weeks topics can be found here: <a href="https://thevaluable.dev/vim-advanced/">https://thevaluable.dev/vim-advanced/</a>
+</blockquote>
+
 </article>
  
       
@@ -172,11 +185,7 @@ Now you can undo everything you inserted after it without losing what was writte
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#splitting-insert-to-multiple-atoms">Splitting insert to multiple atoms</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  

@@ -381,6 +381,18 @@ Open width :edit / :view command # To edit
     </item>
     
     <item>
+      <title>Week 40</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-40/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-40/</guid>
+      <description>Sorting text # Vim has also builtins for operations such as sorting text. Some of it is quite basic but there are also some quite fancy options.
+Basics # Sorting in vim is done with the sort command or sort! for reverse direction.
+Options # Useful options for sorting:
+i - ignore case n - sort by first decimal on line f - sort by first float on line /pattern/ sort by what comes after the match r sort by what is in pattern Note: Some more tips on this week&amp;rsquo;s and previous weeks topics can be found here: https://thevaluable.</description>
+    </item>
+    
+    <item>
       <title>Week 5</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
