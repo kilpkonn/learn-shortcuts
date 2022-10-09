@@ -47,3 +47,4 @@ title: "Neovim tips"
  - [week-38](./week-38) Substitute magic
  - [week-39](./week-39) Repeating substitutions
  - [week-40](./week-40) Sorting text
+ - [week-41](./week-41) Special character classes
