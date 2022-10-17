@@ -403,6 +403,16 @@ Character classes # \f - Filename characters \i - Identifier characters \k - Key
     </item>
     
     <item>
+      <title>Week 42</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-42/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-42/</guid>
+      <description> Zero-with lookaround # Zero-with lookaround assertions allow regex to match patterns looking forward or backward without actually including them in the match. Since they do dot have with, replacing them is actually inserting text. Simple example are ^ and $ characters.
+Useful examples # \zs -Only match your pattern if what’s before the metacharacter \zs has a match \ze -Only match your pattern if what’s after the metacharacter \ze has a match \&amp;lt; - Match beginning of a word \&amp;gt; - Match end of a word \%^ - Match beginning of a file \%$ - Match end of a file \%V - Match only in last visual selection </description>
+    </item>
+    
+    <item>
       <title>Week 5</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

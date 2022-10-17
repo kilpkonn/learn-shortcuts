@@ -48,3 +48,4 @@ title: "Neovim tips"
  - [week-39](./week-39) Repeating substitutions
  - [week-40](./week-40) Sorting text
  - [week-41](./week-41) Special character classes
+ - [week-42](./week-42) Zero-with lookaround
