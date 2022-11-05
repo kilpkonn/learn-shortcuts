@@ -435,6 +435,16 @@ To insert the output of the command into current buffer you can use :read! &amp;
     </item>
     
     <item>
+      <title>Week 45</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-45/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-45/</guid>
+      <description>Virtual edit # While editing text normally, you cannot type characters in a random place in the window. You need to manually add spaces or tabs to type text to the right side of the buffer. However there is a way to tell vim to allow placing cursor everywhere and then add spaces wherever needed if something was inserted.
+Usage # :set virtualedit=all allows you to type everywhere on the screen.</description>
+    </item>
+    
+    <item>
       <title>Week 5</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

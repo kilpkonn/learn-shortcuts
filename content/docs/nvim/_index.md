@@ -51,3 +51,4 @@ title: "Neovim tips"
  - [week-42](./week-42) Zero-with lookaround
  - [week-43](./week-43) Regex and marks
  - [week-44](./week-44) External commands
+ - [week-45](./week-45) Virtual edit
