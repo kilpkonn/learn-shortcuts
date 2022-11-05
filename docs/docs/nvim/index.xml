@@ -423,6 +423,18 @@ Usage # \%&amp;lt;&#39;m - Match before position &#39;m. \%&amp;lt;&#39;m - Matc
     </item>
     
     <item>
+      <title>Week 44</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-44/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-44/</guid>
+      <description>External commands # Vim has also an easy interface to run external (shell) commands from within vim. Some of it is quite basic but it has also some small useful tips not used so often.
+Usage # :! &amp;lt;cmd&amp;gt; executes the shell command &amp;lt;cmd&amp;gt;.
+:!! repeats the last executed command.
+To insert the output of the command into current buffer you can use :read! &amp;lt;cmd&amp;gt; or :!r &amp;lt;cmd&amp;gt; for short form.</description>
+    </item>
+    
+    <item>
       <title>Week 5</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -50,3 +50,4 @@ title: "Neovim tips"
  - [week-41](./week-41) Special character classes
  - [week-42](./week-42) Zero-with lookaround
  - [week-43](./week-43) Regex and marks
+ - [week-44](./week-44) External commands

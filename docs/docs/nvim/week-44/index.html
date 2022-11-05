@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Regex with marks # Regular expressions can be also combined with marks in vim to have easier and more powerful expressions.
-Usage # \%&lt;&#39;m - Match before position &#39;m. \%&lt;&#39;m - Match after position &#39;m. For example, /\%&gt;&#39;afoo\%&lt;&#39;b search the pattern foo between the mark &#39;a and &#39;b.">
+<meta name="description" content="External commands # Vim has also an easy interface to run external (shell) commands from within vim. Some of it is quite basic but it has also some small useful tips not used so often.
+Usage # :! &lt;cmd&gt; executes the shell command &lt;cmd&gt;.
+:!! repeats the last executed command.
+To insert the output of the command into current buffer you can use :read! &lt;cmd&gt; or :!r &lt;cmd&gt; for short form.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 43" />
-<meta property="og:description" content="Regex with marks # Regular expressions can be also combined with marks in vim to have easier and more powerful expressions.
-Usage # \%&lt;&#39;m - Match before position &#39;m. \%&lt;&#39;m - Match after position &#39;m. For example, /\%&gt;&#39;afoo\%&lt;&#39;b search the pattern foo between the mark &#39;a and &#39;b." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 44" />
+<meta property="og:description" content="External commands # Vim has also an easy interface to run external (shell) commands from within vim. Some of it is quite basic but it has also some small useful tips not used so often.
+Usage # :! &lt;cmd&gt; executes the shell command &lt;cmd&gt;.
+:!! repeats the last executed command.
+To insert the output of the command into current buffer you can use :read! &lt;cmd&gt; or :!r &lt;cmd&gt; for short form." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-43/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-44/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Week 43 | Learn Shortcuts</title>
+<title>Week 44 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 43</strong>
+  <strong>Week 44</strong>
 
   <label for="toc-control">
     
@@ -115,20 +119,20 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="regex-with-marks">
-  Regex with marks
-  <a class="anchor" href="#regex-with-marks">#</a>
+  <article class="markdown"><h1 id="external-commands">
+  External commands
+  <a class="anchor" href="#external-commands">#</a>
 </h1>
-<p>Regular expressions can be also combined with marks in vim to have easier and more powerful expressions.</p>
+<p>Vim has also an easy interface to run external (shell) commands from within vim.
+Some of it is quite basic but it has also some small useful tips not used so often.</p>
 <h1 id="usage">
   Usage
   <a class="anchor" href="#usage">#</a>
 </h1>
-<ul>
-<li><code>\%&lt;'m</code> - Match before position <code>'m</code>.</li>
-<li><code>\%&lt;'m</code> - Match after position <code>'m</code>.</li>
-</ul>
-<p>For example, <code>/\%&gt;'afoo\%&lt;'b</code> search the pattern <code>foo</code> between the mark <code>'a</code> and <code>'b</code>.</p>
+<p><code>:! &lt;cmd&gt;</code> executes the shell command <code>&lt;cmd&gt;</code>.<br>
+<code>:!!</code> repeats the last executed command.</p>
+<p>To insert the output of the command into current buffer you can use <code>:read! &lt;cmd&gt;</code> or <code>:!r &lt;cmd&gt;</code> for short form.
+And if you were wondering, <code>:r!!</code> also works fine.</p>
 </article>
  
       
