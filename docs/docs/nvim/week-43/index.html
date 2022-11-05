@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Manipulating numbers # It is quite often, that we do not treat numbersr just as text, but as actual numbers. We might wish to either increment, decrement or perform any other numerical operations.
-Incrementing and decrementing # Incrementing and decrementing can be done with C-a and C-x. You simply have to have your cursor on the same line and then the command modifies the first number on the given line.">
+<meta name="description" content="Regex with marks # Regular expressions can be also combined with marks in vim to have easier and more powerful expressions.
+Usage # \%&lt;&#39;m - Match before position &#39;m. \%&lt;&#39;m - Match after position &#39;m. For example, /\%&gt;&#39;afoo\%&lt;&#39;b search the pattern foo between the mark &#39;a and &#39;b.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 26" />
-<meta property="og:description" content="Manipulating numbers # It is quite often, that we do not treat numbersr just as text, but as actual numbers. We might wish to either increment, decrement or perform any other numerical operations.
-Incrementing and decrementing # Incrementing and decrementing can be done with C-a and C-x. You simply have to have your cursor on the same line and then the command modifies the first number on the given line." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 43" />
+<meta property="og:description" content="Regex with marks # Regular expressions can be also combined with marks in vim to have easier and more powerful expressions.
+Usage # \%&lt;&#39;m - Match before position &#39;m. \%&lt;&#39;m - Match after position &#39;m. For example, /\%&gt;&#39;afoo\%&lt;&#39;b search the pattern foo between the mark &#39;a and &#39;b." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-26/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-43/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Week 26 | Learn Shortcuts</title>
+<title>Week 43 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 26</strong>
+  <strong>Week 43</strong>
 
   <label for="toc-control">
     
@@ -104,11 +104,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#incrementing-and-decrementing">Incrementing and decrementing</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -119,19 +115,20 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="manipulating-numbers">
-  Manipulating numbers
-  <a class="anchor" href="#manipulating-numbers">#</a>
+  <article class="markdown"><h1 id="regex-with-marks">
+  Regex with marks
+  <a class="anchor" href="#regex-with-marks">#</a>
 </h1>
-<p>It is quite often, that we do not treat numbersr just as text, but as actual numbers.
-We might wish to either increment, decrement or perform any other numerical operations.</p>
-<h2 id="incrementing-and-decrementing">
-  Incrementing and decrementing
-  <a class="anchor" href="#incrementing-and-decrementing">#</a>
-</h2>
-<p>Incrementing and decrementing can be done with <code>C-a</code> and <code>C-x</code>.
-You simply have to have your cursor on the same line and then the command modifies the first
-number on the given line.</p>
+<p>Regular expressions can be also combined with marks in vim to have easier and more powerful expressions.</p>
+<h1 id="usage">
+  Usage
+  <a class="anchor" href="#usage">#</a>
+</h1>
+<ul>
+<li><code>\%&lt;'m</code> - Match before position <code>'m</code>.</li>
+<li><code>\%&lt;'m</code> - Match after position <code>'m</code>.</li>
+</ul>
+<p>For example, <code>/\%&gt;'afoo\%&lt;'b</code> search the pattern <code>foo</code> between the mark <code>'a</code> and <code>'b</code>.</p>
 </article>
  
       
@@ -171,11 +168,7 @@ number on the given line.</p>
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#incrementing-and-decrementing">Incrementing and decrementing</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  

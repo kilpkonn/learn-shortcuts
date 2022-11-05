@@ -409,7 +409,17 @@ Character classes # \f - Filename characters \i - Identifier characters \k - Key
       
       <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-42/</guid>
       <description> Zero-with lookaround # Zero-with lookaround assertions allow regex to match patterns looking forward or backward without actually including them in the match. Since they do dot have with, replacing them is actually inserting text. Simple example are ^ and $ characters.
-Useful examples # \zs -Only match your pattern if what’s before the metacharacter \zs has a match \ze -Only match your pattern if what’s after the metacharacter \ze has a match \&amp;lt; - Match beginning of a word \&amp;gt; - Match end of a word \%^ - Match beginning of a file \%$ - Match end of a file \%V - Match only in last visual selection </description>
+Useful examples # \zs - Only match your pattern if what’s before the metacharacter \zs has a match \ze - Only match your pattern if what’s after the metacharacter \ze has a match \&amp;lt; - Match beginning of a word \&amp;gt; - Match end of a word \%^ - Match beginning of a file \%$ - Match end of a file \%V - Match only in last visual selection </description>
+    </item>
+    
+    <item>
+      <title>Week 43</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-43/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-43/</guid>
+      <description>Regex with marks # Regular expressions can be also combined with marks in vim to have easier and more powerful expressions.
+Usage # \%&amp;lt;&#39;m - Match before position &#39;m. \%&amp;lt;&#39;m - Match after position &#39;m. For example, /\%&amp;gt;&#39;afoo\%&amp;lt;&#39;b search the pattern foo between the mark &#39;a and &#39;b.</description>
     </item>
     
     <item>
