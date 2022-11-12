@@ -445,6 +445,16 @@ Usage # :set virtualedit=all allows you to type everywhere on the screen.</descr
     </item>
     
     <item>
+      <title>Week 46</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-46/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-46/</guid>
+      <description>Scroll in insert mode # Vim allows scrolling without leaving insert mode. This is mainly useful if you find staring at the top or bottom of your screen annoying and wish to move to cursor up/down on the monitor.
+Usage # Scrolling in insert mode can be done with C-x C-y (scroll up) and C-x C-e (scroll down). Exiting scroll mode can be done with ESC as usual.</description>
+    </item>
+    
+    <item>
       <title>Week 5</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
