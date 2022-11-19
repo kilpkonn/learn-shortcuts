@@ -53,4 +53,5 @@ title: "Neovim tips"
  - [week-44](./week-44) External commands
  - [week-45](./week-45) Virtual edit
  - [week-46](./week-46) Scroll in insert mode
+ - [week-47](./week-47) More on completion
 

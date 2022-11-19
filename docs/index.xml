@@ -455,6 +455,16 @@ Usage # Scrolling in insert mode can be done with C-x C-y (scroll up) and C-x C-
     </item>
     
     <item>
+      <title>Week 47</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-47/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-47/</guid>
+      <description> More on completion # Most regular autocompletion cases are handled for me by nvim-cmp but there are still some cool completion related shortcuts that are good to know.
+Most useful shortcuts # C-x C-l - Complete whole line from buffer C-x C-f - Complete filepath under cursor (expands env vars) C-x s - Complete with spelling suggestion C-x C-v - Complete with command line history </description>
+    </item>
+    
+    <item>
       <title>Week 5</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

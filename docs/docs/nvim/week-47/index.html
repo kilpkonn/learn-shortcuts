@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Moving lines around # Moving lines can be thought of as deleting and pasting lines. However sometimes it is easier to think of it as pushing selected part up or down. For that vim has :m command.
-The move command # The move command is quite easy to use. To move a line, first you have to place cursor at it or select it in visual mode. After that you can do :m &lt;nr&gt; to move line to line &lt;nr&gt;.">
+<meta name="description" content=" More on completion # Most regular autocompletion cases are handled for me by nvim-cmp but there are still some cool completion related shortcuts that are good to know.
+Most useful shortcuts # C-x C-l - Complete whole line from buffer C-x C-f - Complete filepath under cursor (expands env vars) C-x s - Complete with spelling suggestion C-x C-v - Complete with command line history ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 22" />
-<meta property="og:description" content="Moving lines around # Moving lines can be thought of as deleting and pasting lines. However sometimes it is easier to think of it as pushing selected part up or down. For that vim has :m command.
-The move command # The move command is quite easy to use. To move a line, first you have to place cursor at it or select it in visual mode. After that you can do :m &lt;nr&gt; to move line to line &lt;nr&gt;." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 47" />
+<meta property="og:description" content=" More on completion # Most regular autocompletion cases are handled for me by nvim-cmp but there are still some cool completion related shortcuts that are good to know.
+Most useful shortcuts # C-x C-l - Complete whole line from buffer C-x C-f - Complete filepath under cursor (expands env vars) C-x s - Complete with spelling suggestion C-x C-v - Complete with command line history " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-22/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-47/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Week 22 | Learn Shortcuts</title>
+<title>Week 47 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 22</strong>
+  <strong>Week 47</strong>
 
   <label for="toc-control">
     
@@ -104,12 +104,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#the-move-command">The move command</a></li>
-    <li><a href="#the-copy-command">The copy command</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -120,29 +115,21 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="moving-lines-around">
-  Moving lines around
-  <a class="anchor" href="#moving-lines-around">#</a>
+  <article class="markdown"><h1 id="more-on-completion">
+  More on completion
+  <a class="anchor" href="#more-on-completion">#</a>
 </h1>
-<p>Moving lines can be thought of as deleting and pasting lines.
-However sometimes it is easier to think of it as pushing selected part up or down.
-For that vim has <code>:m</code> command.</p>
-<h2 id="the-move-command">
-  The move command
-  <a class="anchor" href="#the-move-command">#</a>
-</h2>
-<p>The move command is quite easy to use.
-To move a line, first you have to place cursor at it or select it in visual mode.
-After that you can do <code>:m &lt;nr&gt;</code> to move line to line <code>&lt;nr&gt;</code>.
-Also relative numbers can be used to move lines around.
-Simly use <code>:m +1&lt;CR&gt;</code> to move line down or <code>:m -2&lt;CR&gt;</code> to move line up.</p>
-<h2 id="the-copy-command">
-  The copy command
-  <a class="anchor" href="#the-copy-command">#</a>
-</h2>
-<p>Similarly to <code>:m[ove]</code> command vim has <code>:co[py]</code> command that works in a similary manner,
-but instead of moving lines it copies them.
-Copy also doesn&rsquo;t play nice with relative line numbers.</p>
+<p>Most regular autocompletion cases are handled for me by <code>nvim-cmp</code> but there are still some cool completion related shortcuts that are good to know.</p>
+<h1 id="most-useful-shortcuts">
+  Most useful shortcuts
+  <a class="anchor" href="#most-useful-shortcuts">#</a>
+</h1>
+<ul>
+<li><code>C-x C-l</code> - Complete whole line from buffer</li>
+<li><code>C-x C-f</code> - Complete filepath under cursor (expands env vars)</li>
+<li><code>C-x s</code> - Complete with spelling suggestion</li>
+<li><code>C-x C-v</code> - Complete with command line history</li>
+</ul>
 </article>
  
       
@@ -182,12 +169,7 @@ Copy also doesn&rsquo;t play nice with relative line numbers.</p>
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#the-move-command">The move command</a></li>
-    <li><a href="#the-copy-command">The copy command</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  
