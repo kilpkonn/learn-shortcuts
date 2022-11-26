@@ -465,6 +465,16 @@ Most useful shortcuts # C-x C-l - Complete whole line from buffer C-x C-f - Comp
     </item>
     
     <item>
+      <title>Week 48</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-48/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-48/</guid>
+      <description> Copying in command line mode # Sometimes we want to paste something from current buffer to the command line mode (accessed with :) The boring way to do it is go back to normal mode, yank it and then paste it with C-r&amp;lt;reg&amp;gt;. However there are some handy shortcuts for it.
+Most useful shortcuts # C-r C-f Copy the filename under buffer cursor C-r C-w Copy the word under buffer cursor C-r C-a Copy the around word under buffer cursor C-r C-l Copy the line under buffer cursor </description>
+    </item>
+    
+    <item>
       <title>Week 5</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-05/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

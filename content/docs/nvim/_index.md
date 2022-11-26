@@ -54,4 +54,4 @@ title: "Neovim tips"
  - [week-45](./week-45) Virtual edit
  - [week-46](./week-46) Scroll in insert mode
  - [week-47](./week-47) More on completion
-
+ - [week-48](./week-48) Copying in command line mode
