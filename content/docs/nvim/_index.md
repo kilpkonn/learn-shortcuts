@@ -55,3 +55,4 @@ title: "Neovim tips"
  - [week-46](./week-46) Scroll in insert mode
  - [week-47](./week-47) More on completion
  - [week-48](./week-48) Copying in command line mode
+ - [week-49](./week-49) Moving around in search result
