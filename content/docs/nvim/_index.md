@@ -56,3 +56,4 @@ title: "Neovim tips"
  - [week-47](./week-47) More on completion
  - [week-48](./week-48) Copying in command line mode
  - [week-49](./week-49) Moving around in search result
+ - [week-50](./week-50) Running multiple commands in CLI mode

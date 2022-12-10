@@ -497,6 +497,17 @@ For example all .cpp files is src can be opened with
     </item>
     
     <item>
+      <title>Week 50</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-50/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-50/</guid>
+      <description>Running multiple commands in CLI mode # Sometimes it is useful to run multiple commands one after another in CLI mode. An example would be replacing text with :argdo and then following it up with write.
+Basic usage # Commands can be chained with | symbol. So the example above would become
+:argdo s/foo/bar/g | w Note: You cannot use it with commands that take pipe as input. :!ls | .</description>
+    </item>
+    
+    <item>
       <title>Week 6</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
