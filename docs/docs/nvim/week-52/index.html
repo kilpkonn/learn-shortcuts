@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Append to registers # Sometimes it is convenient to append some data to registers. The most likely usecase is:
-Record macro with qa Stop recording with q Realize, something needs to be added to macro Append keystrokes you previously left out Apending keystrokes # Appending can be done with qA to continue the example above. For other registers, simply use other capital letters. You can end the recording with q as always.">
+<meta name="description" content="Saving options to a file # Usually you have hand written config fir your vim, but it might be that sometimes you want to save your current settings to a file. And vim has a command for that&hellip;
+Basic usage # You can save all your mappings and options to a file with :mk[exrc] &lt;file&gt;. The options can be later loaded with :source command.
+If you wish to save more than just options and mappings you can use mks[ession] &lt;file&gt; command that saves current session (tabs, buffer, pwd, .">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 32" />
-<meta property="og:description" content="Append to registers # Sometimes it is convenient to append some data to registers. The most likely usecase is:
-Record macro with qa Stop recording with q Realize, something needs to be added to macro Append keystrokes you previously left out Apending keystrokes # Appending can be done with qA to continue the example above. For other registers, simply use other capital letters. You can end the recording with q as always." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 52" />
+<meta property="og:description" content="Saving options to a file # Usually you have hand written config fir your vim, but it might be that sometimes you want to save your current settings to a file. And vim has a command for that&hellip;
+Basic usage # You can save all your mappings and options to a file with :mk[exrc] &lt;file&gt;. The options can be later loaded with :source command.
+If you wish to save more than just options and mappings you can use mks[ession] &lt;file&gt; command that saves current session (tabs, buffer, pwd, ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-32/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-52/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 32 | Learn Shortcuts</title>
+<title>Week 52 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -89,7 +91,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 32</strong>
+  <strong>Week 52</strong>
 
   <label for="toc-control">
     
@@ -103,11 +105,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#apending-keystrokes">Apending keystrokes</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -118,25 +116,22 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="append-to-registers">
-  Append to registers
-  <a class="anchor" href="#append-to-registers">#</a>
+  <article class="markdown"><h1 id="saving-options-to-a-file">
+  Saving options to a file
+  <a class="anchor" href="#saving-options-to-a-file">#</a>
 </h1>
-<p>Sometimes it is convenient to append some data to registers.
-The most likely usecase is:</p>
-<ol>
-<li>Record macro with <code>qa</code></li>
-<li>Stop recording with <code>q</code></li>
-<li>Realize, something needs to be added to macro</li>
-<li>Append keystrokes you previously left out</li>
-</ol>
-<h2 id="apending-keystrokes">
-  Apending keystrokes
-  <a class="anchor" href="#apending-keystrokes">#</a>
-</h2>
-<p>Appending can be done with <code>qA</code> to continue the example above.
-For other registers, simply use other capital letters.
-You can end the recording with <code>q</code> as always.</p>
+<p>Usually you have hand written config fir your vim, but it might be that sometimes you want to save your current settings to a file.
+And vim has a command for that&hellip;</p>
+<h1 id="basic-usage">
+  Basic usage
+  <a class="anchor" href="#basic-usage">#</a>
+</h1>
+<p>You can save all your mappings and options to a file with <code>:mk[exrc] &lt;file&gt;</code>.
+The options can be later loaded with <code>:source</code> command.</p>
+<p>If you wish to save more than just options and mappings you can use <code>mks[ession] &lt;file&gt;</code> command that
+saves current session (tabs, buffer, pwd, ..) to a file.
+Option called <code>sessionoptions</code> specifies what exactly is saved.
+Loading sessions is also done with <code>:source</code> command</p>
 </article>
  
       
@@ -176,11 +171,7 @@ You can end the recording with <code>q</code> as always.</p>
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#apending-keystrokes">Apending keystrokes</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  

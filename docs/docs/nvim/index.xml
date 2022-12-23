@@ -520,6 +520,17 @@ New abbreviations can be created with :ab &amp;lt;string&amp;gt; &amp;lt;replace
     </item>
     
     <item>
+      <title>Week 52</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-52/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-52/</guid>
+      <description>Saving options to a file # Usually you have hand written config fir your vim, but it might be that sometimes you want to save your current settings to a file. And vim has a command for that&amp;hellip;
+Basic usage # You can save all your mappings and options to a file with :mk[exrc] &amp;lt;file&amp;gt;. The options can be later loaded with :source command.
+If you wish to save more than just options and mappings you can use mks[ession] &amp;lt;file&amp;gt; command that saves current session (tabs, buffer, pwd, .</description>
+    </item>
+    
+    <item>
       <title>Week 6</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
