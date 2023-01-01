@@ -531,6 +531,16 @@ If you wish to save more than just options and mappings you can use mks[ession] 
     </item>
     
     <item>
+      <title>Week 53</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-53/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-53/</guid>
+      <description>Redirections # What if you want to save the output of Vim commands in a file or in a register? The command :redir is here to fulfill your desires.
+Basic usage # :redir &amp;gt; &amp;lt;file&amp;gt; - Write commands output to a file. Use &amp;gt;&amp;gt; to append and :redir! to overwrite. :redir @&amp;lt;reg&amp;gt; - Write every commands output to the register. :redir @&amp;lt;reg&amp;gt;&amp;gt;&amp;gt; - Append every commands output to register. (Caps append as well) :redir =&amp;gt; &amp;lt;var&amp;gt; - Write every commands output to a variable.</description>
+    </item>
+    
+    <item>
       <title>Week 6</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

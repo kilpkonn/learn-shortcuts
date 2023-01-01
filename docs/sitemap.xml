@@ -2,9 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/</loc>
+  </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/</loc>
   </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-00/</loc>
+  </url><url>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-01/</loc>
   </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-01/</loc>
   </url><url>
@@ -102,6 +106,8 @@
   </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-52/</loc>
   </url><url>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-53/</loc>
+  </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</loc>
   </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-07/</loc>
@@ -110,11 +116,12 @@
   </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-09/</loc>
   </url><url>
+    <loc>https://kilpkonn.github.io/learn-shortcuts/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/categories/</loc>
   </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/docs/</loc>
-  </url><url>
-    <loc>https://kilpkonn.github.io/learn-shortcuts/</loc>
   </url><url>
     <loc>https://kilpkonn.github.io/learn-shortcuts/tags/</loc>
   </url>

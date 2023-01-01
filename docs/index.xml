@@ -20,6 +20,16 @@ basic experience with neovim (I had ~5 months as neovim as my main editor but al
     
     <item>
       <title>Week 1</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-01/</guid>
+      <description> Identity filter # Identity filter is the simplest filter there is as it basically just returns the input. Identity filter is specified as ..
+Example # echo &amp;#39;{ &amp;#34;a&amp;#34;: 1, &amp;#34;b&amp;#34;: true }&amp;#39; | jq &amp;#39;.&amp;#39; </description>
+    </item>
+    
+    <item>
+      <title>Week 1</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -528,6 +538,16 @@ New abbreviations can be created with :ab &amp;lt;string&amp;gt; &amp;lt;replace
       <description>Saving options to a file # Usually you have hand written config fir your vim, but it might be that sometimes you want to save your current settings to a file. And vim has a command for that&amp;hellip;
 Basic usage # You can save all your mappings and options to a file with :mk[exrc] &amp;lt;file&amp;gt;. The options can be later loaded with :source command.
 If you wish to save more than just options and mappings you can use mks[ession] &amp;lt;file&amp;gt; command that saves current session (tabs, buffer, pwd, .</description>
+    </item>
+    
+    <item>
+      <title>Week 53</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-53/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-53/</guid>
+      <description>Redirections # What if you want to save the output of Vim commands in a file or in a register? The command :redir is here to fulfill your desires.
+Basic usage # :redir &amp;gt; &amp;lt;file&amp;gt; - Write commands output to a file. Use &amp;gt;&amp;gt; to append and :redir! to overwrite. :redir @&amp;lt;reg&amp;gt; - Write every commands output to the register. :redir @&amp;lt;reg&amp;gt;&amp;gt;&amp;gt; - Append every commands output to register. (Caps append as well) :redir =&amp;gt; &amp;lt;var&amp;gt; - Write every commands output to a variable.</description>
     </item>
     
     <item>

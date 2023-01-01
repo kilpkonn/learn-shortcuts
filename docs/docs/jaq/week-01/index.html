@@ -3,21 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="External commands # Vim has also an easy interface to run external (shell) commands from within vim. Some of it is quite basic but it has also some small useful tips not used so often.
-Usage # :! &lt;cmd&gt; executes the shell command &lt;cmd&gt;.
-:!! repeats the last executed command.
-To insert the output of the command into current buffer you can use :read! &lt;cmd&gt; or :!r &lt;cmd&gt; for short form.">
+<meta name="description" content=" Identity filter # Identity filter is the simplest filter there is as it basically just returns the input. Identity filter is specified as ..
+Example # echo &#39;{ &#34;a&#34;: 1, &#34;b&#34;: true }&#39; | jq &#39;.&#39; ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 44" />
-<meta property="og:description" content="External commands # Vim has also an easy interface to run external (shell) commands from within vim. Some of it is quite basic but it has also some small useful tips not used so often.
-Usage # :! &lt;cmd&gt; executes the shell command &lt;cmd&gt;.
-:!! repeats the last executed command.
-To insert the output of the command into current buffer you can use :read! &lt;cmd&gt; or :!r &lt;cmd&gt; for short form." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 1" />
+<meta property="og:description" content=" Identity filter # Identity filter is the simplest filter there is as it basically just returns the input. Identity filter is specified as ..
+Example # echo &#39;{ &#34;a&#34;: 1, &#34;b&#34;: true }&#39; | jq &#39;.&#39; " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-44/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-01/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 44 | Learn Shortcuts</title>
+<title>Week 1 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -94,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 44</strong>
+  <strong>Week 1</strong>
 
   <label for="toc-control">
     
@@ -119,21 +115,18 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="external-commands">
-  External commands
-  <a class="anchor" href="#external-commands">#</a>
+  <article class="markdown"><h1 id="identity-filter">
+  Identity filter
+  <a class="anchor" href="#identity-filter">#</a>
 </h1>
-<p>Vim has also an easy interface to run external (shell) commands from within vim.
-Some of it is quite basic but it has also some small useful tips not used so often.</p>
-<h1 id="usage">
-  Usage
-  <a class="anchor" href="#usage">#</a>
+<p>Identity filter is the simplest filter there is as it basically just returns the input.
+Identity filter is specified as <code>.</code>.</p>
+<h1 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
 </h1>
-<p><code>:! &lt;cmd&gt;</code> executes the shell command <code>&lt;cmd&gt;</code>.<br>
-<code>:!!</code> repeats the last executed command.</p>
-<p>To insert the output of the command into current buffer you can use <code>:read! &lt;cmd&gt;</code> or <code>:!r &lt;cmd&gt;</code> for short form.
-And if you were wondering, <code>:r!!</code> also works fine.</p>
-</article>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;{ &#34;a&#34;: 1, &#34;b&#34;: true }&#39;</span> | jq <span style="color:#e6db74">&#39;.&#39;</span>
+</span></span></code></pre></div></article>
  
       
 

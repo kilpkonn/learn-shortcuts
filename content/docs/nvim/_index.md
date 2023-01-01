@@ -59,3 +59,4 @@ title: "Neovim tips"
  - [week-50](./week-50) Running multiple commands in CLI mode
  - [week-51](./week-51) Abbreviations
  - [week-52](./week-52) Saving options to a file
+ - [week-53](./week-53) Redirections
