@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Opening links in other apps # Text files often contain links to either files or web pages. It is also quite common that you want to open those links with an app that you have installed for particular meme type.
-The gx command # Vim has a gx command to open links with default app configured in your system. It can be used in a similar manner to gf. Simply place your cursor on the link and press gx.">
+<meta name="description" content=" Object identifier index # Object identifier filter is the most basic non-trivial filter there is (well, along array index). The syntax is .foo, &#39;.foo.bar, .&quot;123foo&quot;, .&quot;foo::bar&quot; or .[&quot;foo&quot;]. The filter takes object and returns value at the key specified or null otherwise.
+Example # echo &#39;{ &#34;a&#34;: 1, &#34;b&#34;: true }&#39; | jq &#39;.a&#39; # Outout: 1 echo &#39;{ &#34;a&#34;: 1, &#34;b&#34;: true }&#39; | jq &#39;.[&#34;b&#34;]&#39; # Outout: true ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 33" />
-<meta property="og:description" content="Opening links in other apps # Text files often contain links to either files or web pages. It is also quite common that you want to open those links with an app that you have installed for particular meme type.
-The gx command # Vim has a gx command to open links with default app configured in your system. It can be used in a similar manner to gf. Simply place your cursor on the link and press gx." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 2" />
+<meta property="og:description" content=" Object identifier index # Object identifier filter is the most basic non-trivial filter there is (well, along array index). The syntax is .foo, &#39;.foo.bar, .&quot;123foo&quot;, .&quot;foo::bar&quot; or .[&quot;foo&quot;]. The filter takes object and returns value at the key specified or null otherwise.
+Example # echo &#39;{ &#34;a&#34;: 1, &#34;b&#34;: true }&#39; | jq &#39;.a&#39; # Outout: 1 echo &#39;{ &#34;a&#34;: 1, &#34;b&#34;: true }&#39; | jq &#39;.[&#34;b&#34;]&#39; # Outout: true " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-33/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-02/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 33 | Learn Shortcuts</title>
+<title>Week 2 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 33</strong>
+  <strong>Week 2</strong>
 
   <label for="toc-control">
     
@@ -104,11 +104,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#the-gx-command">The <code>gx</code> command</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -119,26 +115,20 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="opening-links-in-other-apps">
-  Opening links in other apps
-  <a class="anchor" href="#opening-links-in-other-apps">#</a>
+  <article class="markdown"><h1 id="object-identifier-index">
+  Object identifier index
+  <a class="anchor" href="#object-identifier-index">#</a>
 </h1>
-<p>Text files often contain links to either files or web pages.
-It is also quite common that you want to open those links
-with an app that you have installed for particular meme type.</p>
-<h2 id="the-gx-command">
-  The <code>gx</code> command
-  <a class="anchor" href="#the-gx-command">#</a>
-</h2>
-<p>Vim has a <code>gx</code> command to open links with default app configured in your system.
-It can be used in a similar manner to <code>gf</code>.
-Simply place your cursor on the link and press <code>gx</code>.
-It can open web URLs, image files, videos etc.</p>
-<blockquote class="book-hint warning">
-  <strong>Note:</strong> You need to have <code>netrw</code> plugin enabled in vim for <code>gx</code> command to work.
-</blockquote>
-
-</article>
+<p>Object identifier filter is the most basic non-trivial filter there is (well, along array index).
+The syntax is <code>.foo</code>, <code>'.foo.bar</code>, <code>.&quot;123foo&quot;</code>, <code>.&quot;foo::bar&quot;</code> or <code>.[&quot;foo&quot;]</code>.
+The filter takes object and returns value at the key specified or <code>null</code> otherwise.</p>
+<h1 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;{ &#34;a&#34;: 1, &#34;b&#34;: true }&#39;</span> | jq <span style="color:#e6db74">&#39;.a&#39;</span> <span style="color:#75715e"># Outout: 1</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;{ &#34;a&#34;: 1, &#34;b&#34;: true }&#39;</span> | jq <span style="color:#e6db74">&#39;.[&#34;b&#34;]&#39;</span> <span style="color:#75715e"># Outout: true</span>
+</span></span></code></pre></div></article>
  
       
 
@@ -177,11 +167,7 @@ It can open web URLs, image files, videos etc.</p>
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#the-gx-command">The <code>gx</code> command</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  

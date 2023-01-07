@@ -16,5 +16,15 @@
 Example # echo &amp;#39;{ &amp;#34;a&amp;#34;: 1, &amp;#34;b&amp;#34;: true }&amp;#39; | jq &amp;#39;.&amp;#39; </description>
     </item>
     
+    <item>
+      <title>Week 2</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-02/</guid>
+      <description> Object identifier index # Object identifier filter is the most basic non-trivial filter there is (well, along array index). The syntax is .foo, &#39;.foo.bar, .&amp;quot;123foo&amp;quot;, .&amp;quot;foo::bar&amp;quot; or .[&amp;quot;foo&amp;quot;]. The filter takes object and returns value at the key specified or null otherwise.
+Example # echo &amp;#39;{ &amp;#34;a&amp;#34;: 1, &amp;#34;b&amp;#34;: true }&amp;#39; | jq &amp;#39;.a&amp;#39; # Outout: 1 echo &amp;#39;{ &amp;#34;a&amp;#34;: 1, &amp;#34;b&amp;#34;: true }&amp;#39; | jq &amp;#39;.[&amp;#34;b&amp;#34;]&amp;#39; # Outout: true </description>
+    </item>
+    
   </channel>
 </rss>
