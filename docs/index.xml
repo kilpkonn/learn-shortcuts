@@ -551,6 +551,18 @@ Basic usage # :redir &amp;gt; &amp;lt;file&amp;gt; - Write commands output to a 
     </item>
     
     <item>
+      <title>Week 54</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-54/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-54/</guid>
+      <description> Filtering command output # Vim has built in command :filter to filter command output so you wouldn&amp;rsquo;t have to use grep etc. for it.
+Basic usage # The basic usage is :filter /pattern/ &amp;lt;cmd&amp;gt;
+Example # Here is an example to show only buffers that have &amp;ldquo;content&amp;rdquo; in them.
+:filter /content/ buffers </description>
+    </item>
+    
+    <item>
       <title>Week 6</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sorting text # Vim has also builtins for operations such as sorting text. Some of it is quite basic but there are also some quite fancy options.
-Basics # Sorting in vim is done with the sort command or sort! for reverse direction.
-Options # Useful options for sorting:
-i - ignore case n - sort by first decimal on line f - sort by first float on line /pattern/ sort by what comes after the match r sort by what is in pattern Note: Some more tips on this week&rsquo;s and previous weeks topics can be found here: https://thevaluable.">
+<meta name="description" content=" Filtering command output # Vim has built in command :filter to filter command output so you wouldn&rsquo;t have to use grep etc. for it.
+Basic usage # The basic usage is :filter /pattern/ &lt;cmd&gt;
+Example # Here is an example to show only buffers that have &ldquo;content&rdquo; in them.
+:filter /content/ buffers ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 40" />
-<meta property="og:description" content="Sorting text # Vim has also builtins for operations such as sorting text. Some of it is quite basic but there are also some quite fancy options.
-Basics # Sorting in vim is done with the sort command or sort! for reverse direction.
-Options # Useful options for sorting:
-i - ignore case n - sort by first decimal on line f - sort by first float on line /pattern/ sort by what comes after the match r sort by what is in pattern Note: Some more tips on this week&rsquo;s and previous weeks topics can be found here: https://thevaluable." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 54" />
+<meta property="og:description" content=" Filtering command output # Vim has built in command :filter to filter command output so you wouldn&rsquo;t have to use grep etc. for it.
+Basic usage # The basic usage is :filter /pattern/ &lt;cmd&gt;
+Example # Here is an example to show only buffers that have &ldquo;content&rdquo; in them.
+:filter /content/ buffers " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-40/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-54/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 40 | Learn Shortcuts</title>
+<title>Week 54 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -94,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 40</strong>
+  <strong>Week 54</strong>
 
   <label for="toc-control">
     
@@ -108,7 +108,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
 
 
 
@@ -119,34 +123,23 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="sorting-text">
-  Sorting text
-  <a class="anchor" href="#sorting-text">#</a>
+  <article class="markdown"><h1 id="filtering-command-output">
+  Filtering command output
+  <a class="anchor" href="#filtering-command-output">#</a>
 </h1>
-<p>Vim has also builtins for operations such as sorting text.
-Some of it is quite basic but there are also some quite fancy options.</p>
-<h1 id="basics">
-  Basics
-  <a class="anchor" href="#basics">#</a>
+<p>Vim has built in command <code>:filter</code> to filter command output so you wouldn&rsquo;t have to use <code>grep</code> etc. for it.</p>
+<h1 id="basic-usage">
+  Basic usage
+  <a class="anchor" href="#basic-usage">#</a>
 </h1>
-<p>Sorting in vim is done with the <code>sort</code> command or <code>sort!</code> for reverse direction.</p>
-<h1 id="options">
-  Options
-  <a class="anchor" href="#options">#</a>
-</h1>
-<p>Useful options for sorting:</p>
-<ul>
-<li><code>i</code> - ignore case</li>
-<li><code>n</code> - sort by first decimal on line</li>
-<li><code>f</code> - sort by first float on line</li>
-<li><code>/pattern/</code> sort by what comes <strong>after</strong> the match</li>
-<li><code>r</code> sort by what is in pattern</li>
-</ul>
-<blockquote class="book-hint info">
-  <strong>Note:</strong> Some more tips on this week&rsquo;s and previous weeks topics can be found here: <a href="https://thevaluable.dev/vim-advanced/">https://thevaluable.dev/vim-advanced/</a>
-</blockquote>
-
-</article>
+<p>The basic usage is <code>:filter /pattern/ &lt;cmd&gt;</code></p>
+<h2 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h2>
+<p>Here is an example to show only buffers that have &ldquo;content&rdquo; in them.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">filter</span> <span style="color:#e6db74">/content/</span> <span style="color:#a6e22e">buffers</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div></article>
  
       
 
@@ -185,7 +178,11 @@ Some of it is quite basic but there are also some quite fancy options.</p>
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
 
 
  

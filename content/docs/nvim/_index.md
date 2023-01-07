@@ -60,3 +60,4 @@ title: "Neovim tips"
  - [week-51](./week-51) Abbreviations
  - [week-52](./week-52) Saving options to a file
  - [week-53](./week-53) Redirections
+ - [week-54](./week-54) Filtering command output
