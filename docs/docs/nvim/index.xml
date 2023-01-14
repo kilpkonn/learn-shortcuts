@@ -553,6 +553,18 @@ Example # Here is an example to show only buffers that have &amp;ldquo;content&a
     </item>
     
     <item>
+      <title>Week 55</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-55/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-55/</guid>
+      <description> Verbose commands # Vim has :verbose command to give more precise information about
+Abbreviations Options Mappings User commands Basic usage # The basic usage is :filter /pattern/ &amp;lt;cmd&amp;gt;
+Example # Here is an example to see where mouse option was set from.
+:verbose set mouse? </description>
+    </item>
+    
+    <item>
       <title>Week 6</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

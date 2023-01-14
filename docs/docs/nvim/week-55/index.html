@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Abbreviations # Vim has a feature called abbreviations that can be used to either write out text without actually having to type all words or to correct some common typing mistakes.
-Basic usage # To see all the abbreviations created use :ab[breviate] command.
-To see abbreviations starting with some specific string you can use :ab &lt;string&gt;.
-New abbreviations can be created with :ab &lt;string&gt; &lt;replacement&gt; and cleared with :una &lt;string&gt;.">
+<meta name="description" content=" Verbose commands # Vim has :verbose command to give more precise information about
+Abbreviations Options Mappings User commands Basic usage # The basic usage is :filter /pattern/ &lt;cmd&gt;
+Example # Here is an example to see where mouse option was set from.
+:verbose set mouse? ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 51" />
-<meta property="og:description" content="Abbreviations # Vim has a feature called abbreviations that can be used to either write out text without actually having to type all words or to correct some common typing mistakes.
-Basic usage # To see all the abbreviations created use :ab[breviate] command.
-To see abbreviations starting with some specific string you can use :ab &lt;string&gt;.
-New abbreviations can be created with :ab &lt;string&gt; &lt;replacement&gt; and cleared with :una &lt;string&gt;." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 55" />
+<meta property="og:description" content=" Verbose commands # Vim has :verbose command to give more precise information about
+Abbreviations Options Mappings User commands Basic usage # The basic usage is :filter /pattern/ &lt;cmd&gt;
+Example # Here is an example to see where mouse option was set from.
+:verbose set mouse? " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-51/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-55/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 51 | Learn Shortcuts</title>
+<title>Week 55 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -94,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 51</strong>
+  <strong>Week 55</strong>
 
   <label for="toc-control">
     
@@ -108,7 +108,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
 
 
 
@@ -119,22 +123,29 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="abbreviations">
-  Abbreviations
-  <a class="anchor" href="#abbreviations">#</a>
+  <article class="markdown"><h1 id="verbose-commands">
+  Verbose commands
+  <a class="anchor" href="#verbose-commands">#</a>
 </h1>
-<p>Vim has a feature called abbreviations that can be used to either write out text without actually having to type all words or to
-correct some common typing mistakes.</p>
+<p>Vim has <code>:verbose</code> command to give more precise information about</p>
+<ul>
+<li>Abbreviations</li>
+<li>Options</li>
+<li>Mappings</li>
+<li>User commands</li>
+</ul>
 <h1 id="basic-usage">
   Basic usage
   <a class="anchor" href="#basic-usage">#</a>
 </h1>
-<p>To see all the abbreviations created use <code>:ab[breviate]</code> command.<br>
-To see abbreviations starting with some specific string you can use <code>:ab &lt;string&gt;</code>.<br>
-New abbreviations can be created with <code>:ab &lt;string&gt; &lt;replacement&gt;</code> and cleared with <code>:una &lt;string&gt;</code>.
-To clear all abbreviations you can use <code>:abc[lear]</code>.</p>
-<p>To create abbreviation for only a specific mode you can prefix the command with <code>i</code> for insert mode or <code>c</code> for command line mode.</p>
-</article>
+<p>The basic usage is <code>:filter /pattern/ &lt;cmd&gt;</code></p>
+<h2 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h2>
+<p>Here is an example to see where <code>mouse</code> option was set from.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">verbose</span> <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">mouse</span>?<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div></article>
  
       
 
@@ -173,7 +184,11 @@ To clear all abbreviations you can use <code>:abc[lear]</code>.</p>
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
 
 
  

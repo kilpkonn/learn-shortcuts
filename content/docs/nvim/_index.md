@@ -61,3 +61,4 @@ title: "Neovim tips"
  - [week-52](./week-52) Saving options to a file
  - [week-53](./week-53) Redirections
  - [week-54](./week-54) Filtering command output
+ - [week-55](./week-55) Verbose commands
