@@ -397,6 +397,17 @@ Repeat the substitution with new pattern # To redo the substitution with a new p
     
     <item>
       <title>Week 4</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-04/</guid>
+      <description>Array filters # Array filter is quite basic as it works as .[i] where i is the index of the object we wish to select. Note that also negative indexes work just as in python.
+Slice filters # Slice filters work as .[i:j] where i is the start index and j is the end index of the slice. The filter works on both arrays and strings.
+Examples # echo &amp;#39;[1,2,3]&amp;#39; | jq &amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>Week 4</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

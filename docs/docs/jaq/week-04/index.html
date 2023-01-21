@@ -3,21 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="External commands # Vim has also an easy interface to run external (shell) commands from within vim. Some of it is quite basic but it has also some small useful tips not used so often.
-Usage # :! &lt;cmd&gt; executes the shell command &lt;cmd&gt;.
-:!! repeats the last executed command.
-To insert the output of the command into current buffer you can use :read! &lt;cmd&gt; or :!r &lt;cmd&gt; for short form.">
+<meta name="description" content="Array filters # Array filter is quite basic as it works as .[i] where i is the index of the object we wish to select. Note that also negative indexes work just as in python.
+Slice filters # Slice filters work as .[i:j] where i is the start index and j is the end index of the slice. The filter works on both arrays and strings.
+Examples # echo &#39;[1,2,3]&#39; | jq &#39;.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 44" />
-<meta property="og:description" content="External commands # Vim has also an easy interface to run external (shell) commands from within vim. Some of it is quite basic but it has also some small useful tips not used so often.
-Usage # :! &lt;cmd&gt; executes the shell command &lt;cmd&gt;.
-:!! repeats the last executed command.
-To insert the output of the command into current buffer you can use :read! &lt;cmd&gt; or :!r &lt;cmd&gt; for short form." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 4" />
+<meta property="og:description" content="Array filters # Array filter is quite basic as it works as .[i] where i is the index of the object we wish to select. Note that also negative indexes work just as in python.
+Slice filters # Slice filters work as .[i:j] where i is the start index and j is the end index of the slice. The filter works on both arrays and strings.
+Examples # echo &#39;[1,2,3]&#39; | jq &#39;." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-44/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-04/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 44 | Learn Shortcuts</title>
+<title>Week 4 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -94,7 +92,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 44</strong>
+  <strong>Week 4</strong>
 
   <label for="toc-control">
     
@@ -119,21 +117,25 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="external-commands">
-  External commands
-  <a class="anchor" href="#external-commands">#</a>
+  <article class="markdown"><h1 id="array-filters">
+  Array filters
+  <a class="anchor" href="#array-filters">#</a>
 </h1>
-<p>Vim has also an easy interface to run external (shell) commands from within vim.
-Some of it is quite basic but it has also some small useful tips not used so often.</p>
-<h1 id="usage">
-  Usage
-  <a class="anchor" href="#usage">#</a>
+<p>Array filter is quite basic as it works as <code>.[i]</code> where <code>i</code> is the index of the object we wish to select.
+Note that also negative indexes work just as in python.</p>
+<h1 id="slice-filters">
+  Slice filters
+  <a class="anchor" href="#slice-filters">#</a>
 </h1>
-<p><code>:! &lt;cmd&gt;</code> executes the shell command <code>&lt;cmd&gt;</code>.<br>
-<code>:!!</code> repeats the last executed command.</p>
-<p>To insert the output of the command into current buffer you can use <code>:read! &lt;cmd&gt;</code> or <code>:!r &lt;cmd&gt;</code> for short form.
-And if you were wondering, <code>:r!!</code> also works fine.</p>
-</article>
+<p>Slice filters work as <code>.[i:j]</code> where <code>i</code> is the start index and <code>j</code> is the end index of the slice.
+The filter works on both arrays and strings.</p>
+<h1 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
+</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;[1,2,3]&#39;</span> | jq <span style="color:#e6db74">&#39;.[-2]&#39;</span> <span style="color:#75715e"># 2</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;[&#34;a&#34;,&#34;b&#34;,&#34;c&#34;,&#34;d&#34;,&#34;e&#34;]&#39;</span> | jq <span style="color:#e6db74">&#39;.[2:4]&#39;</span> <span style="color:#75715e"># [&#34;c&#34;, &#34;d&#34;] </span>
+</span></span></code></pre></div></article>
  
       
 
