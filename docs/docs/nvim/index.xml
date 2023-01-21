@@ -565,6 +565,17 @@ Example # Here is an example to see where mouse option was set from.
     </item>
     
     <item>
+      <title>Week 56</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-56/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-56/</guid>
+      <description> Operator pending mode # Once you start deleting, yanking or changing text vim enters OPERATOR PENDING MODE which then waits for textobject to come in. There is also a way to define mapping for this mode with :omap.
+Example # Here is an example to select everything on the line within next curly braces.
+:onoremap nc :normal! f{vi{&amp;lt;cr&amp;gt; </description>
+    </item>
+    
+    <item>
       <title>Week 6</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

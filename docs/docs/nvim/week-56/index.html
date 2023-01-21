@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content=" Operator pending mode # Once you start deleting, yanking or changing text vim enters OPERATOR PENDING MODE which then waits for textobject to come in. There is also a way to define mapping for this mode with :omap.
+Example # Here is an example to select everything on the line within next curly braces.
+:onoremap nc :normal! f{vi{&lt;cr&gt; ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Docs" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/" />
-<title>Docs | Learn Shortcuts</title>
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 56" />
+<meta property="og:description" content=" Operator pending mode # Once you start deleting, yanking or changing text vim enters OPERATOR PENDING MODE which then waits for textobject to come in. There is also a way to define mapping for this mode with :omap.
+Example # Here is an example to select everything on the line within next curly braces.
+:onoremap nc :normal! f{vi{&lt;cr&gt; " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-56/" /><meta property="article:section" content="docs" />
+
+
+<title>Week 56 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
   <script defer src="/learn-shortcuts/en.search.min.b436127d6fb2eae06b843c5ea64df9a8efadc08e74f3480b9b367ed785969774.js" integrity="sha256-tDYSfW&#43;y6uBrhDxepk35qO&#43;twI5080gLmzZ&#43;14WWl3Q=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://kilpkonn.github.io/learn-shortcuts/docs/index.xml" title="Learn Shortcuts" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -87,7 +92,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Docs</strong>
+  <strong>Week 56</strong>
 
   <label for="toc-control">
     
@@ -101,7 +106,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
 
 
 
@@ -112,7 +121,19 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"></article>
+  <article class="markdown"><h1 id="operator-pending-mode">
+  Operator pending mode
+  <a class="anchor" href="#operator-pending-mode">#</a>
+</h1>
+<p>Once you start deleting, yanking or changing text vim enters <code>OPERATOR PENDING MODE</code> which then waits for textobject to come in.
+There is also a way to define mapping for this mode with <code>:omap</code>.</p>
+<h2 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h2>
+<p>Here is an example to select everything on the line within next curly braces.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">onoremap</span> <span style="color:#a6e22e">nc</span> :<span style="color:#a6e22e">normal</span>! <span style="color:#a6e22e">f</span>{<span style="color:#a6e22e">vi</span>{&lt;<span style="color:#a6e22e">cr</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div></article>
  
       
 
@@ -137,6 +158,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -147,7 +172,11 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+  </ul>
+</nav>
 
 
  
