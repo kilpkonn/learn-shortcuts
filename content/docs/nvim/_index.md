@@ -63,3 +63,4 @@ title: "Neovim tips"
  - [week-54](./week-54) Filtering command output
  - [week-55](./week-55) Verbose commands
  - [week-56](./week-56) Operator pending mode
+ - [week-57](./week-57) Autocommands

@@ -576,6 +576,17 @@ Example # Here is an example to select everything on the line within next curly 
     </item>
     
     <item>
+      <title>Week 57</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-57/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-57/</guid>
+      <description>Autocommands # Autocommands are definitely something you have heard of, but maybe not tried yourself yet. Here&amp;rsquo;s how they work :D
+Basic syntax # The basic syntax is following:
+:au[tocmd] &amp;lt;event&amp;gt; &amp;lt;pattern&amp;gt; &amp;lt;cmd&amp;gt; &amp;lt;event&amp;gt; is event you wish to hook into (such as BufRead) &amp;lt;pattern&amp;gt; is regex pattern to filter files where to append the autocommand (use * for everywhere) &amp;lt;cnd&amp;gt; is the command to execute Note: You can specify multiple events or patterns by separating them with commas.</description>
+    </item>
+    
+    <item>
       <title>Week 6</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
