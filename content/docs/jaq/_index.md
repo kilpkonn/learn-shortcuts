@@ -10,3 +10,4 @@ title: "Jaq from zero to hero"
  - [week-02](./week-02) Object identifier filter
  - [week-03](./week-03) Optional object filters
  - [week-04](./week-04) Array and slice filters
+ - [week-05](./week-05) Array/Object value iterator

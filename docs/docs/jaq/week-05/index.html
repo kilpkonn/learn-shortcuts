@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Moving around in search results # Everybody knows that we can search with / and then move around the results with n and N. However there is also a way to move around the results without leaving the command line mode.
-Basic usage # &lt;C-g&gt; Takes you to the next match and &lt;C-t&gt; takes you to the previous match. Nothing special here :D">
+<meta name="description" content=" Array/Object value iterator # Array/object value iterator simply returns whole array/object instead of some of its values. You can also postfix it with ? to avoid yielding error if the root object isn&rsquo;t array nor object.
+Examples # echo &#39;[1,2,3]&#39; | jq &#39;.[]&#39; # [1, 2, 3] ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 49" />
-<meta property="og:description" content="Moving around in search results # Everybody knows that we can search with / and then move around the results with n and N. However there is also a way to move around the results without leaving the command line mode.
-Basic usage # &lt;C-g&gt; Takes you to the next match and &lt;C-t&gt; takes you to the previous match. Nothing special here :D" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 5" />
+<meta property="og:description" content=" Array/Object value iterator # Array/object value iterator simply returns whole array/object instead of some of its values. You can also postfix it with ? to avoid yielding error if the root object isn&rsquo;t array nor object.
+Examples # echo &#39;[1,2,3]&#39; | jq &#39;.[]&#39; # [1, 2, 3] " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-49/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-05/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 49 | Learn Shortcuts</title>
+<title>Week 5 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 49</strong>
+  <strong>Week 5</strong>
 
   <label for="toc-control">
     
@@ -115,19 +115,18 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="moving-around-in-search-results">
-  Moving around in search results
-  <a class="anchor" href="#moving-around-in-search-results">#</a>
+  <article class="markdown"><h1 id="arrayobject-value-iterator">
+  Array/Object value iterator
+  <a class="anchor" href="#arrayobject-value-iterator">#</a>
 </h1>
-<p>Everybody knows that we can search with <code>/</code> and then move around the results with <code>n</code> and <code>N</code>.
-However there is also a way to move around the results without leaving the command line mode.</p>
-<h1 id="basic-usage">
-  Basic usage
-  <a class="anchor" href="#basic-usage">#</a>
+<p>Array/object value iterator simply returns whole array/object instead of some of its values.
+You can also postfix it with <code>?</code> to avoid yielding error if the root object isn&rsquo;t array nor object.</p>
+<h1 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
 </h1>
-<p><code>&lt;C-g&gt;</code> Takes you to the next match and <code>&lt;C-t&gt;</code> takes you to the previous match.
-Nothing special here :D</p>
-</article>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;[1,2,3]&#39;</span> | jq <span style="color:#e6db74">&#39;.[]&#39;</span> <span style="color:#75715e"># [1, 2, 3]</span>
+</span></span></code></pre></div></article>
  
       
 

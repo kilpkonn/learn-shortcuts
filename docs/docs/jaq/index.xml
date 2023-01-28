@@ -46,5 +46,15 @@ Slice filters # Slice filters work as .[i:j] where i is the start index and j is
 Examples # echo &amp;#39;[1,2,3]&amp;#39; | jq &amp;#39;.</description>
     </item>
     
+    <item>
+      <title>Week 5</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-05/</guid>
+      <description> Array/Object value iterator # Array/object value iterator simply returns whole array/object instead of some of its values. You can also postfix it with ? to avoid yielding error if the root object isn&amp;rsquo;t array nor object.
+Examples # echo &amp;#39;[1,2,3]&amp;#39; | jq &amp;#39;.[]&amp;#39; # [1, 2, 3] </description>
+    </item>
+    
   </channel>
 </rss>
