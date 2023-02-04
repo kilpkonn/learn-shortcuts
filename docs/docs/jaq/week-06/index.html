@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Aligning text # This week we&rsquo;re simply continuing with aligning text.
-Aligning left or right # Aigning text to left or right can be achieved with :left and :right. Make sure to also set correct textwidth so that aligning right would make sense.
-Aligning by character # As a followup to last week I also decided to add option to align by char. For that you can use
-:% !">
+<meta name="description" content="Basic filter combinators # Here are some basics on how to combine filters.
+Comma filter (,) # If too filters are separated with comma both filters are ran and their outputs are concatenated in the order they are specified.
+Pipe filter (|) # If too filters are separated by a pipe operator then the first filter is rand and its output is fed into the second filter.
+Examples # echo &#39;{&#34;foo&#34;: 42, &#34;bar&#34;: &#34;something else&#34;, &#34;baz&#34;: true}&#39; | jq &#39;.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 25" />
-<meta property="og:description" content="Aligning text # This week we&rsquo;re simply continuing with aligning text.
-Aligning left or right # Aigning text to left or right can be achieved with :left and :right. Make sure to also set correct textwidth so that aligning right would make sense.
-Aligning by character # As a followup to last week I also decided to add option to align by char. For that you can use
-:% !" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 6" />
+<meta property="og:description" content="Basic filter combinators # Here are some basics on how to combine filters.
+Comma filter (,) # If too filters are separated with comma both filters are ran and their outputs are concatenated in the order they are specified.
+Pipe filter (|) # If too filters are separated by a pipe operator then the first filter is rand and its output is fed into the second filter.
+Examples # echo &#39;{&#34;foo&#34;: 42, &#34;bar&#34;: &#34;something else&#34;, &#34;baz&#34;: true}&#39; | jq &#39;." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-25/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-06/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 25 | Learn Shortcuts</title>
+<title>Week 6 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -94,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 25</strong>
+  <strong>Week 6</strong>
 
   <label for="toc-control">
     
@@ -110,8 +110,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#aligning-left-or-right">Aligning left or right</a></li>
-    <li><a href="#aligning-by-character">Aligning by character</a></li>
+    <li><a href="#comma-filter-">Comma filter (<code>,</code>)</a></li>
+    <li><a href="#pipe-filter-">Pipe filter (<code>|</code>)</a></li>
   </ul>
 </nav>
 
@@ -124,25 +124,31 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="aligning-text">
-  Aligning text
-  <a class="anchor" href="#aligning-text">#</a>
+  <article class="markdown"><h1 id="basic-filter-combinators">
+  Basic filter combinators
+  <a class="anchor" href="#basic-filter-combinators">#</a>
 </h1>
-<p>This week we&rsquo;re simply continuing with aligning text.</p>
-<h2 id="aligning-left-or-right">
-  Aligning left or right
-  <a class="anchor" href="#aligning-left-or-right">#</a>
+<p>Here are some basics on how to combine filters.</p>
+<h2 id="comma-filter-">
+  Comma filter (<code>,</code>)
+  <a class="anchor" href="#comma-filter-">#</a>
 </h2>
-<p>Aigning text to left or right can be achieved with <code>:left</code> and <code>:right</code>.
-Make sure to also set correct <code>textwidth</code> so that aligning right would make sense.</p>
-<h2 id="aligning-by-character">
-  Aligning by character
-  <a class="anchor" href="#aligning-by-character">#</a>
+<p>If too filters are separated with comma both filters are ran and their outputs are concatenated in the order they are specified.</p>
+<h2 id="pipe-filter-">
+  Pipe filter (<code>|</code>)
+  <a class="anchor" href="#pipe-filter-">#</a>
 </h2>
-<p>As a followup to last week I also decided to add option to align by char.
-For that you can use</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:% ! <span style="color:#a6e22e">column</span> -<span style="color:#a6e22e">t</span> -<span style="color:#a6e22e">s</span>= -<span style="color:#a6e22e">o</span>=<span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><p>The example above aligns by <code>=</code> character.</p>
+<p>If too filters are separated by a pipe operator then the first filter is rand and its output is fed into the second filter.</p>
+<h1 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
+</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;{&#34;foo&#34;: 42, &#34;bar&#34;: &#34;something else&#34;, &#34;baz&#34;: true}&#39;</span> | jq <span style="color:#e6db74">&#39;.foo, .bar&#39;</span> <span style="color:#75715e"># [42, &#34;something else&#34;]</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;[{&#34;name&#34;:&#34;JSON&#34;, &#34;good&#34;:true}, {&#34;name&#34;:&#34;XML&#34;, &#34;good&#34;:false}]&#39;</span> | jq <span style="color:#e6db74">&#39;.[] | .name&#39;</span> <span style="color:#75715e"># [&#34;JSON&#34;, &#34;XML&#34;]</span>
+</span></span></code></pre></div><blockquote class="book-hint info">
+  <strong>Note:</strong> Parenthesis work as grouping operator just like in other programming languages.
+</blockquote>
+
 </article>
  
       
@@ -184,8 +190,8 @@ For that you can use</p>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#aligning-left-or-right">Aligning left or right</a></li>
-    <li><a href="#aligning-by-character">Aligning by character</a></li>
+    <li><a href="#comma-filter-">Comma filter (<code>,</code>)</a></li>
+    <li><a href="#pipe-filter-">Pipe filter (<code>|</code>)</a></li>
   </ul>
 </nav>
 

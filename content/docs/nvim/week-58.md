@@ -17,7 +17,7 @@ The basic syntax is following:
 ...
 :augroup END
 ```
-{{< hint error >}}
+{{< hint danger >}}
 **Note:** You can add same autocommand to group multiple times so watch out for it :p
 Common fix to the problem is to delete all the commands in group with `:au! <name>` (or `:au!` if inside group) and then readding them.
 {{< /hint >}}
