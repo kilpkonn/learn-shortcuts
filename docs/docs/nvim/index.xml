@@ -587,6 +587,17 @@ Basic syntax # The basic syntax is following:
     </item>
     
     <item>
+      <title>Week 58</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-58/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-58/</guid>
+      <description>Autocommand groups # Autocommand groups are something like a namespaces for autocommands. If you don&amp;rsquo;t specify group, the autocommand is added automatically to default autocommand group without a name. But there are several reasons why it can be useful to specify custom autocommand groups.
+Basic syntax # The basic syntax is following:
+:augroup &amp;lt;name&amp;gt; :au &amp;lt;event&amp;gt; &amp;lt;pattern&amp;gt; &amp;lt;cmd&amp;gt; ... :augroup END Note: You can add same autocommand to group multiple times so watch out for it :p Common fix to the problem is to delete all the commands in group with :au!</description>
+    </item>
+    
+    <item>
       <title>Week 6</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

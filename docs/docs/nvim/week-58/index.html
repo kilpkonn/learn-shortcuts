@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Autocommands # Autocommands are definitely something you have heard of, but maybe not tried yourself yet. Here&rsquo;s how they work :D
+<meta name="description" content="Autocommand groups # Autocommand groups are something like a namespaces for autocommands. If you don&rsquo;t specify group, the autocommand is added automatically to default autocommand group without a name. But there are several reasons why it can be useful to specify custom autocommand groups.
 Basic syntax # The basic syntax is following:
-:au[tocmd] &lt;event&gt; &lt;pattern&gt; &lt;cmd&gt; &lt;event&gt; is event you wish to hook into (such as BufRead) &lt;pattern&gt; is regex pattern to filter files where to append the autocommand (use * for everywhere) &lt;cnd&gt; is the command to execute Note: You can specify multiple events or patterns by separating them with commas.">
+:augroup &lt;name&gt; :au &lt;event&gt; &lt;pattern&gt; &lt;cmd&gt; ... :augroup END Note: You can add same autocommand to group multiple times so watch out for it :p Common fix to the problem is to delete all the commands in group with :au!">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 57" />
-<meta property="og:description" content="Autocommands # Autocommands are definitely something you have heard of, but maybe not tried yourself yet. Here&rsquo;s how they work :D
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 58" />
+<meta property="og:description" content="Autocommand groups # Autocommand groups are something like a namespaces for autocommands. If you don&rsquo;t specify group, the autocommand is added automatically to default autocommand group without a name. But there are several reasons why it can be useful to specify custom autocommand groups.
 Basic syntax # The basic syntax is following:
-:au[tocmd] &lt;event&gt; &lt;pattern&gt; &lt;cmd&gt; &lt;event&gt; is event you wish to hook into (such as BufRead) &lt;pattern&gt; is regex pattern to filter files where to append the autocommand (use * for everywhere) &lt;cnd&gt; is the command to execute Note: You can specify multiple events or patterns by separating them with commas." />
+:augroup &lt;name&gt; :au &lt;event&gt; &lt;pattern&gt; &lt;cmd&gt; ... :augroup END Note: You can add same autocommand to group multiple times so watch out for it :p Common fix to the problem is to delete all the commands in group with :au!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-57/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-58/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 57 | Learn Shortcuts</title>
+<title>Week 58 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -92,7 +92,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 57</strong>
+  <strong>Week 58</strong>
 
   <label for="toc-control">
     
@@ -123,40 +123,39 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="autocommands">
-  Autocommands
-  <a class="anchor" href="#autocommands">#</a>
+  <article class="markdown"><h1 id="autocommand-groups">
+  Autocommand groups
+  <a class="anchor" href="#autocommand-groups">#</a>
 </h1>
-<p>Autocommands are definitely something you have heard of, but maybe not tried yourself yet.
-Here&rsquo;s how they work :D</p>
+<p>Autocommand groups are something like a namespaces for autocommands.
+If you don&rsquo;t specify group, the autocommand is added automatically to default autocommand group without a name.
+But there are several reasons why it can be useful to specify custom autocommand groups.</p>
 <h2 id="basic-syntax">
   Basic syntax
   <a class="anchor" href="#basic-syntax">#</a>
 </h2>
 <p>The basic syntax is following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">au</span>[<span style="color:#a6e22e">tocmd</span>] &lt;<span style="color:#a6e22e">event</span>&gt; &lt;<span style="color:#a6e22e">pattern</span>&gt; &lt;<span style="color:#a6e22e">cmd</span>&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div><ul>
-<li><code>&lt;event&gt;</code> is event you wish to hook into (such as <code>BufRead</code>)</li>
-<li><code>&lt;pattern&gt;</code> is regex pattern to filter files where to append the autocommand (use * for everywhere)</li>
-<li><code>&lt;cnd&gt;</code> is the command to execute</li>
-</ul>
-<blockquote class="book-hint info">
-  <strong>Note:</strong> You can specify multiple events or patterns by separating them with commas.
-For example <code>:au BufRead,BufWrite *.md,*.txt &lt;cmd&gt;</code>.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">augroup</span> &lt;<span style="color:#a6e22e">name</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">au</span> &lt;<span style="color:#a6e22e">event</span>&gt; &lt;<span style="color:#a6e22e">pattern</span>&gt; &lt;<span style="color:#a6e22e">cmd</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>...<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">augroup</span> <span style="color:#a6e22e">END</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><blockquote class="book-hint error">
+  <strong>Note:</strong> You can add same autocommand to group multiple times so watch out for it :p
+Common fix to the problem is to delete all the commands in group with <code>:au! &lt;name&gt;</code> (or <code>:au!</code> if inside group) and then readding them.
 </blockquote>
 
 <h2 id="viewing-autocommands">
   Viewing autocommands
   <a class="anchor" href="#viewing-autocommands">#</a>
 </h2>
-<p>To view the autocommands created for <code>&lt;event&gt;</code> use</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">au</span>[<span style="color:#a6e22e">tocmd</span>] &lt;<span style="color:#a6e22e">event</span>&gt;<span style="color:#960050;background-color:#1e0010">
+<p>To view the autocommand groups use</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">augroup</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><h2 id="deleting-autocommands">
   Deleting autocommands
   <a class="anchor" href="#deleting-autocommands">#</a>
 </h2>
-<p>To delete all atocommands for <code>&lt;event&gt;</code> use</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">au</span>[<span style="color:#a6e22e">tocmd</span>]! &lt;<span style="color:#a6e22e">event</span>&gt;<span style="color:#960050;background-color:#1e0010">
+<p>To delete autocommand group <code>&lt;name&gt;</code> use</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">augroup</span>! &lt;<span style="color:#a6e22e">name</span>&gt;<span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div></article>
  
       
