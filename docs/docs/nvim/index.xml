@@ -598,6 +598,17 @@ Basic syntax # The basic syntax is following:
     </item>
     
     <item>
+      <title>Week 59</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-59/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-59/</guid>
+      <description> Ignoring autocommand # What if you wish to ignore all autocommands for hook at some specific time. Vim has noautocmd for it.
+Basic syntax # The basic syntax is following:
+:noautocmd &amp;lt;cmd&amp;gt; </description>
+    </item>
+    
+    <item>
       <title>Week 6</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
