@@ -12,3 +12,4 @@ title: "Jaq from zero to hero"
  - [week-04](./week-04) Array and slice filters
  - [week-05](./week-05) Array / Object value iterator
  - [week-06](./week-06) Basic filter combinators
+ - [week-07](./week-07) Array construction
