@@ -80,5 +80,16 @@ Array with items # Here are some ways of declaring array with items.
 [1, 2, 3] [.foo, .bar, .baz] [[.items[].name]] </description>
     </item>
     
+    <item>
+      <title>Week 8</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-08/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-08/</guid>
+      <description>Object construction # Here are some basics on how to construct objects.
+Basics # Objects are constructed with {}, and you can use comma separated expressions inside object similarly to arrays. One thing to note is that you might be able to specify keys without quotes if the are &amp;ldquo;identifier-like&amp;rdquo;.
+Useful tips # Since it is common that we want something like { foo: .foo, bar: .bar } there is a shorter form for it: { foo, bar }.</description>
+    </item>
+    
   </channel>
 </rss>

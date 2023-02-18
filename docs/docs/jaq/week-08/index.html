@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Optional object filters # Optional object index filter is specified with postfix ? (.foo?.bar?) and it works just as regular object index filter except it doesn&rsquo;t output an error if . or .foo is not an object.">
+<meta name="description" content="Object construction # Here are some basics on how to construct objects.
+Basics # Objects are constructed with {}, and you can use comma separated expressions inside object similarly to arrays. One thing to note is that you might be able to specify keys without quotes if the are &ldquo;identifier-like&rdquo;.
+Useful tips # Since it is common that we want something like { foo: .foo, bar: .bar } there is a shorter form for it: { foo, bar }.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 3" />
-<meta property="og:description" content="Optional object filters # Optional object index filter is specified with postfix ? (.foo?.bar?) and it works just as regular object index filter except it doesn&rsquo;t output an error if . or .foo is not an object." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 8" />
+<meta property="og:description" content="Object construction # Here are some basics on how to construct objects.
+Basics # Objects are constructed with {}, and you can use comma separated expressions inside object similarly to arrays. One thing to note is that you might be able to specify keys without quotes if the are &ldquo;identifier-like&rdquo;.
+Useful tips # Since it is common that we want something like { foo: .foo, bar: .bar } there is a shorter form for it: { foo, bar }." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-03/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-08/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 3 | Learn Shortcuts</title>
+<title>Week 8 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -88,7 +92,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 3</strong>
+  <strong>Week 8</strong>
 
   <label for="toc-control">
     
@@ -102,7 +106,13 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basics">Basics</a></li>
+    <li><a href="#useful-tips">Useful tips</a></li>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
 
 
 
@@ -113,12 +123,33 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="optional-object-filters">
-  Optional object filters
-  <a class="anchor" href="#optional-object-filters">#</a>
+  <article class="markdown"><h1 id="object-construction">
+  Object construction
+  <a class="anchor" href="#object-construction">#</a>
 </h1>
-<p>Optional object index filter is specified with postfix <code>?</code> (<code>.foo?.bar?</code>) and it works just as regular object index filter except it doesn&rsquo;t output an error if <code>.</code> or <code>.foo</code> is not an object.</p>
-</article>
+<p>Here are some basics on how to construct objects.</p>
+<h2 id="basics">
+  Basics
+  <a class="anchor" href="#basics">#</a>
+</h2>
+<p>Objects are constructed with <code>{}</code>, and you can use comma separated expressions inside object similarly to arrays.
+One thing to note is that you might be able to specify keys without quotes if the are &ldquo;identifier-like&rdquo;.</p>
+<h2 id="useful-tips">
+  Useful tips
+  <a class="anchor" href="#useful-tips">#</a>
+</h2>
+<p>Since it is common that we want something like <code>{ foo: .foo, bar: .bar }</code> there is a shorter form for it: <code>{ foo, bar }</code>.
+If any of the expressions produces multiple outputs then multiple objects are produces.
+However you can put parenthesis around the key to make it an expression and then the values will be concatenated if the keys match.</p>
+<h2 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
+</h2>
+<p>Here are some ways of declaring objects with items.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>{foo: .bar}
+</span></span><span style="display:flex;"><span>{user, title: .titles[]}  # multiple objects for single user
+</span></span><span style="display:flex;"><span>{(.user): .titles}  # Single object for single user
+</span></span></code></pre></div></article>
  
       
 
@@ -157,7 +188,13 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#basics">Basics</a></li>
+    <li><a href="#useful-tips">Useful tips</a></li>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
 
 
  
