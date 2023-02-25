@@ -14,3 +14,4 @@ title: "Jaq from zero to hero"
  - [week-06](./week-06) Basic filter combinators
  - [week-07](./week-07) Array construction
  - [week-08](./week-08) Object construction
+ - [week-09](./week-09) Recursive decent

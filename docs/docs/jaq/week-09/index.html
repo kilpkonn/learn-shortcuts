@@ -3,19 +3,28 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content=" Recursive descent .. # Recursively descends ., producing every value. For [1, 2] this is [[1, 2], 1, 2].
+Useful tips # Note that ..a does not work so you should use ..|.a to get all values for key a.
+Examples # Input
+[{&#34;a&#34;: true, &#34;b&#34;: false}, 1] Query
+..|.a? -&gt; true ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/tags/" />
-<title>Tags | Learn Shortcuts</title>
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 9" />
+<meta property="og:description" content=" Recursive descent .. # Recursively descends ., producing every value. For [1, 2] this is [[1, 2], 1, 2].
+Useful tips # Note that ..a does not work so you should use ..|.a to get all values for key a.
+Examples # Input
+[{&#34;a&#34;: true, &#34;b&#34;: false}, 1] Query
+..|.a? -&gt; true " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-09/" /><meta property="article:section" content="docs" />
+
+
+<title>Week 9 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
   <script defer src="/learn-shortcuts/en.search.min.786c4a5cf5874eac5810d91c17b53e8259381db8cc0ec02075390ea070b9c204.js" integrity="sha256-eGxKXPWHTqxYENkcF7U&#43;glk4HbjMDsAgdTkOoHC5wgQ=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://kilpkonn.github.io/learn-shortcuts/tags/index.xml" title="Learn Shortcuts" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -87,7 +96,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Tags</strong>
+  <strong>Week 9</strong>
 
   <label for="toc-control">
     
@@ -100,29 +109,14 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#useful-tips">Useful tips</a></li>
+    <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
+
 
 
   </aside>
@@ -132,9 +126,26 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  
-
-  
+  <article class="markdown"><h1 id="recursive-descent-">
+  Recursive descent <code>..</code>
+  <a class="anchor" href="#recursive-descent-">#</a>
+</h1>
+<p>Recursively descends <code>.</code>, producing every value.
+For <code>[1, 2]</code> this is <code>[[1, 2], 1, 2]</code>.</p>
+<h2 id="useful-tips">
+  Useful tips
+  <a class="anchor" href="#useful-tips">#</a>
+</h2>
+<p>Note that <code>..a</code> does not work so you should use <code>..|.a</code> to get all values for key <code>a</code>.</p>
+<h2 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
+</h2>
+<p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[{<span style="color:#f92672">&#34;a&#34;</span>: <span style="color:#66d9ef">true</span>, <span style="color:#f92672">&#34;b&#34;</span>: <span style="color:#66d9ef">false</span>}, <span style="color:#ae81ff">1</span>]
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">..|.a?    -&gt; true
+</code></pre></article>
  
       
 
@@ -159,6 +170,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -168,29 +183,14 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-toc">
       <div class="book-toc-content">
         
-  <nav>
+  
+<nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
-      <ul>
-      
-      </ul>
-    </li>
-    
-  
+    <li><a href="#useful-tips">Useful tips</a></li>
+    <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
+
 
  
       </div>
