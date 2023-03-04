@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Redirections # What if you want to save the output of Vim commands in a file or in a register? The command :redir is here to fulfill your desires.
-Basic usage # :redir &gt; &lt;file&gt; - Write commands output to a file. Use &gt;&gt; to append and :redir! to overwrite. :redir @&lt;reg&gt; - Write every commands output to the register. :redir @&lt;reg&gt;&gt;&gt; - Append every commands output to register. (Caps append as well) :redir =&gt; &lt;var&gt; - Write every commands output to a variable.">
+<meta name="description" content="Addition (&#43;) and subtraction (-) # Addition takes two filters and then adds results of them together. Depending of the value type, adding has different meanings:
+Numbers are added arithmetically Arrays are concatenated Strings are concatenated Objects are merged. If both have same key, then the object on the right wins Note: null can be added to any value resulting no change. Subtraction works in a similar manner. For arrays it means that are occurrences of element(s) are removed.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 53" />
-<meta property="og:description" content="Redirections # What if you want to save the output of Vim commands in a file or in a register? The command :redir is here to fulfill your desires.
-Basic usage # :redir &gt; &lt;file&gt; - Write commands output to a file. Use &gt;&gt; to append and :redir! to overwrite. :redir @&lt;reg&gt; - Write every commands output to the register. :redir @&lt;reg&gt;&gt;&gt; - Append every commands output to register. (Caps append as well) :redir =&gt; &lt;var&gt; - Write every commands output to a variable." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 10" />
+<meta property="og:description" content="Addition (&#43;) and subtraction (-) # Addition takes two filters and then adds results of them together. Depending of the value type, adding has different meanings:
+Numbers are added arithmetically Arrays are concatenated Strings are concatenated Objects are merged. If both have same key, then the object on the right wins Note: null can be added to any value resulting no change. Subtraction works in a similar manner. For arrays it means that are occurrences of element(s) are removed." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-53/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-10/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 53 | Learn Shortcuts</title>
+<title>Week 10 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 53</strong>
+  <strong>Week 10</strong>
 
   <label for="toc-control">
     
@@ -106,7 +106,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#example">Example</a></li>
+    <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
 
@@ -119,31 +119,38 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="redirections">
-  Redirections
-  <a class="anchor" href="#redirections">#</a>
+  <article class="markdown"><h1 id="addition--and-subtraction--">
+  Addition (<code>+</code>) and subtraction (<code>-</code>)
+  <a class="anchor" href="#addition--and-subtraction--">#</a>
 </h1>
-<p>What if you want to save the output of Vim commands in a file or in a register? The command <code>:redir</code> is here to fulfill your desires.</p>
-<h1 id="basic-usage">
-  Basic usage
-  <a class="anchor" href="#basic-usage">#</a>
-</h1>
+<p>Addition takes two filters and then adds results of them together.
+Depending of the value type, adding has different meanings:</p>
 <ul>
-<li><code>:redir &gt; &lt;file&gt;</code> - Write commands output to a file. Use <code>&gt;&gt;</code> to append and <code>:redir!</code> to overwrite.</li>
-<li><code>:redir @&lt;reg&gt;</code> - Write every commands output to  the register.</li>
-<li><code>:redir @&lt;reg&gt;&gt;&gt;</code> - Append every commands output to register. (Caps append as well)</li>
-<li><code>:redir =&gt; &lt;var&gt;</code> - Write every commands output to a variable.</li>
-<li><code>:redir END</code> - End redirections</li>
+<li><strong>Numbers</strong> are added arithmetically</li>
+<li><strong>Arrays</strong> are concatenated</li>
+<li><strong>Strings</strong> are concatenated</li>
+<li><strong>Objects</strong> are merged. If both have same key, then the object on the right wins</li>
 </ul>
-<h2 id="example">
-  Example
-  <a class="anchor" href="#example">#</a>
+<blockquote class="book-hint info">
+  <strong>Note:</strong> <code>null</code> can be added to any value resulting no change.
+</blockquote>
+
+<p>Subtraction works in a similar manner.
+For arrays it means that are occurrences of element(s) are removed.</p>
+<h2 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
 </h2>
-<p>Here is an example to save <code>sessionoptions</code> to <code>.vimrc</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vim" data-lang="vim"><span style="display:flex;"><span>:<span style="color:#a6e22e">redir</span> &gt;&gt; $<span style="color:#a6e22e">VIMCONFIG</span>/.<span style="color:#a6e22e">vimrc</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">sessionoptions</span>?<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">redir</span> <span style="color:#a6e22e">END</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span></code></pre></div></article>
+<p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{ <span style="color:#f92672">&#34;a&#34;</span>:<span style="color:#ae81ff">3</span> }
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;.a + 1&#39;    -&gt; 4
+jq &#39;4 - .a&#39;    -&gt; 1
+</code></pre><p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[<span style="color:#e6db74">&#34;xml&#34;</span>, <span style="color:#e6db74">&#34;yaml&#34;</span>, <span style="color:#e6db74">&#34;json&#34;</span>]
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;. - [&#34;xml&#34;, &#34;yaml&#34;]&#39;   -&gt; [&#34;json&#34;]
+</code></pre></article>
  
       
 
@@ -184,7 +191,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#example">Example</a></li>
+    <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
 

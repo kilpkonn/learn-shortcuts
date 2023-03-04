@@ -17,6 +17,16 @@ Example # echo &amp;#39;{ &amp;#34;a&amp;#34;: 1, &amp;#34;b&amp;#34;: true }&am
     </item>
     
     <item>
+      <title>Week 10</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-10/</guid>
+      <description>Addition (+) and subtraction (-) # Addition takes two filters and then adds results of them together. Depending of the value type, adding has different meanings:
+Numbers are added arithmetically Arrays are concatenated Strings are concatenated Objects are merged. If both have same key, then the object on the right wins Note: null can be added to any value resulting no change. Subtraction works in a similar manner. For arrays it means that are occurrences of element(s) are removed.</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
