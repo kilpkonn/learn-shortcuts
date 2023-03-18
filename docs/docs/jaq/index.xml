@@ -27,6 +27,18 @@ Numbers are added arithmetically Arrays are concatenated Strings are concatenate
     </item>
     
     <item>
+      <title>Week 11</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-11/</guid>
+      <description>Multiplication (*), division (/), modulo (%) # All these infix operators work as you&amp;rsquo;d expect with numbers. Only thing to note is that dividing with 0 gives error.
+Multiplying string works as in python (repeats string n times).
+Dividing string by another string splits first string using the second string as a separator.
+Multiplying objects merges them recursively, so it works similarly to addition, but if both objects contain the same key and values are objects, then they get merged.</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

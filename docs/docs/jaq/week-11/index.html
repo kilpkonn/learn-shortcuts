@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="More on inserting and deleting # How to insert and delete text are some of the first things you have to learn in vim, but there are also more &ldquo;advanced&rdquo; ways to do it or just cool shortcuts for it.
-Start inserting on new line # The o key can be used to start inserting text to newline just below the cursor. The capital O does the same, but start inserting to a line above.">
+<meta name="description" content="Multiplication (*), division (/), modulo (%) # All these infix operators work as you&rsquo;d expect with numbers. Only thing to note is that dividing with 0 gives error.
+Multiplying string works as in python (repeats string n times).
+Dividing string by another string splits first string using the second string as a separator.
+Multiplying objects merges them recursively, so it works similarly to addition, but if both objects contain the same key and values are objects, then they get merged.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 19" />
-<meta property="og:description" content="More on inserting and deleting # How to insert and delete text are some of the first things you have to learn in vim, but there are also more &ldquo;advanced&rdquo; ways to do it or just cool shortcuts for it.
-Start inserting on new line # The o key can be used to start inserting text to newline just below the cursor. The capital O does the same, but start inserting to a line above." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 11" />
+<meta property="og:description" content="Multiplication (*), division (/), modulo (%) # All these infix operators work as you&rsquo;d expect with numbers. Only thing to note is that dividing with 0 gives error.
+Multiplying string works as in python (repeats string n times).
+Dividing string by another string splits first string using the second string as a separator.
+Multiplying objects merges them recursively, so it works similarly to addition, but if both objects contain the same key and values are objects, then they get merged." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-19/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-11/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 19 | Learn Shortcuts</title>
+<title>Week 11 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 19</strong>
+  <strong>Week 11</strong>
 
   <label for="toc-control">
     
@@ -106,10 +110,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#start-inserting-on-new-line">Start inserting on new line</a></li>
-    <li><a href="#special-inserts">Special inserts</a></li>
-    <li><a href="#deleting-by-sentence">Deleting by sentence</a></li>
-    <li><a href="#replacing-text">Replacing text</a></li>
+    <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
 
@@ -122,38 +123,24 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="more-on-inserting-and-deleting">
-  More on inserting and deleting
-  <a class="anchor" href="#more-on-inserting-and-deleting">#</a>
+  <article class="markdown"><h1 id="multiplication--division--modulo-">
+  Multiplication (<code>*</code>), division (<code>/</code>), modulo (<code>%</code>)
+  <a class="anchor" href="#multiplication--division--modulo-">#</a>
 </h1>
-<p>How to insert and delete text are some of the first things you have to learn in vim, but there
-are also more &ldquo;advanced&rdquo; ways to do it or just cool shortcuts for it.</p>
-<h2 id="start-inserting-on-new-line">
-  Start inserting on new line
-  <a class="anchor" href="#start-inserting-on-new-line">#</a>
+<p>All these infix operators work as you&rsquo;d expect with numbers.
+Only thing to note is that dividing with 0 gives error.</p>
+<p>Multiplying string works as in python (repeats string n times).</p>
+<p>Dividing string by another string splits first string using the second string as a separator.</p>
+<p>Multiplying objects merges them recursively, so it works similarly to addition, but if both objects contain the same key and values are objects, then they get merged.</p>
+<h2 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
 </h2>
-<p>The <code>o</code> key can be used to start inserting text to newline just below the cursor.
-The capital <code>O</code> does the same, but start inserting to a line above.</p>
-<h2 id="special-inserts">
-  Special inserts
-  <a class="anchor" href="#special-inserts">#</a>
-</h2>
-<p>There are also some more special ways to insert text.
-<code>:r [filename]</code> can be used to insert the contents of some file to current location.
-<code>:r ![command]</code> runs shell command and pastes the output to current location.</p>
-<h2 id="deleting-by-sentence">
-  Deleting by sentence
-  <a class="anchor" href="#deleting-by-sentence">#</a>
-</h2>
-<p>To delete from current location to the end of sentence <code>d)</code> can be used.
-Similarly <code>d}</code> etc. can be used to delete to end of paragraph etc.</p>
-<h2 id="replacing-text">
-  Replacing text
-  <a class="anchor" href="#replacing-text">#</a>
-</h2>
-<p>To replace single character use <code>r</code>.
-To go to replace mode (instead of inserting new characters overwrite existing ones) use <code>R</code>.</p>
-</article>
+<p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;a, b,c,d, e&#34;</span>
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;. / &#34;, &#34;&#39;  -&gt; [&#34;a&#34;,&#34;b,c,d&#34;,&#34;e&#34;]
+</code></pre></article>
  
       
 
@@ -194,10 +181,7 @@ To go to replace mode (instead of inserting new characters overwrite existing on
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#start-inserting-on-new-line">Start inserting on new line</a></li>
-    <li><a href="#special-inserts">Special inserts</a></li>
-    <li><a href="#deleting-by-sentence">Deleting by sentence</a></li>
-    <li><a href="#replacing-text">Replacing text</a></li>
+    <li><a href="#examples">Examples</a></li>
   </ul>
 </nav>
 

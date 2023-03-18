@@ -16,3 +16,4 @@ title: "Jaq from zero to hero"
  - [week-08](./week-08) Object construction
  - [week-09](./week-09) Recursive decent
  - [week-10](./week-10) Addition and subtraction
+ - [week-11](./week-11) Multiplication, division, modulo 
