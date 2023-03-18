@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Array/Object value iterator # Array/object value iterator simply returns whole array/object instead of some of its values. You can also postfix it with ? to avoid yielding error if the root object isn&rsquo;t array nor object.
-Examples # echo &#39;[1,2,3]&#39; | jq &#39;.[]&#39; # [1, 2, 3] ">
+<meta name="description" content=" Function length # The length function is one of the basic functions in jq. It works pretty much as expected, but there are some points to bring out just to be sure.
+Length of string is amount of characters Length of array is amount of elements Length of object is amount of key-value pairs Length of null is 0 Examples # Input
+[[1,2], &#34;string&#34;, {&#34;a&#34;:2}, null] Query
+jq &#39;.[] | length&#39; -&gt; 2, 6, 1, 0 ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 5" />
-<meta property="og:description" content=" Array/Object value iterator # Array/object value iterator simply returns whole array/object instead of some of its values. You can also postfix it with ? to avoid yielding error if the root object isn&rsquo;t array nor object.
-Examples # echo &#39;[1,2,3]&#39; | jq &#39;.[]&#39; # [1, 2, 3] " />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 12" />
+<meta property="og:description" content=" Function length # The length function is one of the basic functions in jq. It works pretty much as expected, but there are some points to bring out just to be sure.
+Length of string is amount of characters Length of array is amount of elements Length of object is amount of key-value pairs Length of null is 0 Examples # Input
+[[1,2], &#34;string&#34;, {&#34;a&#34;:2}, null] Query
+jq &#39;.[] | length&#39; -&gt; 2, 6, 1, 0 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-05/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-12/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 5 | Learn Shortcuts</title>
+<title>Week 12 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -90,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 5</strong>
+  <strong>Week 12</strong>
 
   <label for="toc-control">
     
@@ -104,7 +108,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
 
 
 
@@ -115,18 +123,27 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="arrayobject-value-iterator">
-  Array/Object value iterator
-  <a class="anchor" href="#arrayobject-value-iterator">#</a>
+  <article class="markdown"><h1 id="function-length">
+  Function <code>length</code>
+  <a class="anchor" href="#function-length">#</a>
 </h1>
-<p>Array/object value iterator simply returns whole array/object instead of some of its values.
-You can also postfix it with <code>?</code> to avoid yielding error if the root object isn&rsquo;t array nor object.</p>
-<h1 id="examples">
+<p>The <code>length</code> function is one of the basic functions in <code>jq</code>.
+It works pretty much as expected, but there are some points to bring out just to be sure.</p>
+<ul>
+<li>Length of string is amount of characters</li>
+<li>Length of array is amount of elements</li>
+<li>Length of object is amount of key-value pairs</li>
+<li>Length of <code>null</code> is 0</li>
+</ul>
+<h2 id="examples">
   Examples
   <a class="anchor" href="#examples">#</a>
-</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;[1,2,3]&#39;</span> | jq <span style="color:#e6db74">&#39;.[]&#39;</span> <span style="color:#75715e"># [1, 2, 3]</span>
-</span></span></code></pre></div></article>
+</h2>
+<p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>], <span style="color:#e6db74">&#34;string&#34;</span>, {<span style="color:#f92672">&#34;a&#34;</span>:<span style="color:#ae81ff">2</span>}, <span style="color:#66d9ef">null</span>]
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;.[] | length&#39;  -&gt; 2, 6, 1, 0
+</code></pre></article>
  
       
 
@@ -165,7 +182,11 @@ You can also postfix it with <code>?</code> to avoid yielding error if the root 
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
 
 
  

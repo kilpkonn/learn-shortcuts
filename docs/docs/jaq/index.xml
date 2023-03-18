@@ -39,6 +39,18 @@ Multiplying objects merges them recursively, so it works similarly to addition, 
     </item>
     
     <item>
+      <title>Week 12</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-12/</guid>
+      <description> Function length # The length function is one of the basic functions in jq. It works pretty much as expected, but there are some points to bring out just to be sure.
+Length of string is amount of characters Length of array is amount of elements Length of object is amount of key-value pairs Length of null is 0 Examples # Input
+[[1,2], &amp;#34;string&amp;#34;, {&amp;#34;a&amp;#34;:2}, null] Query
+jq &amp;#39;.[] | length&amp;#39; -&amp;gt; 2, 6, 1, 0 </description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
