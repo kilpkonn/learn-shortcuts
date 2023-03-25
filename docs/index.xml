@@ -105,6 +105,17 @@ Movement # Here are some more options to move around marks.
     
     <item>
       <title>Week 13</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-13/</guid>
+      <description>Function keys # The builtin function keys, when given an object, returns its keys in an array.
+The keys are sorted &amp;ldquo;alphabetically&amp;rdquo;, by unicode codepoint order. This is not an order that makes particular sense in any particular language, but you can count on it being the same for any two objects with the same set of keys, regardless of locale settings.
+Note: For arrays the keys function returns an array of indices.</description>
+    </item>
+    
+    <item>
+      <title>Week 13</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

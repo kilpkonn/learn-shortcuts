@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Array filters # Array filter is quite basic as it works as .[i] where i is the index of the object we wish to select. Note that also negative indexes work just as in python.
-Slice filters # Slice filters work as .[i:j] where i is the start index and j is the end index of the slice. The filter works on both arrays and strings.
-Examples # echo &#39;[1,2,3]&#39; | jq &#39;.">
+<meta name="description" content="Function keys # The builtin function keys, when given an object, returns its keys in an array.
+The keys are sorted &ldquo;alphabetically&rdquo;, by unicode codepoint order. This is not an order that makes particular sense in any particular language, but you can count on it being the same for any two objects with the same set of keys, regardless of locale settings.
+Note: For arrays the keys function returns an array of indices.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 4" />
-<meta property="og:description" content="Array filters # Array filter is quite basic as it works as .[i] where i is the index of the object we wish to select. Note that also negative indexes work just as in python.
-Slice filters # Slice filters work as .[i:j] where i is the start index and j is the end index of the slice. The filter works on both arrays and strings.
-Examples # echo &#39;[1,2,3]&#39; | jq &#39;." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 13" />
+<meta property="og:description" content="Function keys # The builtin function keys, when given an object, returns its keys in an array.
+The keys are sorted &ldquo;alphabetically&rdquo;, by unicode codepoint order. This is not an order that makes particular sense in any particular language, but you can count on it being the same for any two objects with the same set of keys, regardless of locale settings.
+Note: For arrays the keys function returns an array of indices." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-04/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-13/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 4 | Learn Shortcuts</title>
+<title>Week 13 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -92,7 +92,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 4</strong>
+  <strong>Week 13</strong>
 
   <label for="toc-control">
     
@@ -106,7 +106,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
 
 
 
@@ -117,25 +121,30 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="array-filters">
-  Array filters
-  <a class="anchor" href="#array-filters">#</a>
+  <article class="markdown"><h1 id="function-keys">
+  Function <code>keys</code>
+  <a class="anchor" href="#function-keys">#</a>
 </h1>
-<p>Array filter is quite basic as it works as <code>.[i]</code> where <code>i</code> is the index of the object we wish to select.
-Note that also negative indexes work just as in python.</p>
-<h1 id="slice-filters">
-  Slice filters
-  <a class="anchor" href="#slice-filters">#</a>
-</h1>
-<p>Slice filters work as <code>.[i:j]</code> where <code>i</code> is the start index and <code>j</code> is the end index of the slice.
-The filter works on both arrays and strings.</p>
-<h1 id="examples">
+<p>The builtin function <code>keys</code>, when given an object, returns its keys in an array.</p>
+<p>The keys are sorted &ldquo;alphabetically&rdquo;, by unicode codepoint order.
+This is not an order that makes particular sense in any particular language, but you can count on it being the same for any two objects with the same set of keys, regardless of locale settings.</p>
+<blockquote class="book-hint info">
+  <strong>Note:</strong> For arrays the <code>keys</code> function returns an array of indices.
+</blockquote>
+
+<h2 id="examples">
   Examples
   <a class="anchor" href="#examples">#</a>
-</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;[1,2,3]&#39;</span> | jq <span style="color:#e6db74">&#39;.[-2]&#39;</span> <span style="color:#75715e"># 2</span>
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;[&#34;a&#34;,&#34;b&#34;,&#34;c&#34;,&#34;d&#34;,&#34;e&#34;]&#39;</span> | jq <span style="color:#e6db74">&#39;.[2:4]&#39;</span> <span style="color:#75715e"># [&#34;c&#34;, &#34;d&#34;] </span>
-</span></span></code></pre></div></article>
+</h2>
+<p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{ <span style="color:#f92672">&#34;abc&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#f92672">&#34;abcd&#34;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#f92672">&#34;Foo&#34;</span>: <span style="color:#ae81ff">3</span> }
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;keys&#39;  -&gt; [&#34;Foo&#34;, &#34;abc&#34;, &#34;abcd&#34;]
+</code></pre><p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[<span style="color:#ae81ff">42</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">35</span>]
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;keys&#39;  -&gt; [0,1,2] 
+</code></pre></article>
  
       
 
@@ -174,7 +183,11 @@ The filter works on both arrays and strings.</p>
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
 
 
  
