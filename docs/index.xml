@@ -127,6 +127,16 @@ Basic commands # You can view the contents of buffers with :buffers or :ls.</des
     
     <item>
       <title>Week 14</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-14/</guid>
+      <description>Functions has(key) and in # The builtin function has(key) returns whether the input object has the given key, or the input array has an element at the given index. The function has the same effect as checking whether the key is in array of keys returned by the function keys, but it works faster.
+The builtin function in in returns whether or not the input key is in the given object, or the input index corresponds to an element in the given array.</description>
+    </item>
+    
+    <item>
+      <title>Week 14</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

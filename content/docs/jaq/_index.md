@@ -19,3 +19,4 @@ title: "Jaq from zero to hero"
  - [week-11](./week-11) Multiplication, division, modulo 
  - [week-12](./week-12) Function `length`
  - [week-13](./week-13) Function `keys`
+ - [week-14](./week-14) Functions `has(key)` and `in`
