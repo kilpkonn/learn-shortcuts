@@ -147,6 +147,17 @@ Viewving and navigating QuickFix list # QuickFix list can be viewed with :copen 
     
     <item>
       <title>Week 15</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-15/</guid>
+      <description>Function path(path_expression) # Outputs array representations of the given path expression in ... The outputs are arrays of strings (object keys) and/or numbers (array indices).
+Path expressions are jq expressions like .a, but also .[]. There are two types of path expressions: ones that can match exactly, and ones that cannot. For example, .a.b.c is an exact match path expression, while .a[].b is not.
+path(exact_path_expression) will produce the array representation of the path expression even if it does not exist in .</description>
+    </item>
+    
+    <item>
+      <title>Week 15</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
