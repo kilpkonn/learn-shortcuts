@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Jaq from zero to hero # week-01 Identity filter week-02 Object identifier filter week-03 Optional object filters week-04 Array and slice filters week-05 Array / Object value iterator week-06 Basic filter combinators week-07 Array construction week-08 Object construction week-09 Recursive decent week-10 Addition and subtraction week-11 Multiplication, division, modulo week-12 Function length week-13 Function keys week-14 Functions has(key) and in week-15 Function path(path_expression) week-16 Function del(path_expression) ">
+<meta name="description" content=" Function del(path_expression) # The builtin function del removes a key and its corresponding value from an object.
+Examples # Input
+{ &#34;foo&#34;: 42, &#34;bar&#34;: 9001, &#34;baz&#34;: 42 } Query
+jq &#39;del(.foo)&#39; # --&gt; {&#34;bar&#34;: 9001, &#34;baz&#34;: 42} ">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Jaq from zero to hero" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/" />
-<title>Jaq from zero to hero | Learn Shortcuts</title>
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 16" />
+<meta property="og:description" content=" Function del(path_expression) # The builtin function del removes a key and its corresponding value from an object.
+Examples # Input
+{ &#34;foo&#34;: 42, &#34;bar&#34;: 9001, &#34;baz&#34;: 42 } Query
+jq &#39;del(.foo)&#39; # --&gt; {&#34;bar&#34;: 9001, &#34;baz&#34;: 42} " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-16/" /><meta property="article:section" content="docs" />
+
+
+<title>Week 16 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
   <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
   <script defer src="/learn-shortcuts/en.search.min.bb14d85f46d63282787c1c75c7ea1a07fc079a81611adc2914f27aa14d6f7756.js" integrity="sha256-uxTYX0bWMoJ4fBx1x&#43;oaB/wHmoFhGtwpFPJ6oU1vd1Y=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/index.xml" title="Learn Shortcuts" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -55,7 +62,7 @@ https://github.com/alex-shpak/hugo-book
 
   <ul>
 <li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
-<li><a href="/learn-shortcuts/docs/jaq/"class=active><strong>Jaq</strong></a></li>
+<li><a href="/learn-shortcuts/docs/jaq/"><strong>Jaq</strong></a></li>
 </ul>
 
 
@@ -87,7 +94,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Jaq from zero to hero</strong>
+  <strong>Week 16</strong>
 
   <label for="toc-control">
     
@@ -101,7 +108,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
 
 
 
@@ -112,29 +123,20 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="jaq-from-zero-to-hero">
-  Jaq from zero to hero
-  <a class="anchor" href="#jaq-from-zero-to-hero">#</a>
+  <article class="markdown"><h1 id="function-delpath_expression">
+  Function <code>del(path_expression)</code>
+  <a class="anchor" href="#function-delpath_expression">#</a>
 </h1>
-<ul>
-<li><a href="./week-01">week-01</a> Identity filter</li>
-<li><a href="./week-02">week-02</a> Object identifier filter</li>
-<li><a href="./week-03">week-03</a> Optional object filters</li>
-<li><a href="./week-04">week-04</a> Array and slice filters</li>
-<li><a href="./week-05">week-05</a> Array / Object value iterator</li>
-<li><a href="./week-06">week-06</a> Basic filter combinators</li>
-<li><a href="./week-07">week-07</a> Array construction</li>
-<li><a href="./week-08">week-08</a> Object construction</li>
-<li><a href="./week-09">week-09</a> Recursive decent</li>
-<li><a href="./week-10">week-10</a> Addition and subtraction</li>
-<li><a href="./week-11">week-11</a> Multiplication, division, modulo</li>
-<li><a href="./week-12">week-12</a> Function <code>length</code></li>
-<li><a href="./week-13">week-13</a> Function <code>keys</code></li>
-<li><a href="./week-14">week-14</a> Functions <code>has(key)</code> and <code>in</code></li>
-<li><a href="./week-15">week-15</a> Function <code>path(path_expression)</code></li>
-<li><a href="./week-16">week-16</a> Function <code>del(path_expression)</code></li>
-</ul>
-</article>
+<p>The builtin function <code>del</code> removes a key and its corresponding value from an object.</p>
+<h2 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
+</h2>
+<p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{ <span style="color:#f92672">&#34;foo&#34;</span>: <span style="color:#ae81ff">42</span>, <span style="color:#f92672">&#34;bar&#34;</span>: <span style="color:#ae81ff">9001</span>, <span style="color:#f92672">&#34;baz&#34;</span>: <span style="color:#ae81ff">42</span> }
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;del(.foo)&#39;   # --&gt; {&#34;bar&#34;: 9001, &#34;baz&#34;: 42}
+</code></pre></article>
  
       
 
@@ -173,7 +175,11 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
 
 
  

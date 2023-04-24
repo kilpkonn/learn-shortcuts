@@ -83,6 +83,18 @@ path(exact_path_expression) will produce the array representation of the path ex
     </item>
     
     <item>
+      <title>Week 16</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-16/</guid>
+      <description> Function del(path_expression) # The builtin function del removes a key and its corresponding value from an object.
+Examples # Input
+{ &amp;#34;foo&amp;#34;: 42, &amp;#34;bar&amp;#34;: 9001, &amp;#34;baz&amp;#34;: 42 } Query
+jq &amp;#39;del(.foo)&amp;#39; # --&amp;gt; {&amp;#34;bar&amp;#34;: 9001, &amp;#34;baz&amp;#34;: 42} </description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

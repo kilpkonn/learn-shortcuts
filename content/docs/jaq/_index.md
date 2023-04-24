@@ -21,3 +21,4 @@ title: "Jaq from zero to hero"
  - [week-13](./week-13) Function `keys`
  - [week-14](./week-14) Functions `has(key)` and `in`
  - [week-15](./week-15) Function `path(path_expression)`
+ - [week-16](./week-16) Function `del(path_expression)`
