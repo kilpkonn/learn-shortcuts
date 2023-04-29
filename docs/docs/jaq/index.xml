@@ -95,6 +95,21 @@ jq &amp;#39;del(.foo)&amp;#39; # --&amp;gt; {&amp;#34;bar&amp;#34;: 9001, &amp;#
     </item>
     
     <item>
+      <title>Week 17</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-17/</guid>
+      <description> Function getpath(PATHS) # The builtin function getpath outputs the values in . found at each path in PATHS.
+Examples # Input
+{ &amp;#34;a&amp;#34;: {&amp;#34;b&amp;#34;:0, &amp;#34;c&amp;#34;:1} } Query
+jq &amp;#39;[getpath([&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;], [&amp;#34;a&amp;#34;,&amp;#34;c&amp;#34;])]&amp;#39; # --&amp;gt; [0, 1] Function setpath(PATHS; value) # The builtin function setpath sets the PATHS in . to VALUE. If there is no value to update, new value is inserted.
+Examples # Input
+{ &amp;#34;a&amp;#34;: {&amp;#34;b&amp;#34;:0} } Query
+jq &amp;#39;setpath([&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;]; 1)&amp;#39; # --&amp;gt; {&amp;#34;a&amp;#34;: {&amp;#34;b&amp;#34;: 1}} </description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
