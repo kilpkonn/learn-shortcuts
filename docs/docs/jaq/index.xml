@@ -110,6 +110,16 @@ jq &amp;#39;setpath([&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;]; 1)&amp;#39; # --&
     </item>
     
     <item>
+      <title>Week 18</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-18/</guid>
+      <description>Functions to_entries, from_entries, with_entries # These functions convert between an object and an array of key-value pairs. If to_entries is passed an object, then for each k: v entry in the input, the output array includes {&amp;quot;key&amp;quot;: k, &amp;quot;value&amp;quot;: v}.
+from_entries does the opposite conversion, and with_entries(foo) is a shorthand for to_entries | map(foo) | from_entries, useful for doing some operation to all keys and values of an object. from_entries accepts key, Key, name, Name, value and Value as keys.</description>
+    </item>
+    
+    <item>
       <title>Week 2</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

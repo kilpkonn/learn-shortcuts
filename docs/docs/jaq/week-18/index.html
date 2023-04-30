@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Functions to_entries, from_entries, with_entries # These functions convert between an object and an array of key-value pairs. If to_entries is passed an object, then for each k: v entry in the input, the output array includes {&quot;key&quot;: k, &quot;value&quot;: v}.
+from_entries does the opposite conversion, and with_entries(foo) is a shorthand for to_entries | map(foo) | from_entries, useful for doing some operation to all keys and values of an object. from_entries accepts key, Key, name, Name, value and Value as keys.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 18" />
+<meta property="og:description" content="Functions to_entries, from_entries, with_entries # These functions convert between an object and an array of key-value pairs. If to_entries is passed an object, then for each k: v entry in the input, the output array includes {&quot;key&quot;: k, &quot;value&quot;: v}.
+from_entries does the opposite conversion, and with_entries(foo) is a shorthand for to_entries | map(foo) | from_entries, useful for doing some operation to all keys and values of an object. from_entries accepts key, Key, name, Name, value and Value as keys." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-18/" /><meta property="article:section" content="docs" />
+
+
+<title>Week 18 | Learn Shortcuts</title>
+<link rel="manifest" href="/learn-shortcuts/manifest.json">
+<link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
+  <script defer src="/learn-shortcuts/flexsearch.min.js"></script>
+  <script defer src="/learn-shortcuts/en.search.min.bb14d85f46d63282787c1c75c7ea1a07fc079a81611adc2914f27aa14d6f7756.js" integrity="sha256-uxTYX0bWMoJ4fBx1x&#43;oaB/wHmoFhGtwpFPJ6oU1vd1Y=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn-shortcuts/"><span>Learn Shortcuts</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/learn-shortcuts/docs/nvim/"><strong>Nvim</strong></a></li>
+<li><a href="/learn-shortcuts/docs/jaq/"><strong>Jaq</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Week 18</strong>
+
+  <label for="toc-control">
+    
+    <img src="/learn-shortcuts/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="functions--to_entries-from_entries-with_entries">
+  Functions <code> to_entries</code>, <code>from_entries</code>, <code>with_entries</code>
+  <a class="anchor" href="#functions--to_entries-from_entries-with_entries">#</a>
+</h1>
+<p>These functions convert between an object and an array of key-value pairs.
+If <code>to_entries</code> is passed an object, then for each <code>k: v</code> entry in the input, the output array includes <code>{&quot;key&quot;: k, &quot;value&quot;: v}</code>.</p>
+<p><code>from_entries</code> does the opposite conversion, and <code>with_entries(foo)</code> is a shorthand for <code>to_entries | map(foo) | from_entries</code>,
+useful for doing some operation to all keys and values of an object.
+<code>from_entries</code> accepts key, Key, name, Name, value and Value as keys.</p>
+<h2 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
+</h2>
+<p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{ <span style="color:#f92672">&#34;a&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#f92672">&#34;b&#34;</span>: <span style="color:#ae81ff">2</span> }
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;to_entries&#39;   # --&gt; [{&#34;key&#34;:&#34;a&#34;, &#34;value&#34;:1}, {&#34;key&#34;:&#34;b&#34;, &#34;value&#34;:2}] 
+</code></pre><p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[{<span style="color:#f92672">&#34;key&#34;</span>:<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#ae81ff">1</span>}, {<span style="color:#f92672">&#34;key&#34;</span>:<span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#f92672">&#34;value&#34;</span>:<span style="color:#ae81ff">2</span>}]
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;from_entries&#39;   # --&gt; {&#34;a&#34;: 1, &#34;b&#34;: 2} 
+</code></pre><p>Input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{<span style="color:#f92672">&#34;a&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#f92672">&#34;b&#34;</span>: <span style="color:#ae81ff">2</span>}
+</span></span></code></pre></div><p>Query</p>
+<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;with_entries(.key |= &#34;KEY_&#34; + .)&#39;   # --&gt; {&#34;KEY_a&#34;: 1, &#34;KEY_b&#34;: 2} 
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
