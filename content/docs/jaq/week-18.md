@@ -4,7 +4,7 @@ bookFlatSection: false
 title: "Week 18"
 ---
 
-# Functions ` to_entries`, `from_entries`, `with_entries`
+# Functions `to_entries`, `from_entries`, `with_entries`
 These functions convert between an object and an array of key-value pairs.
 If `to_entries` is passed an object, then for each `k: v` entry in the input, the output array includes `{"key": k, "value": v}`.
 

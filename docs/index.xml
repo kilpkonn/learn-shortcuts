@@ -238,6 +238,19 @@ Move to next occurance # One way to skip couple of keystrokes is to jump around 
     
     <item>
       <title>Week 19</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-19/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-19/</guid>
+      <description> Function select(boolean_expression) # The function select(foo) produces its input unchanged if foo returns true for that input, and produces no output otherwise.
+It&amp;rsquo;s useful for filtering lists: [1,2,3] | map(select(. &amp;gt;= 2)) will give you [2,3].
+Examples # Input
+[1, 5, 3, 0, 7] Query
+jq &amp;#39;map(select(. &amp;gt;= 2))&amp;#39; # --&amp;gt;[5,3,7] </description>
+    </item>
+    
+    <item>
+      <title>Week 19</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/nvim/week-19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -23,4 +23,5 @@ title: "Jaq from zero to hero"
  - [week-15](./week-15) Function `path(path_expression)`
  - [week-16](./week-16) Function `del(path_expression)`
  - [week-17](./week-17) Functions `getpath(PATHS)` and `setpath(PATHS; value)`
- - [week-18](./week-18) Functions ` to_entries`, `from_entries`, `with_entries`
+ - [week-18](./week-18) Functions `to_entries`, `from_entries`, `with_entries`
+ - [week-19](./week-19) Function `select(boolean_expression)`
