@@ -5,7 +5,7 @@ title: "Week 20"
 ---
 
 # Function / value `empty`
-empty returns no results. None at all. Not even `null`.
+`empty` returns no results. None at all. Not even `null`.
 
 It's useful on occasion. You'll know if you need it :)
 

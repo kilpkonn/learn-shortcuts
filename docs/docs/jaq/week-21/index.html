@@ -3,23 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Function / value empty # empty returns no results. None at all. Not even null.
-It&rsquo;s useful on occasion. You&rsquo;ll know if you need it :)
-Examples # Input
-null Query
-jq &#39;[1,2,empty,3]&#39; # --&gt; [1,2,3] ">
+<meta name="description" content="Function error(message) # Produces an error, just like .a applied to values other than null and objects would, but with the given message as the error&rsquo;s value. Errors can be caught with try/catch
+Function halt # Stops the jq program with no further outputs. jq will exit with exit status 0.
+Note: The function halt_error(exit_code) works in a similar matter but you can also specify exit code which otherwise defaults to 5.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 20" />
-<meta property="og:description" content=" Function / value empty # empty returns no results. None at all. Not even null.
-It&rsquo;s useful on occasion. You&rsquo;ll know if you need it :)
-Examples # Input
-null Query
-jq &#39;[1,2,empty,3]&#39; # --&gt; [1,2,3] " />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Week 21" />
+<meta property="og:description" content="Function error(message) # Produces an error, just like .a applied to values other than null and objects would, but with the given message as the error&rsquo;s value. Errors can be caught with try/catch
+Function halt # Stops the jq program with no further outputs. jq will exit with exit status 0.
+Note: The function halt_error(exit_code) works in a similar matter but you can also specify exit code which otherwise defaults to 5." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-20/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-21/" /><meta property="article:section" content="docs" />
 
 
-<title>Week 20 | Learn Shortcuts</title>
+<title>Week 21 | Learn Shortcuts</title>
 <link rel="manifest" href="/learn-shortcuts/manifest.json">
 <link rel="icon" href="/learn-shortcuts/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/learn-shortcuts/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css" integrity="sha256-RhgbyTN1upMgJudTs3xA5v&#43;LsWqe93DHi8xmPkV3sbo=" crossorigin="anonymous">
@@ -96,7 +92,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn-shortcuts/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Week 20</strong>
+  <strong>Week 21</strong>
 
   <label for="toc-control">
     
@@ -110,11 +106,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#examples">Examples</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -125,21 +117,22 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="function--value-empty">
-  Function / value <code>empty</code>
-  <a class="anchor" href="#function--value-empty">#</a>
+  <article class="markdown"><h1 id="function-errormessage">
+  Function <code>error(message)</code>
+  <a class="anchor" href="#function-errormessage">#</a>
 </h1>
-<p><code>empty</code> returns no results. None at all. Not even <code>null</code>.</p>
-<p>It&rsquo;s useful on occasion. You&rsquo;ll know if you need it :)</p>
-<h2 id="examples">
-  Examples
-  <a class="anchor" href="#examples">#</a>
-</h2>
-<p>Input</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#66d9ef">null</span>
-</span></span></code></pre></div><p>Query</p>
-<pre tabindex="0"><code class="language-jq" data-lang="jq">jq &#39;[1,2,empty,3]&#39;   # --&gt; [1,2,3] 
-</code></pre></article>
+<p>Produces an error, just like <code>.a</code> applied to values other than <code>null</code> and objects would, but with the given message as the error&rsquo;s value.
+Errors can be caught with <code>try/catch</code></p>
+<h1 id="function-halt">
+  Function <code>halt</code>
+  <a class="anchor" href="#function-halt">#</a>
+</h1>
+<p>Stops the <code>jq</code> program with no further outputs. <code>jq</code> will exit with exit status <code>0</code>.</p>
+<blockquote class="book-hint info">
+  <strong>Note:</strong> The function <code>halt_error(exit_code)</code> works in a similar matter but you can also specify exit code which otherwise defaults to <code>5</code>.
+</blockquote>
+
+</article>
  
       
 
@@ -178,11 +171,7 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#examples">Examples</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  

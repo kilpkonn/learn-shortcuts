@@ -156,6 +156,17 @@ jq &amp;#39;[1,2,empty,3]&amp;#39; # --&amp;gt; [1,2,3] </description>
     </item>
     
     <item>
+      <title>Week 21</title>
+      <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-21/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-21/</guid>
+      <description>Function error(message) # Produces an error, just like .a applied to values other than null and objects would, but with the given message as the error&amp;rsquo;s value. Errors can be caught with try/catch
+Function halt # Stops the jq program with no further outputs. jq will exit with exit status 0.
+Note: The function halt_error(exit_code) works in a similar matter but you can also specify exit code which otherwise defaults to 5.</description>
+    </item>
+    
+    <item>
       <title>Week 3</title>
       <link>https://kilpkonn.github.io/learn-shortcuts/docs/jaq/week-03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
