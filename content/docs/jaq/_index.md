@@ -27,3 +27,4 @@ title: "Jaq from zero to hero"
  - [week-19](./week-19) Function `select(boolean_expression)`
  - [week-20](./week-20) Function / value `empty`
  - [week-21](./week-21) Functions `error(message)` and `halt`
+ - [week-22](./week-22) Function `add`
